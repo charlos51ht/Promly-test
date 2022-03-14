@@ -1,0 +1,106 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.promly"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+8-->C:\Users\charl\Documents\School Work\Spring 2022\Software Engineering\Promly-Android--main\Promly\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="32" />
+9-->C:\Users\charl\Documents\School Work\Spring 2022\Software Engineering\Promly-Android--main\Promly\app\src\main\AndroidManifest.xml
+10
+11    <application
+11-->C:\Users\charl\Documents\School Work\Spring 2022\Software Engineering\Promly-Android--main\Promly\app\src\main\AndroidManifest.xml:5:5-39:19
+12        android:allowBackup="true"
+12-->C:\Users\charl\Documents\School Work\Spring 2022\Software Engineering\Promly-Android--main\Promly\app\src\main\AndroidManifest.xml:6:9-35
+13        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+13-->[androidx.core:core:1.7.0] C:\Users\charl\.gradle\caches\transforms-3\45d02a77dae881956d1271c2f6287d3a\transformed\core-1.7.0\AndroidManifest.xml:24:18-86
+14        android:debuggable="true"
+15        android:icon="@mipmap/ic_launcher"
+15-->C:\Users\charl\Documents\School Work\Spring 2022\Software Engineering\Promly-Android--main\Promly\app\src\main\AndroidManifest.xml:7:9-43
+16        android:label=""
+16-->C:\Users\charl\Documents\School Work\Spring 2022\Software Engineering\Promly-Android--main\Promly\app\src\main\AndroidManifest.xml:8:9-26
+17        android:roundIcon="@mipmap/ic_launcher_round"
+17-->C:\Users\charl\Documents\School Work\Spring 2022\Software Engineering\Promly-Android--main\Promly\app\src\main\AndroidManifest.xml:9:9-54
+18        android:supportsRtl="true"
+18-->C:\Users\charl\Documents\School Work\Spring 2022\Software Engineering\Promly-Android--main\Promly\app\src\main\AndroidManifest.xml:10:9-35
+19        android:testOnly="true"
+20        android:theme="@style/Theme.Promly" >
+20-->C:\Users\charl\Documents\School Work\Spring 2022\Software Engineering\Promly-Android--main\Promly\app\src\main\AndroidManifest.xml:11:9-44
+21        <activity
+21-->C:\Users\charl\Documents\School Work\Spring 2022\Software Engineering\Promly-Android--main\Promly\app\src\main\AndroidManifest.xml:12:9-20:20
+22            android:name="com.example.promly.MainActivity"
+22-->C:\Users\charl\Documents\School Work\Spring 2022\Software Engineering\Promly-Android--main\Promly\app\src\main\AndroidManifest.xml:13:13-41
+23            android:exported="true" >
+23-->C:\Users\charl\Documents\School Work\Spring 2022\Software Engineering\Promly-Android--main\Promly\app\src\main\AndroidManifest.xml:14:13-36
+24            <intent-filter>
+24-->C:\Users\charl\Documents\School Work\Spring 2022\Software Engineering\Promly-Android--main\Promly\app\src\main\AndroidManifest.xml:15:13-19:29
+25                <action android:name="android.intent.action.MAIN" />
+25-->C:\Users\charl\Documents\School Work\Spring 2022\Software Engineering\Promly-Android--main\Promly\app\src\main\AndroidManifest.xml:16:17-69
+25-->C:\Users\charl\Documents\School Work\Spring 2022\Software Engineering\Promly-Android--main\Promly\app\src\main\AndroidManifest.xml:16:25-66
+26
+27                <category android:name="android.intent.category.LAUNCHER" />
+27-->C:\Users\charl\Documents\School Work\Spring 2022\Software Engineering\Promly-Android--main\Promly\app\src\main\AndroidManifest.xml:18:17-77
+27-->C:\Users\charl\Documents\School Work\Spring 2022\Software Engineering\Promly-Android--main\Promly\app\src\main\AndroidManifest.xml:18:27-74
+28            </intent-filter>
+29        </activity>
+30        <activity
+30-->C:\Users\charl\Documents\School Work\Spring 2022\Software Engineering\Promly-Android--main\Promly\app\src\main\AndroidManifest.xml:21:9-29:20
+31            android:name="com.example.promly.CodeActivity"
+31-->C:\Users\charl\Documents\School Work\Spring 2022\Software Engineering\Promly-Android--main\Promly\app\src\main\AndroidManifest.xml:22:13-41
+32            android:exported="true" >
+32-->C:\Users\charl\Documents\School Work\Spring 2022\Software Engineering\Promly-Android--main\Promly\app\src\main\AndroidManifest.xml:23:13-36
+33            <intent-filter>
+33-->C:\Users\charl\Documents\School Work\Spring 2022\Software Engineering\Promly-Android--main\Promly\app\src\main\AndroidManifest.xml:15:13-19:29
+34                <action android:name="android.intent.action.MAIN" />
+34-->C:\Users\charl\Documents\School Work\Spring 2022\Software Engineering\Promly-Android--main\Promly\app\src\main\AndroidManifest.xml:16:17-69
+34-->C:\Users\charl\Documents\School Work\Spring 2022\Software Engineering\Promly-Android--main\Promly\app\src\main\AndroidManifest.xml:16:25-66
+35
+36                <category android:name="android.intent.category.LAUNCHER" />
+36-->C:\Users\charl\Documents\School Work\Spring 2022\Software Engineering\Promly-Android--main\Promly\app\src\main\AndroidManifest.xml:18:17-77
+36-->C:\Users\charl\Documents\School Work\Spring 2022\Software Engineering\Promly-Android--main\Promly\app\src\main\AndroidManifest.xml:18:27-74
+37            </intent-filter>
+38        </activity>
+39        <activity
+39-->C:\Users\charl\Documents\School Work\Spring 2022\Software Engineering\Promly-Android--main\Promly\app\src\main\AndroidManifest.xml:30:9-38:20
+40            android:name="com.example.promly.IntroActivity"
+40-->C:\Users\charl\Documents\School Work\Spring 2022\Software Engineering\Promly-Android--main\Promly\app\src\main\AndroidManifest.xml:31:13-42
+41            android:exported="true" >
+41-->C:\Users\charl\Documents\School Work\Spring 2022\Software Engineering\Promly-Android--main\Promly\app\src\main\AndroidManifest.xml:32:13-36
+42            <intent-filter>
+42-->C:\Users\charl\Documents\School Work\Spring 2022\Software Engineering\Promly-Android--main\Promly\app\src\main\AndroidManifest.xml:15:13-19:29
+43                <action android:name="android.intent.action.MAIN" />
+43-->C:\Users\charl\Documents\School Work\Spring 2022\Software Engineering\Promly-Android--main\Promly\app\src\main\AndroidManifest.xml:16:17-69
+43-->C:\Users\charl\Documents\School Work\Spring 2022\Software Engineering\Promly-Android--main\Promly\app\src\main\AndroidManifest.xml:16:25-66
+44
+45                <category android:name="android.intent.category.LAUNCHER" />
+45-->C:\Users\charl\Documents\School Work\Spring 2022\Software Engineering\Promly-Android--main\Promly\app\src\main\AndroidManifest.xml:18:17-77
+45-->C:\Users\charl\Documents\School Work\Spring 2022\Software Engineering\Promly-Android--main\Promly\app\src\main\AndroidManifest.xml:18:27-74
+46            </intent-filter>
+47        </activity>
+48
+49        <provider
+49-->[androidx.emoji2:emoji2:1.0.0] C:\Users\charl\.gradle\caches\transforms-3\ec75a5ef9cd8cff1061d37370f71c616\transformed\emoji2-1.0.0\AndroidManifest.xml:26:9-34:20
+50            android:name="androidx.startup.InitializationProvider"
+50-->[androidx.emoji2:emoji2:1.0.0] C:\Users\charl\.gradle\caches\transforms-3\ec75a5ef9cd8cff1061d37370f71c616\transformed\emoji2-1.0.0\AndroidManifest.xml:27:13-67
+51            android:authorities="com.example.promly.androidx-startup"
+51-->[androidx.emoji2:emoji2:1.0.0] C:\Users\charl\.gradle\caches\transforms-3\ec75a5ef9cd8cff1061d37370f71c616\transformed\emoji2-1.0.0\AndroidManifest.xml:28:13-68
+52            android:exported="false" >
+52-->[androidx.emoji2:emoji2:1.0.0] C:\Users\charl\.gradle\caches\transforms-3\ec75a5ef9cd8cff1061d37370f71c616\transformed\emoji2-1.0.0\AndroidManifest.xml:29:13-37
+53            <meta-data
+53-->[androidx.emoji2:emoji2:1.0.0] C:\Users\charl\.gradle\caches\transforms-3\ec75a5ef9cd8cff1061d37370f71c616\transformed\emoji2-1.0.0\AndroidManifest.xml:31:13-33:52
+54                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+54-->[androidx.emoji2:emoji2:1.0.0] C:\Users\charl\.gradle\caches\transforms-3\ec75a5ef9cd8cff1061d37370f71c616\transformed\emoji2-1.0.0\AndroidManifest.xml:32:17-75
+55                android:value="androidx.startup" />
+55-->[androidx.emoji2:emoji2:1.0.0] C:\Users\charl\.gradle\caches\transforms-3\ec75a5ef9cd8cff1061d37370f71c616\transformed\emoji2-1.0.0\AndroidManifest.xml:33:17-49
+56            <meta-data
+56-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\charl\.gradle\caches\transforms-3\f1959bf96fa7646ec067229fc59b8cae\transformed\lifecycle-process-2.4.0\AndroidManifest.xml:31:13-33:52
+57                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+57-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\charl\.gradle\caches\transforms-3\f1959bf96fa7646ec067229fc59b8cae\transformed\lifecycle-process-2.4.0\AndroidManifest.xml:32:17-78
+58                android:value="androidx.startup" />
+58-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\charl\.gradle\caches\transforms-3\f1959bf96fa7646ec067229fc59b8cae\transformed\lifecycle-process-2.4.0\AndroidManifest.xml:33:17-49
+59        </provider>
+60    </application>
+61
+62</manifest>
