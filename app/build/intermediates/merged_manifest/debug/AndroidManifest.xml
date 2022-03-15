@@ -19,6 +19,9 @@
         android:testOnly="true"
         android:theme="@style/Theme.Promly" >
         <activity
+            android:name="com.example.promly.twenty_home"
+            android:exported="false" />
+        <activity
             android:name="com.example.promly.HomePageActivity"
             android:exported="false"
             android:label="@string/title_activity_home_page"

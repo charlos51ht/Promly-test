@@ -24,8 +24,6 @@
         and conditions and privacy policy.</string>
     <string name="code_welcome">Welcome to Promly!\n\nPlease remember to be respectful of your fellow users.This platform is designed to empower teens-Created for GenZ by GenZ.\n\nWe hope this app fosters more genuine connections and allows people to share their authentic selves! </string>
     <string name="first_fragment_label">First Fragment</string>
-    <string name="hello_first_fragment">Hello first fragment</string>
-    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
     <string name="i_agree">I agree</string>
     <string name="intro_apple_text">Continue with Apple</string>
     <string name="intro_email_text">Continue with Email</string>
@@ -37,6 +35,8 @@
     <string name="second_fragment_label">Second Fragment</string>
     <string name="title_activity_home_page">HomePageActivity</string>
     <string name="twenty_by">20by20</string>
+    <string name="twenty_nav">My 20by20</string>
+    <string name="twenty_welcome">Your 20by20 is a collection of things you want to achieve by the time you are 20 years old.</string>
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/brand_purple</item>

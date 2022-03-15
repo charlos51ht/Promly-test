@@ -9,11 +9,82 @@
 
     <ImageButton
         android:id="@+id/twentybytwenty"
-        android:layout_width="168dp"
-        android:layout_height="174dp"
-        android:layout_marginTop="258dp"
+        android:layout_width="163dp"
+        android:layout_height="176dp"
+        android:layout_marginTop="279dp"
         android:layout_marginEnd="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/twenty_by_twenty_icon" />
+
+    <ImageButton
+        android:id="@+id/ExpandYourCircle"
+        android:layout_width="163dp"
+        android:layout_height="194dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="100dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/expand_circle_icon"></ImageButton>
+
+    <ImageButton
+        android:id="@+id/OneByTwo"
+        android:layout_width="163dp"
+        android:layout_height="176dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="310dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/one_by_two_icon"></ImageButton>
+
+    <ImageButton
+        android:id="@+id/WeGotYou"
+        android:layout_width="163dp"
+        android:layout_height="144dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="502dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/we_got_you_icon"></ImageButton>
+
+    <ImageButton
+        android:id="@+id/SpinMe"
+        android:layout_width="163dp"
+        android:layout_height="163dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/spin_me_icon"></ImageButton>
+
+    <ImageButton
+        android:id="@+id/ShopButton"
+        android:layout_width="163dp"
+        android:layout_height="79dp"
+        android:layout_marginTop="471dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/shop_icon"></ImageButton>
+
+    <ImageButton
+        android:id="@+id/Hustle"
+        android:layout_width="163dp"
+        android:layout_height="79dp"
+        android:layout_marginTop="566dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/hustle_icon"></ImageButton>
+
+    <ImageButton
+        android:id="@+id/ShareYourVoice"
+        android:layout_width="343dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="656dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/share_your_voice_icon"></ImageButton>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -18,6 +18,7 @@ color teal_200
 color teal_700
 color white
 dimen fab_margin
+drawable empty_goal
 drawable expand_circle_icon
 drawable gradient_button
 drawable gradient_navbar
@@ -25,6 +26,7 @@ drawable hustle_icon
 drawable ic_ball
 drawable ic_launcher_background
 drawable ic_launcher_foreground
+drawable img
 drawable logo
 drawable one_by_two_icon
 drawable rounded_corners_gray
@@ -40,8 +42,15 @@ font avenir_black
 font avenir_book
 font avenir_roman
 font fonts
+id ExpandYourCircle
 id FirstFragment
+id Hustle
+id OneByTwo
 id SecondFragment
+id ShareYourVoice
+id ShopButton
+id SpinMe
+id WeGotYou
 id action_FirstFragment_to_SecondFragment
 id action_SecondFragment_to_FirstFragment
 id agreeButton
@@ -49,6 +58,7 @@ id check_box_agreement
 id checkbox
 id code_note
 id code_welcome
+id empty1
 id intro_apple_button
 id intro_ball
 id intro_email_button
@@ -58,11 +68,14 @@ id intro_slogan
 id logo
 id nav_graph
 id respect_code
+id twenty_title
+id twenty_welcome
 id twentybytwenty
 layout activity_code
 layout activity_home_page
 layout activity_intro
 layout activity_main
+layout activity_twenty_home
 menu main
 mipmap ic_launcher
 mipmap ic_launcher_round
@@ -72,8 +85,6 @@ string check_box
 string code_note
 string code_welcome
 string first_fragment_label
-string hello_first_fragment
-string hello_second_fragment
 string i_agree
 string intro_apple_text
 string intro_email_text
@@ -85,6 +96,8 @@ string respect_code
 string second_fragment_label
 string title_activity_home_page
 string twenty_by
+string twenty_nav
+string twenty_welcome
 style AppTheme
 style Theme.Promly
 style Theme.Promly.AppBarOverlay
