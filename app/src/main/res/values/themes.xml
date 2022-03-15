@@ -36,5 +36,11 @@
 
 
     </style>
+    <style name="Theme.Promly.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="Theme.Promly.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <style name="Theme.Promly.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 
 </resources>
