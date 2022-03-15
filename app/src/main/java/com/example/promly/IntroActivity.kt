@@ -1,5 +1,6 @@
 package com.example.promly
 
+import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import android.widget.CheckBox
@@ -31,6 +32,23 @@ class IntroActivity : AppCompatActivity(){
         emailButton = findViewById(R.id.intro_email_button)
         appleButton = findViewById(R.id.intro_apple_button)
         googleButton = findViewById(R.id.intro_google_button)
+
+        //setup so that regardless of what you click it takes you to the homepage for now
+        //may be a cleaner way to do this
+        emailButton.setOnClickListener{
+                val intent = Intent(this, HomePageActivity::class.java)
+                startActivity(intent);
+        }
+        appleButton.setOnClickListener{
+            val intent = Intent(this, HomePageActivity::class.java)
+            startActivity(intent);
+        }
+        googleButton.setOnClickListener{
+            val intent = Intent(this, HomePageActivity::class.java)
+            startActivity(intent);
+        }
+
+
     }
 
 

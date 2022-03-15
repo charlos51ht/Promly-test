@@ -17,17 +17,26 @@
     <color name="teal_200">#03DAC5</color>
     <color name="teal_700">#00796B</color>
     <color name="white">#FFFFFF</color>
+    <dimen name="fab_margin">16dp</dimen>
     <string name="app_name">Promly</string>
     <string name="check_box">Yes, I am between the ages of 13–19.</string>
     <string name="code_note">By signing up, you agree to the terms
         and conditions and privacy policy.</string>
     <string name="code_welcome">Welcome to Promly!\n\nPlease remember to be respectful of your fellow users.This platform is designed to empower teens-Created for GenZ by GenZ.\n\nWe hope this app fosters more genuine connections and allows people to share their authentic selves! </string>
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
     <string name="i_agree">I agree</string>
     <string name="intro_apple_text">Continue with Apple</string>
     <string name="intro_email_text">Continue with Email</string>
     <string name="intro_google_text">Continue with Google</string>
     <string name="intro_slogan">connections for genz by genz</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
     <string name="respect_code">Respect Code</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="title_activity_home_page">HomePageActivity</string>
+    <string name="twenty_by">20by20</string>
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/brand_purple</item>
@@ -63,4 +72,10 @@
         <item name="android:windowActionModeOverlay">false</item>
         <!-- Customize your theme here. -->
     </style>
+    <style name="Theme.Promly.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
+    <style name="Theme.Promly.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="Theme.Promly.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
 </resources>

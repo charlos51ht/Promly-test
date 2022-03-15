@@ -16,11 +16,8 @@ class HomePageActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        twenty_by = findViewById(R.id.twenty_by)
-        addCodeTheme()
-        twenty_by.setOnClickListener{
+        setContentView(R.layout.activity_home_page)
 
-        }
     }
     private fun addCodeTheme()
     {
