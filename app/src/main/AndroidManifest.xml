@@ -10,10 +10,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Promly">
         <activity
-            android:name=".goal"
+            android:name=".ExistingGoalActivity"
             android:exported="false" />
         <activity
-            android:name=".twenty_home"
+            android:name=".TwentybyTwentyHomeActivity"
             android:exported="false" />
         <activity
             android:name=".HomePageActivity"
@@ -30,7 +30,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".CodeActivity"
+            android:name=".RespectCodeActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

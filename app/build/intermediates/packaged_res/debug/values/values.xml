@@ -23,6 +23,7 @@
     <string name="code_note">By signing up, you agree to the terms
         and conditions and privacy policy.</string>
     <string name="code_welcome">Welcome to Promly!\n\nPlease remember to be respectful of your fellow users.This platform is designed to empower teens-Created for GenZ by GenZ.\n\nWe hope this app fosters more genuine connections and allows people to share their authentic selves! </string>
+    <string name="completed_text">Mark as Completed</string>
     <string name="first_fragment_label">First Fragment</string>
     <string name="i_agree">I agree</string>
     <string name="intro_apple_text">Continue with Apple</string>
@@ -38,7 +39,7 @@
     <string name="twenty_nav">My 20by20</string>
     <string name="twenty_welcome">Your 20by20 is a collection of things you want to achieve by the time you are 20 years old.</string>
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
-        <!-- Customize your theme here. -->
+        
         <item name="colorPrimary">@color/brand_purple</item>
         <item name="colorPrimaryDark">@color/brand_purple</item>
         <item name="colorAccent">@color/brand_pink</item>
@@ -54,15 +55,15 @@
 
     </style>
     <style name="Theme.Promly" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
-        <!-- Primary brand color. -->
+        
         <item name="colorPrimary">@color/brand_purple</item>
         <item name="colorPrimaryVariant">@color/brand_purple</item>
         <item name="colorOnPrimary">@color/black</item>
-        <!-- Secondary brand color. -->
+        
         <item name="colorSecondary">@color/brand_purple</item>
         <item name="colorSecondaryVariant">@color/brand_purple</item>
         <item name="colorOnSecondary">@color/black</item>
-        <!-- Status bar color. -->
+        
         <item name="android:statusBarColor">@color/black</item>
         <item name="actionBarSize">68dp</item>
         <item name="background">@android:color/transparent</item>
@@ -70,7 +71,7 @@
         <item name="android:windowActionBarOverlay">false</item>
         <item name="android:windowActionBar">false</item>
         <item name="android:windowActionModeOverlay">false</item>
-        <!-- Customize your theme here. -->
+        
     </style>
     <style name="Theme.Promly.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
     <style name="Theme.Promly.NoActionBar">

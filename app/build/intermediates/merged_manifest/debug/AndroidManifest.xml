@@ -19,7 +19,10 @@
         android:testOnly="true"
         android:theme="@style/Theme.Promly" >
         <activity
-            android:name="com.example.promly.twenty_home"
+            android:name="com.example.promly.ExistingGoalActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.promly.TwentybyTwentyHomeActivity"
             android:exported="false" />
         <activity
             android:name="com.example.promly.HomePageActivity"
@@ -36,7 +39,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.example.promly.CodeActivity"
+            android:name="com.example.promly.RespectCodeActivity"
             android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
