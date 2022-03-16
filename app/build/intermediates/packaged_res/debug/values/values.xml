@@ -34,12 +34,13 @@
     <string name="previous">Previous</string>
     <string name="respect_code">Respect Code</string>
     <string name="second_fragment_label">Second Fragment</string>
+    <string name="set_goal_text">Set a goal:</string>
     <string name="title_activity_home_page">HomePageActivity</string>
     <string name="twenty_by">20by20</string>
     <string name="twenty_nav">My 20by20</string>
     <string name="twenty_welcome">Your 20by20 is a collection of things you want to achieve by the time you are 20 years old.</string>
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
-        
+        <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/brand_purple</item>
         <item name="colorPrimaryDark">@color/brand_purple</item>
         <item name="colorAccent">@color/brand_pink</item>
@@ -55,15 +56,15 @@
 
     </style>
     <style name="Theme.Promly" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
-        
+        <!-- Primary brand color. -->
         <item name="colorPrimary">@color/brand_purple</item>
         <item name="colorPrimaryVariant">@color/brand_purple</item>
         <item name="colorOnPrimary">@color/black</item>
-        
+        <!-- Secondary brand color. -->
         <item name="colorSecondary">@color/brand_purple</item>
         <item name="colorSecondaryVariant">@color/brand_purple</item>
         <item name="colorOnSecondary">@color/black</item>
-        
+        <!-- Status bar color. -->
         <item name="android:statusBarColor">@color/black</item>
         <item name="actionBarSize">68dp</item>
         <item name="background">@android:color/transparent</item>
@@ -71,7 +72,7 @@
         <item name="android:windowActionBarOverlay">false</item>
         <item name="android:windowActionBar">false</item>
         <item name="android:windowActionModeOverlay">false</item>
-        
+        <!-- Customize your theme here. -->
     </style>
     <style name="Theme.Promly.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
     <style name="Theme.Promly.NoActionBar">

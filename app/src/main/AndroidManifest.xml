@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Promly">
         <activity
+            android:name=".NewGoalActivity"
+            android:exported="false" />
+        <activity
             android:name=".ExistingGoalActivity"
             android:exported="false" />
         <activity

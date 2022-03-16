@@ -2511,6 +2511,7 @@ drawable empty_goal
 drawable expand_circle_icon
 drawable gradient_button
 drawable gradient_navbar
+drawable gradient_new_goal_background
 drawable hustle_icon
 drawable ic_ball
 drawable ic_clock_black_24dp
@@ -2775,9 +2776,9 @@ id easeIn
 id easeInOut
 id easeOut
 id east
+id editText1
 id edit_query
 id elastic
-id empty1
 id end
 id endToStart
 id enterAlways
@@ -2921,6 +2922,7 @@ id navigation_header_container
 id never
 id neverCompleteToEnd
 id neverCompleteToStart
+id new_goal
 id noScroll
 id noState
 id none
@@ -3053,6 +3055,7 @@ id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
 id textTop
+id textView
 id text_input_end_icon
 id text_input_error_icon
 id text_input_start_icon
@@ -3193,6 +3196,7 @@ layout activity_existing_goal
 layout activity_home_page
 layout activity_intro
 layout activity_main
+layout activity_new_goal
 layout activity_respect_code
 layout activity_twenty_by_twenty_home
 layout custom_dialog
@@ -3436,6 +3440,7 @@ string previous
 string respect_code
 string search_menu_title
 string second_fragment_label
+string set_goal_text
 string status_bar_notification_info_overflow
 string title_activity_home_page
 string twenty_by

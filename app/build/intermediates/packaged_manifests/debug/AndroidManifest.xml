@@ -19,6 +19,9 @@
         android:testOnly="true"
         android:theme="@style/Theme.Promly" >
         <activity
+            android:name="com.example.promly.NewGoalActivity"
+            android:exported="false" />
+        <activity
             android:name="com.example.promly.ExistingGoalActivity"
             android:exported="false" />
         <activity

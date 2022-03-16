@@ -22,6 +22,7 @@ drawable empty_goal
 drawable expand_circle_icon
 drawable gradient_button
 drawable gradient_navbar
+drawable gradient_new_goal_background
 drawable hustle_icon
 drawable ic_ball
 drawable ic_launcher_background
@@ -60,7 +61,7 @@ id checkbox
 id code_note
 id code_welcome
 id completed_button
-id empty1
+id editText1
 id goal_date
 id goal_title
 id intro_apple_button
@@ -71,9 +72,11 @@ id intro_logo
 id intro_slogan
 id logo
 id nav_graph
+id new_goal
 id profilePicture
 id progressBar
 id respect_code
+id textView
 id twenty_title
 id twenty_welcome
 id twentybytwenty
@@ -81,6 +84,7 @@ layout activity_existing_goal
 layout activity_home_page
 layout activity_intro
 layout activity_main
+layout activity_new_goal
 layout activity_respect_code
 layout activity_twenty_by_twenty_home
 menu main
@@ -102,6 +106,7 @@ string next
 string previous
 string respect_code
 string second_fragment_label
+string set_goal_text
 string title_activity_home_page
 string twenty_by
 string twenty_nav

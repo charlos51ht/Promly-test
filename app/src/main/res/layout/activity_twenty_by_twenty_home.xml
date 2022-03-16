@@ -32,7 +32,7 @@
                 />
 
             <ImageButton
-                android:id="@+id/empty1"
+                android:id="@+id/new_goal"
                 android:layout_width="228dp"
                 android:layout_height="228dp"
                 android:layout_marginStart="16dp"

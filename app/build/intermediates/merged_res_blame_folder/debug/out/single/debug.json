@@ -36,6 +36,10 @@
         "source": "C:\\Users\\adici\\AndroidStudioProjects\\Promly-test\\app\\src\\main\\res\\drawable-mdpi\\shop_icon.png"
     },
     {
+        "merged": "C:\\Users\\adici\\AndroidStudioProjects\\Promly-test\\app\\build\\intermediates\\merged_res\\debug\\drawable_gradient_new_goal_background.xml.flat",
+        "source": "C:\\Users\\adici\\AndroidStudioProjects\\Promly-test\\app\\src\\main\\res\\drawable\\gradient_new_goal_background.xml"
+    },
+    {
         "merged": "C:\\Users\\adici\\AndroidStudioProjects\\Promly-test\\app\\build\\intermediates\\merged_res\\debug\\drawable_rounded_corners_red.xml.flat",
         "source": "C:\\Users\\adici\\AndroidStudioProjects\\Promly-test\\app\\src\\main\\res\\drawable\\rounded_corners_red.xml"
     },
@@ -80,12 +84,12 @@
         "source": "C:\\Users\\adici\\AndroidStudioProjects\\Promly-test\\app\\src\\main\\res\\drawable-mdpi\\one_by_two_icon.png"
     },
     {
-        "merged": "C:\\Users\\adici\\AndroidStudioProjects\\Promly-test\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xhdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\adici\\AndroidStudioProjects\\Promly-test\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.webp"
-    },
-    {
         "merged": "C:\\Users\\adici\\AndroidStudioProjects\\Promly-test\\app\\build\\intermediates\\merged_res\\debug\\font_fonts.xml.flat",
         "source": "C:\\Users\\adici\\AndroidStudioProjects\\Promly-test\\app\\src\\main\\res\\font\\fonts.xml"
+    },
+    {
+        "merged": "C:\\Users\\adici\\AndroidStudioProjects\\Promly-test\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\adici\\AndroidStudioProjects\\Promly-test\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.webp"
     },
     {
         "merged": "C:\\Users\\adici\\AndroidStudioProjects\\Promly-test\\app\\build\\intermediates\\merged_res\\debug\\drawable_rounded_corners_white.xml.flat",
@@ -98,6 +102,10 @@
     {
         "merged": "C:\\Users\\adici\\AndroidStudioProjects\\Promly-test\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_respect_code.xml.flat",
         "source": "C:\\Users\\adici\\AndroidStudioProjects\\Promly-test\\app\\src\\main\\res\\layout\\activity_respect_code.xml"
+    },
+    {
+        "merged": "C:\\Users\\adici\\AndroidStudioProjects\\Promly-test\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_new_goal.xml.flat",
+        "source": "C:\\Users\\adici\\AndroidStudioProjects\\Promly-test\\app\\src\\main\\res\\layout\\activity_new_goal.xml"
     },
     {
         "merged": "C:\\Users\\adici\\AndroidStudioProjects\\Promly-test\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_existing_goal.xml.flat",
@@ -180,12 +188,12 @@
         "source": "C:\\Users\\adici\\AndroidStudioProjects\\Promly-test\\app\\src\\main\\res\\font\\avenir_book.otf"
     },
     {
-        "merged": "C:\\Users\\adici\\AndroidStudioProjects\\Promly-test\\app\\build\\intermediates\\merged_res\\debug\\mipmap-anydpi-v26_ic_launcher.xml.flat",
-        "source": "C:\\Users\\adici\\AndroidStudioProjects\\Promly-test\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher.xml"
-    },
-    {
         "merged": "C:\\Users\\adici\\AndroidStudioProjects\\Promly-test\\app\\build\\intermediates\\merged_res\\debug\\drawable-xhdpi_ic_ball.png.flat",
         "source": "C:\\Users\\adici\\AndroidStudioProjects\\Promly-test\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\ic_ball.png"
+    },
+    {
+        "merged": "C:\\Users\\adici\\AndroidStudioProjects\\Promly-test\\app\\build\\intermediates\\merged_res\\debug\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "C:\\Users\\adici\\AndroidStudioProjects\\Promly-test\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher.xml"
     },
     {
         "merged": "C:\\Users\\adici\\AndroidStudioProjects\\Promly-test\\app\\build\\intermediates\\merged_res\\debug\\drawable-mdpi_logo.png.flat",
