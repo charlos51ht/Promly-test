@@ -2508,6 +2508,7 @@ drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
 drawable empty_goal
+drawable empty_long
 drawable expand_circle_icon
 drawable gradient_button
 drawable gradient_navbar
@@ -3047,6 +3048,7 @@ id staticPostLayout
 id stop
 id stretch
 id submenuarrow
+id submit
 id submit_area
 id supportScrollUp
 id tabMode

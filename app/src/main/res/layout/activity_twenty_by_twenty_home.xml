@@ -41,35 +41,44 @@
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginBottom="2px"
                 android:orientation="horizontal">
 
 
-                <ImageButton
+                <Button
                     android:id="@+id/empty1"
                     android:layout_width="228dp"
                     android:layout_height="228dp"
+                    android:layout_margin="5px"
+                    android:background="@drawable/empty_goal"
+                    android:gravity="left|bottom"
+                    android:textColor="@color/white"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:srcCompat="@drawable/empty_goal"></ImageButton>
+                    app:layout_constraintTop_toTopOf="parent"></Button>
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical">
 
-                    <ImageButton
+                    <Button
                         android:id="@+id/empty2"
                         android:layout_width="112dp"
                         android:layout_height="112dp"
-                        app:layout_constraintTop_toTopOf="parent"
-                        app:srcCompat="@drawable/empty_goal"></ImageButton>
+                        android:layout_margin="5px"
+                        android:gravity="left|bottom"
+                        android:text=""
+                        android:textColor="@color/white"
+                        app:background="@drawable/empty_goal"
+                        app:layout_constraintTop_toTopOf="parent"></Button>
 
-                    <ImageButton
+                    <Button
                         android:id="@+id/empty3"
                         android:layout_width="112dp"
                         android:layout_height="112dp"
-                        app:layout_constraintTop_toTopOf="parent"
-                        app:srcCompat="@drawable/empty_goal"></ImageButton>
+                        android:layout_margin="5px"
+                        app:background="@drawable/empty_goal"
+                        app:layout_constraintTop_toTopOf="parent"></Button>
                 </LinearLayout>
             </LinearLayout>
 
@@ -83,26 +92,29 @@
                     android:layout_height="wrap_content"
                     android:orientation="vertical">
 
-                    <ImageButton
+                    <Button
                         android:id="@+id/empty4"
                         android:layout_width="112dp"
                         android:layout_height="112dp"
-                        app:layout_constraintTop_toTopOf="parent"
-                        app:srcCompat="@drawable/empty_goal"></ImageButton>
+                        android:layout_margin="5px"
+                        app:background="@drawable/empty_goal"
+                        app:layout_constraintTop_toTopOf="parent"></Button>
 
-                    <ImageButton
+                    <Button
                         android:id="@+id/empty5"
                         android:layout_width="112dp"
                         android:layout_height="112dp"
-                        app:layout_constraintTop_toTopOf="parent"
-                        app:srcCompat="@drawable/empty_goal"></ImageButton>
+                        android:layout_margin="5px"
+                        app:background="@drawable/empty_goal"
+                        app:layout_constraintTop_toTopOf="parent"></Button>
 
-                    <ImageButton
+                    <Button
                         android:id="@+id/empty6"
                         android:layout_width="112dp"
                         android:layout_height="112dp"
-                        app:layout_constraintTop_toTopOf="parent"
-                        app:srcCompat="@drawable/empty_goal"></ImageButton>
+                        android:layout_margin="5px"
+                        app:background="@drawable/empty_goal"
+                        app:layout_constraintTop_toTopOf="parent"></Button>
                 </LinearLayout>
 
                 <LinearLayout
@@ -110,20 +122,21 @@
                     android:layout_height="wrap_content"
                     android:orientation="vertical">
 
-                    <ImageButton
+                    <Button
                         android:id="@+id/empty7"
                         android:layout_width="228dp"
                         android:layout_height="112dp"
+                        android:layout_margin="5px"
                         android:paddingBottom="34dp"
-                        app:layout_constraintTop_toTopOf="parent"
-                        app:srcCompat="@drawable/empty_goal"></ImageButton>
+                        app:layout_constraintTop_toTopOf="parent"></Button>
 
-                    <ImageButton
+                    <Button
                         android:id="@+id/empty8"
                         android:layout_width="228dp"
                         android:layout_height="228dp"
-                        app:layout_constraintTop_toTopOf="parent"
-                        app:srcCompat="@drawable/empty_goal"></ImageButton>
+                        android:layout_margin="5px"
+                        app:background="@drawable/empty_goal"
+                        app:layout_constraintTop_toTopOf="parent"></Button>
                 </LinearLayout>
             </LinearLayout>
 
@@ -137,19 +150,21 @@
                     android:layout_height="wrap_content"
                     android:orientation="vertical">
 
-                    <ImageButton
+                    <Button
                         android:id="@+id/empty9"
                         android:layout_width="228dp"
                         android:layout_height="112dp"
-                        app:layout_constraintTop_toTopOf="parent"
-                        app:srcCompat="@drawable/empty_goal"></ImageButton>
+                        android:layout_margin="5px"
+                        app:background="@drawable/empty_goal"
+                        app:layout_constraintTop_toTopOf="parent"></Button>
 
-                    <ImageButton
+                    <Button
                         android:id="@+id/empty10"
                         android:layout_width="228dp"
                         android:layout_height="228dp"
-                        app:layout_constraintTop_toTopOf="parent"
-                        app:srcCompat="@drawable/empty_goal"></ImageButton>
+                        android:layout_margin="5px"
+                        app:background="@drawable/empty_goal"
+                        app:layout_constraintTop_toTopOf="parent"></Button>
                 </LinearLayout>
 
                 <LinearLayout
@@ -157,26 +172,29 @@
                     android:layout_height="wrap_content"
                     android:orientation="vertical">
 
-                    <ImageButton
+                    <Button
                         android:id="@+id/empty11"
                         android:layout_width="112dp"
                         android:layout_height="112dp"
-                        app:layout_constraintTop_toTopOf="parent"
-                        app:srcCompat="@drawable/empty_goal"></ImageButton>
+                        android:layout_margin="5px"
+                        app:background="@drawable/empty_goal"
+                        app:layout_constraintTop_toTopOf="parent"></Button>
 
-                    <ImageButton
+                    <Button
                         android:id="@+id/empty12"
                         android:layout_width="112dp"
                         android:layout_height="112dp"
+                        android:layout_margin="5px"
                         app:layout_constraintTop_toTopOf="parent"
-                        app:srcCompat="@drawable/empty_goal"></ImageButton>
+                        app:srcCompat="@drawable/empty_goal"></Button>
 
-                    <ImageButton
+                    <Button
                         android:id="@+id/empty13"
                         android:layout_width="112dp"
                         android:layout_height="112dp"
-                        app:layout_constraintTop_toTopOf="parent"
-                        app:srcCompat="@drawable/empty_goal"></ImageButton>
+                        android:layout_margin="5px"
+                        app:background="@drawable/empty_goal"
+                        app:layout_constraintTop_toTopOf="parent"></Button>
                 </LinearLayout>
             </LinearLayout>
 
@@ -190,26 +208,29 @@
                     android:layout_height="wrap_content"
                     android:orientation="vertical">
 
-                    <ImageButton
+                    <Button
                         android:id="@+id/empty14"
                         android:layout_width="112dp"
                         android:layout_height="112dp"
-                        app:layout_constraintTop_toTopOf="parent"
-                        app:srcCompat="@drawable/empty_goal"></ImageButton>
+                        android:layout_margin="5px"
+                        app:background="@drawable/empty_goal"
+                        app:layout_constraintTop_toTopOf="parent"></Button>
 
-                    <ImageButton
+                    <Button
                         android:id="@+id/empty15"
                         android:layout_width="112dp"
                         android:layout_height="112dp"
-                        app:layout_constraintTop_toTopOf="parent"
-                        app:srcCompat="@drawable/empty_goal"></ImageButton>
+                        android:layout_margin="5px"
+                        app:background="@drawable/empty_goal"
+                        app:layout_constraintTop_toTopOf="parent"></Button>
 
-                    <ImageButton
+                    <Button
                         android:id="@+id/empty16"
                         android:layout_width="112dp"
                         android:layout_height="112dp"
-                        app:layout_constraintTop_toTopOf="parent"
-                        app:srcCompat="@drawable/empty_goal"></ImageButton>
+                        android:layout_margin="5px"
+                        app:background="@drawable/empty_goal"
+                        app:layout_constraintTop_toTopOf="parent"></Button>
                 </LinearLayout>
 
                 <LinearLayout
@@ -217,19 +238,21 @@
                     android:layout_height="wrap_content"
                     android:orientation="vertical">
 
-                    <ImageButton
+                    <Button
                         android:id="@+id/empty17"
                         android:layout_width="228dp"
                         android:layout_height="112dp"
-                        app:layout_constraintTop_toTopOf="parent"
-                        app:srcCompat="@drawable/empty_goal"></ImageButton>
+                        android:layout_margin="5px"
+                        app:background="@drawable/empty_goal"
+                        app:layout_constraintTop_toTopOf="parent"></Button>
 
-                    <ImageButton
+                    <Button
                         android:id="@+id/empty18"
                         android:layout_width="228dp"
                         android:layout_height="228dp"
-                        app:layout_constraintTop_toTopOf="parent"
-                        app:srcCompat="@drawable/empty_goal"></ImageButton>
+                        android:layout_margin="5px"
+                        app:background="@drawable/empty_goal"
+                        app:layout_constraintTop_toTopOf="parent"></Button>
                 </LinearLayout>
             </LinearLayout>
 
@@ -238,19 +261,21 @@
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
 
-                <ImageButton
+                <Button
                     android:id="@+id/empty19"
                     android:layout_width="228dp"
                     android:layout_height="112dp"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:srcCompat="@drawable/empty_goal"></ImageButton>
+                    android:layout_margin="5px"
+                    app:background="@drawable/empty_goal"
+                    app:layout_constraintTop_toTopOf="parent"></Button>
 
-                <ImageButton
+                <Button
                     android:id="@+id/empty20"
                     android:layout_width="112dp"
                     android:layout_height="112dp"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:srcCompat="@drawable/empty_goal"></ImageButton>
+                    android:layout_margin="5px"
+                    app:background="@drawable/empty_goal"
+                    app:layout_constraintTop_toTopOf="parent"></Button>
 
             </LinearLayout>
         </LinearLayout>
