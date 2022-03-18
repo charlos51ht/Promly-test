@@ -8,7 +8,10 @@
         android:minSdkVersion="21"
         android:targetSdkVersion="32" />
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
+        android:name="com.example.promly.UnsplashApplication"
         android:allowBackup="true"
         android:appComponentFactory="androidx.core.app.CoreComponentFactory"
         android:debuggable="true"
@@ -67,6 +70,16 @@
             android:name="androidx.window.sidecar"
             android:required="false" />
 
+        <activity
+            android:name="com.unsplash.pickerandroid.photopicker.presentation.UnsplashPickerActivity"
+            android:configChanges="orientation|screenSize"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+        <activity
+            android:name="com.unsplash.pickerandroid.photopicker.presentation.PhotoShowActivity"
+            android:theme="@style/AppTheme.NoActionBar.Transparent" >
+        </activity>
+
         <provider
             android:name="androidx.startup.InitializationProvider"
             android:authorities="com.example.promly.androidx-startup"
@@ -78,6 +91,10 @@
                 android:name="androidx.lifecycle.ProcessLifecycleInitializer"
                 android:value="androidx.startup" />
         </provider>
+        <provider
+            android:name="com.squareup.picasso.PicassoProvider"
+            android:authorities="com.example.promly.com.squareup.picasso"
+            android:exported="false" />
     </application>
 
 </manifest>

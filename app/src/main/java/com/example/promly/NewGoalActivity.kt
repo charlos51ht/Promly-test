@@ -1,5 +1,8 @@
 package com.example.promly
 
+import android.app.Activity
+import android.app.Activity.RESULT_OK
+import android.app.Instrumentation
 import android.content.Intent
 import android.os.Bundle
 import android.view.KeyEvent
@@ -7,7 +10,12 @@ import android.view.View
 import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
+import androidx.activity.result.ActivityResult
+import androidx.activity.result.contract.ActivityResultContracts
 import androidx.appcompat.app.AppCompatActivity
+import com.unsplash.pickerandroid.photopicker.UnsplashPhotoPicker
+import com.unsplash.pickerandroid.photopicker.data.UnsplashPhoto
+import com.unsplash.pickerandroid.photopicker.presentation.UnsplashPickerActivity
 
 
 private lateinit var goal_title : EditText
@@ -20,21 +28,24 @@ class NewGoalActivity : AppCompatActivity() {
         goal_title = findViewById(R.id.editText1)
         submit = findViewById(R.id.submit)
 
+        val unsplash_window = registerForActivityResult(ActivityResultContracts.StartActivityForResult()){ result: ActivityResult ->
+            if(result.resultCode==Activity.RESULT_OK){
+                val data : Intent? = result.data
+                val photos : ArrayList<UnsplashPhoto>? = data?.getParcelableArrayListExtra(UnsplashPickerActivity.EXTRA_PHOTOS)
+                val intent = Intent(this, TwentybyTwentyHomeActivity::class.java)
+                intent.putExtra("goal_name", goal_title.getText().toString())
+                intent.putExtra("goal_index",getIntent().getIntExtra("goal_index",0))
+                intent.putExtra("goal_thumbnail",photos?.get(0)?.urls?.small)
+                startActivity(intent);
+            }
+        }
+
         submit.setOnClickListener {
-            val intent = Intent(this, TwentybyTwentyHomeActivity::class.java)
-            intent.putExtra("goal_name", goal_title.getText().toString())
-            intent.putExtra("goal_index",getIntent().getIntExtra("goal_index",0))
-            startActivity(intent);
+            unsplash_window.launch(UnsplashPickerActivity.getStartingIntent(this,isMultipleSelection = false))
         }
 
         if(getSupportActionBar()!=null) {
             getSupportActionBar()?.hide()
         }
-
-        /*var photo_picker = UnsplashPhotoPicker.init(
-            this, // application
-            "ozn6JHWcOkRQZJBTfIAMh0hNON4BIn7dG8HgXc-DouE",
-            "fDnCs3skmSjLQHnUOH-6dtIVRd3cHfR_SN6tEq6v07M"
-        )*/
     }
 }

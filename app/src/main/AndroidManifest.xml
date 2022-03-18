@@ -8,7 +8,8 @@
         android:label=""
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Promly">
+        android:theme="@style/Theme.Promly"
+        android:name=".UnsplashApplication">
         <activity
             android:name=".NewGoalActivity"
             android:exported="false" />

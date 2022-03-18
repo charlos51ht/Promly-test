@@ -6,6 +6,8 @@ import android.os.Bundle
 import android.view.View
 import android.widget.Button
 import android.widget.ImageButton
+import android.widget.ImageView
+import com.squareup.picasso.Picasso
 
 
 class TwentybyTwentyHomeActivity : AppCompatActivity() {
@@ -61,6 +63,7 @@ class TwentybyTwentyHomeActivity : AppCompatActivity() {
 
         var goal_index = getIntent().getIntExtra("goal_index",0)
         var goal_text = getIntent().getStringExtra("goal_name")
+        var goal_thumbnail = getIntent().getStringExtra("goal_thumbnail")
         goals[goal_index]?.setText(goal_text.toString())
         for(i in 0..19) {
             var params = goals[i]?.layoutParams
@@ -74,5 +77,14 @@ class TwentybyTwentyHomeActivity : AppCompatActivity() {
                 startActivity(intent);
             }
         }
+        /*
+            Can only be implemented when CardView/RecyclerView System is implemented
+            Keep in mind, the code above may need to be changed once we switch to Card/RecyclerView
+            Loading images into Picasso.get().load(goal_thumbnail).into(ImageView/Target)
+            We can also get started looking into firebase to hold these values.
+            Right now, you can enter in a goal name and its photo/thumbnail, but it will not be able to be displayed until we use firebase
+
+         */
+
     }
 }
