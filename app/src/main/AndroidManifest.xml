@@ -17,7 +17,7 @@
             android:name=".ExistingGoalActivity"
             android:exported="false" />
         <activity
-            android:name=".TwentybyTwentyHomeActivity"
+            android:name=".TwentyByTwenty.TwentybyTwentyHomeActivity"
             android:exported="false" />
         <activity
             android:name=".HomePageActivity"

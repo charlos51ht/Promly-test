@@ -48,8 +48,8 @@
 29-->C:\Users\charl\Documents\School Work\Spring 2022\Software Engineering\Promly-Android--main\Promly\app\src\main\AndroidManifest.xml:18:13-37
 30        <activity
 30-->C:\Users\charl\Documents\School Work\Spring 2022\Software Engineering\Promly-Android--main\Promly\app\src\main\AndroidManifest.xml:19:9-21:40
-31            android:name="com.example.promly.TwentybyTwentyHomeActivity"
-31-->C:\Users\charl\Documents\School Work\Spring 2022\Software Engineering\Promly-Android--main\Promly\app\src\main\AndroidManifest.xml:20:13-55
+31            android:name="com.example.promly.TwentyByTwenty.TwentybyTwentyHomeActivity"
+31-->C:\Users\charl\Documents\School Work\Spring 2022\Software Engineering\Promly-Android--main\Promly\app\src\main\AndroidManifest.xml:20:13-70
 32            android:exported="false" />
 32-->C:\Users\charl\Documents\School Work\Spring 2022\Software Engineering\Promly-Android--main\Promly\app\src\main\AndroidManifest.xml:21:13-37
 33        <activity

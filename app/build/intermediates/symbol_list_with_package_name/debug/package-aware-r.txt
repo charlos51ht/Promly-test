@@ -2792,26 +2792,6 @@ id east
 id editText1
 id edit_query
 id elastic
-id empty1
-id empty10
-id empty11
-id empty12
-id empty13
-id empty14
-id empty15
-id empty16
-id empty17
-id empty18
-id empty19
-id empty2
-id empty20
-id empty3
-id empty4
-id empty5
-id empty6
-id empty7
-id empty8
-id empty9
 id end
 id endToStart
 id enterAlways
@@ -2834,6 +2814,8 @@ id frost
 id ghost_view
 id ghost_view_holder
 id goal_date
+id goal_image
+id goal_status
 id goal_title
 id gone
 id graph
@@ -3120,6 +3102,7 @@ id transition_position
 id transition_scene_layoutid_cache
 id transition_transform
 id triangle
+id twenty_recycler_view
 id twenty_title
 id twenty_welcome
 id twentybytwenty
@@ -3266,6 +3249,7 @@ layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
+layout goal
 layout item_unsplash_photo
 layout m3_alert_dialog
 layout m3_alert_dialog_actions
@@ -4699,6 +4683,7 @@ styleable ViewPager2 android_orientation
 styleable ViewStubCompat android_id android_layout android_inflatedId
 styleable ViewTransition android_id SharedValue SharedValueId clearsTag duration ifTagNotSet ifTagSet motionInterpolator motionTarget onStateTransition pathMotionArc setsTag transitionDisable upDuration viewTransitionMode
 styleable include constraintSet
+xml activity_twenty_by_twenty_home_scene
 xml standalone_badge
 xml standalone_badge_gravity_bottom_end
 xml standalone_badge_gravity_bottom_start

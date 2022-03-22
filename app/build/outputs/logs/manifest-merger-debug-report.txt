@@ -139,12 +139,12 @@ ADDED from C:\Users\charl\Documents\School Work\Spring 2022\Software Engineering
 		ADDED from C:\Users\charl\Documents\School Work\Spring 2022\Software Engineering\Promly-Android--main\Promly\app\src\main\AndroidManifest.xml:18:13-37
 	android:name
 		ADDED from C:\Users\charl\Documents\School Work\Spring 2022\Software Engineering\Promly-Android--main\Promly\app\src\main\AndroidManifest.xml:17:13-49
-activity#com.example.promly.TwentybyTwentyHomeActivity
+activity#com.example.promly.TwentyByTwenty.TwentybyTwentyHomeActivity
 ADDED from C:\Users\charl\Documents\School Work\Spring 2022\Software Engineering\Promly-Android--main\Promly\app\src\main\AndroidManifest.xml:19:9-21:40
 	android:exported
 		ADDED from C:\Users\charl\Documents\School Work\Spring 2022\Software Engineering\Promly-Android--main\Promly\app\src\main\AndroidManifest.xml:21:13-37
 	android:name
-		ADDED from C:\Users\charl\Documents\School Work\Spring 2022\Software Engineering\Promly-Android--main\Promly\app\src\main\AndroidManifest.xml:20:13-55
+		ADDED from C:\Users\charl\Documents\School Work\Spring 2022\Software Engineering\Promly-Android--main\Promly\app\src\main\AndroidManifest.xml:20:13-70
 activity#com.example.promly.HomePageActivity
 ADDED from C:\Users\charl\Documents\School Work\Spring 2022\Software Engineering\Promly-Android--main\Promly\app\src\main\AndroidManifest.xml:22:9-26:63
 	android:label
