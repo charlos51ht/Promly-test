@@ -28,7 +28,7 @@
             android:name="com.example.promly.ExistingGoalActivity"
             android:exported="false" />
         <activity
-            android:name="com.example.promly.TwentybyTwentyHomeActivity"
+            android:name="com.example.promly.TwentyByTwenty.TwentybyTwentyHomeActivity"
             android:exported="false" />
         <activity
             android:name="com.example.promly.HomePageActivity"
