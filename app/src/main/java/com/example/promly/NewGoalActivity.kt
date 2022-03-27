@@ -34,10 +34,11 @@ class NewGoalActivity : AppCompatActivity() {
                 val data : Intent? = result.data
                 val photos : ArrayList<UnsplashPhoto>? = data?.getParcelableArrayListExtra(UnsplashPickerActivity.EXTRA_PHOTOS)
                 val intent = Intent(this, TwentybyTwentyHomeActivity::class.java)
-                intent.putExtra("goal_name", goal_title.getText().toString())
+                intent.putExtra("goal_name", goal_title.text.toString())
                 intent.putExtra("goal_index",getIntent().getIntExtra("goal_index",0))
                 intent.putExtra("goal_thumbnail",photos?.get(0)?.urls?.small)
                 startActivity(intent);
+
             }
         }
 

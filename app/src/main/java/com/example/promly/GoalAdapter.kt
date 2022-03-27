@@ -11,6 +11,7 @@ import com.example.promly.NewGoalActivity
 import com.example.promly.R
 
 
+
 class GoalAdapter(val goals: ArrayList<Goal>):
     RecyclerView.Adapter<GoalAdapter.GoalHolder>() {
 
@@ -48,9 +49,11 @@ class GoalAdapter(val goals: ArrayList<Goal>):
 
     override fun onBindViewHolder(holder: GoalHolder, position: Int) {
 
-        holder.goalTitle.text = position.toString()
-        holder.goalImage.setImageResource(goals[position].goalImage)
-        goals[position].goalStatus?.let { holder.goalStatus.setImageResource(it) }
+            holder.goalTitle.text = goals[position].goalTitle
+            holder.goalImage.setImageResource(goals[position].goalImage)
+            goals[position].goalStatus?.let { holder.goalStatus.setImageResource(it)
+            goals[position].goalIndex = position
+        }
 
 
         when (getItemViewType(position)) {
@@ -78,12 +81,14 @@ class GoalAdapter(val goals: ArrayList<Goal>):
         var goalImage: ImageView = itemView.findViewById(R.id.goal_image)
         var goalStatus: ImageView = itemView.findViewById(R.id.goal_status)
 
+
         //
         init {
             itemView.setOnClickListener {
 
                 val context = itemView.context
                 val showGoalIntent = Intent(context, NewGoalActivity::class.java)
+                showGoalIntent.putExtra("goal_index", adapterPosition)
                 context.startActivity(showGoalIntent)
 
             }

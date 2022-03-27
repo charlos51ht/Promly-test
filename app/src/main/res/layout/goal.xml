@@ -28,10 +28,11 @@
             android:layout_height="wrap_content"
             android:textColor="@color/white"
             android:textSize="12sp"
+            android:text=""
             android:fontFamily="@font/avenir_roman"
             android:layout_alignParentBottom="true"
-            android:layout_marginStart="8dp"
-            android:layout_marginBottom="10dp"/>
+            android:layout_marginStart="5dp"
+            android:layout_marginBottom="8dp"/>
 
         <ImageView
             android:id="@+id/goal_status"

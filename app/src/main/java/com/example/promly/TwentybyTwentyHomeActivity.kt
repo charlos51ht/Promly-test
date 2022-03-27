@@ -1,12 +1,7 @@
 package com.example.promly.TwentyByTwenty
 
-import android.annotation.SuppressLint
 import android.os.Bundle
-import android.text.method.ScrollingMovementMethod
-import android.widget.ImageView
-import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
-import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import androidx.recyclerview.widget.StaggeredGridLayoutManager
@@ -20,6 +15,7 @@ class TwentybyTwentyHomeActivity : AppCompatActivity() {
     private lateinit var recyclerView: RecyclerView
     private lateinit var gridLayoutManager: StaggeredGridLayoutManager
     private lateinit var adapter: GoalAdapter
+
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -36,6 +32,13 @@ class TwentybyTwentyHomeActivity : AppCompatActivity() {
             goalList.add(Goal())
         }
 
+
+        val extras = intent.extras
+        if (extras != null) {
+            var index = extras!!.getInt("goal_index")
+            goalList[index].goalTitle = extras!!.getString("goal_name")
+        }
+
         /* initializes recyclerview and sets up the layout manager of the recycler view*/
         recyclerView = findViewById(R.id.twenty_recycler_view)
 
@@ -46,7 +49,6 @@ class TwentybyTwentyHomeActivity : AppCompatActivity() {
         adapter = GoalAdapter(goalList)
 
         recyclerView.adapter = adapter
-
 
     }
 
