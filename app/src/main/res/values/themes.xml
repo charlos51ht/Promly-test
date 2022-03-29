@@ -32,14 +32,22 @@
         <item name="android:windowActionBar">false</item>
         <item name="android:windowActionModeOverlay">false</item>
 
-
-
-
     </style>
     <style name="Theme.Promly.NoActionBar">
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
     </style>
+
+    <style name="twenty_by_bar" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="actionBarSize">68dp</item>
+        <item name="background">@drawable/gradient_navbar</item>
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowActionBarOverlay">false</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowActionModeOverlay">false</item>
+    </style>
+
     <style name="Theme.Promly.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
     <style name="Theme.Promly.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 

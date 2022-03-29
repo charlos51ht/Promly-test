@@ -29,7 +29,8 @@
             android:exported="false" />
         <activity
             android:name="com.example.promly.TwentyByTwenty.TwentybyTwentyHomeActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:theme="@style/twenty_by_bar" />
         <activity
             android:name="com.example.promly.HomePageActivity"
             android:exported="false"

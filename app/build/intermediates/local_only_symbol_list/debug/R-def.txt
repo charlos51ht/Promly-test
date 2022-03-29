@@ -62,6 +62,7 @@ id checkbox
 id code_note
 id code_welcome
 id completed_button
+id details_box
 id editText1
 id end
 id goal_date
@@ -75,7 +76,9 @@ id intro_google_button
 id intro_logo
 id intro_slogan
 id logo
+id menu
 id nav_graph
+id notes_text
 id profilePicture
 id progressBar
 id respect_code
@@ -123,4 +126,5 @@ style Theme.Promly
 style Theme.Promly.AppBarOverlay
 style Theme.Promly.NoActionBar
 style Theme.Promly.PopupOverlay
+style twenty_by_bar
 xml activity_twenty_by_twenty_home_scene

@@ -7,6 +7,7 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.cardview.widget.CardView
 import androidx.recyclerview.widget.RecyclerView
+import com.example.promly.ExistingGoalActivity
 import com.example.promly.NewGoalActivity
 import com.example.promly.R
 
@@ -85,12 +86,14 @@ class GoalAdapter(val goals: ArrayList<Goal>):
         //
         init {
             itemView.setOnClickListener {
-
                 val context = itemView.context
-                val showGoalIntent = Intent(context, NewGoalActivity::class.java)
+                var showGoalIntent = Intent(context, NewGoalActivity::class.java)
+                if(goalTitle.text.toString()!="")
+                    showGoalIntent = Intent(context, ExistingGoalActivity::class.java)
+
                 showGoalIntent.putExtra("goal_index", adapterPosition)
                 context.startActivity(showGoalIntent)
-
+                context.startActivity(showGoalIntent)
             }
         }
 

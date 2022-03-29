@@ -18,6 +18,7 @@
             android:exported="false" />
         <activity
             android:name=".TwentyByTwenty.TwentybyTwentyHomeActivity"
+            android:theme="@style/twenty_by_bar"
             android:exported="false" />
         <activity
             android:name=".HomePageActivity"
