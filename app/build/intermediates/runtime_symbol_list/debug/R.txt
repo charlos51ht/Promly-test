@@ -2703,6 +2703,7 @@ int id baseline 0x7f090065
 int id beginOnFirstDraw 0x7f090066
 int id beginning 0x7f090067
 int id bestChoice 0x7f090068
+int id big_goal_img 0x7f09021e
 int id blocking 0x7f090069
 int id bottom 0x7f09006a
 int id bounce 0x7f09006b
@@ -2817,6 +2818,7 @@ int id goal_date 0x7f0900d7
 int id goal_image 0x7f0900d8
 int id goal_status 0x7f0900d9
 int id goal_title 0x7f0900da
+int id goal_title_big 0x7f09021f
 int id gone 0x7f0900db
 int id graph 0x7f0900dc
 int id graph_wrap 0x7f0900dd

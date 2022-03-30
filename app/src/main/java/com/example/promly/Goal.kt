@@ -1,5 +1,6 @@
 package com.example.promly.TwentyByTwenty
 
 import com.example.promly.R
+import java.util.*
 
-data class Goal(var goalTitle: String? = "", var goalImage: Int = R.drawable.empty_goal, var goalStatus: Int? = null, var goalIndex: Int? = null)
+data class Goal(var goalTitle: String? = "", var goalImage: String? = "", var goalStatus: Int? = null, var goalIndex: Int? = null,var date_created : Date? = null, var details: String?="")

@@ -1,6 +1,7 @@
 package com.example.promly.TwentyByTwenty
 
 import android.content.Intent
+import android.media.Image
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import android.widget.ImageView
@@ -10,7 +11,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.promly.ExistingGoalActivity
 import com.example.promly.NewGoalActivity
 import com.example.promly.R
-
+import com.squareup.picasso.Picasso
 
 
 class GoalAdapter(val goals: ArrayList<Goal>):
@@ -51,7 +52,12 @@ class GoalAdapter(val goals: ArrayList<Goal>):
     override fun onBindViewHolder(holder: GoalHolder, position: Int) {
 
             holder.goalTitle.text = goals[position].goalTitle
-            holder.goalImage.setImageResource(goals[position].goalImage)
+            if(goals[position].goalImage == "") {
+                holder.goalImage.setImageResource(R.drawable.empty_goal)
+            }
+            else {
+                Picasso.get().load(goals[position].goalImage).fit().into(holder.goalImage)
+            }
             goals[position].goalStatus?.let { holder.goalStatus.setImageResource(it)
             goals[position].goalIndex = position
         }
@@ -88,11 +94,14 @@ class GoalAdapter(val goals: ArrayList<Goal>):
             itemView.setOnClickListener {
                 val context = itemView.context
                 var showGoalIntent = Intent(context, NewGoalActivity::class.java)
-                if(goalTitle.text.toString()!="")
+                if(goalTitle.text.toString()!="") {
                     showGoalIntent = Intent(context, ExistingGoalActivity::class.java)
+                    showGoalIntent.putExtra("image_url",goals[adapterPosition].goalImage)
+                    showGoalIntent.putExtra("title",goals[adapterPosition].goalTitle)
+                    showGoalIntent.putExtra("date_created",goals[adapterPosition].date_created.toString())
+                }
 
                 showGoalIntent.putExtra("goal_index", adapterPosition)
-                context.startActivity(showGoalIntent)
                 context.startActivity(showGoalIntent)
             }
         }

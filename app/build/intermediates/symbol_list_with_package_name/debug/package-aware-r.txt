@@ -2704,6 +2704,7 @@ id baseline
 id beginOnFirstDraw
 id beginning
 id bestChoice
+id big_goal_img
 id blocking
 id bottom
 id bounce
@@ -2818,6 +2819,7 @@ id goal_date
 id goal_image
 id goal_status
 id goal_title
+id goal_title_big
 id gone
 id graph
 id graph_wrap

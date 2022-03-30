@@ -1,18 +1,17 @@
 package com.example.promly.TwentyByTwenty
 
-import android.annotation.SuppressLint
-import android.content.Intent
 import android.os.Bundle
-import android.text.method.ScrollingMovementMethod
+import android.view.View
 import android.widget.ImageView
-import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
-import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import androidx.recyclerview.widget.StaggeredGridLayoutManager
-import com.example.promly.ExistingGoalActivity
 import com.example.promly.R
+import com.squareup.picasso.Picasso
+import java.time.LocalDate
+import java.util.*
+import kotlin.collections.ArrayList
 
 
 class TwentybyTwentyHomeActivity : AppCompatActivity() {
@@ -37,7 +36,12 @@ class TwentybyTwentyHomeActivity : AppCompatActivity() {
         for(i in 0..19){
             goalList.add(Goal())
         }
-        goalList.get(0).goalTitle = "ExistingGoal"
+        var goal_index = intent.getIntExtra("goal_index",0)
+        goalList.get(goal_index).goalTitle = intent.getStringExtra("goal_name")
+        goalList.get(goal_index).goalImage = intent.getStringExtra("goal_thumbnail")
+        goalList.get(goal_index).date_created = Date()
+
+
         /* initializes recyclerview and sets up the layout manager of the recycler view*/
         recyclerView = findViewById(R.id.twenty_recycler_view)
 
