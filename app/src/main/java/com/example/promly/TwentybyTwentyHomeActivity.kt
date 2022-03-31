@@ -1,17 +1,13 @@
 package com.example.promly.TwentyByTwenty
 
 import android.os.Bundle
-import android.view.View
-import android.widget.ImageView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import androidx.recyclerview.widget.StaggeredGridLayoutManager
 import com.example.promly.R
-import com.squareup.picasso.Picasso
-import java.time.LocalDate
+import com.example.promly.SpanSize
+import com.example.promly.SpannedGridLayoutManager
 import java.util.*
-import kotlin.collections.ArrayList
 
 
 class TwentybyTwentyHomeActivity : AppCompatActivity() {
@@ -19,7 +15,7 @@ class TwentybyTwentyHomeActivity : AppCompatActivity() {
 
     /* These variables access the recycler view and goal adapter */
     private lateinit var recyclerView: RecyclerView
-    private lateinit var gridLayoutManager: StaggeredGridLayoutManager
+    private lateinit var gridLayoutManager: SpannedGridLayoutManager
     private lateinit var adapter: GoalAdapter
 
 
@@ -28,31 +24,42 @@ class TwentybyTwentyHomeActivity : AppCompatActivity() {
 
         setContentView(R.layout.activity_twenty_by_twenty_home)
 
-        supportActionBar?.title = "My 20by20"                            //this is temporary till we fix the actionbars
+        supportActionBar?.title = "My 20by20"
 
         /* initializes arraylist of goals (card view) */
         val goalList = ArrayList<Goal>()
+
         //Placeholder code for Firebase below
         for(i in 0..19){
             goalList.add(Goal())
         }
-        var goal_index = intent.getIntExtra("goal_index",0)
-        goalList.get(goal_index).goalTitle = intent.getStringExtra("goal_name")
-        goalList.get(goal_index).goalImage = intent.getStringExtra("goal_thumbnail")
-        goalList.get(goal_index).date_created = Date()
-
+        val goalIndex = intent.getIntExtra("goal_index",0)
+        goalList.get(goalIndex).goalTitle = intent.getStringExtra("goal_name")
+        goalList.get(goalIndex).goalImage = intent.getStringExtra("goal_thumbnail")
+        goalList.get(goalIndex).date_created = Date()
+        goalList.get(goalIndex).goalStatus = intent.getIntExtra("goal_status", 0)
 
         /* initializes recyclerview and sets up the layout manager of the recycler view*/
         recyclerView = findViewById(R.id.twenty_recycler_view)
 
-        gridLayoutManager = StaggeredGridLayoutManager(2, LinearLayoutManager.VERTICAL)
+        gridLayoutManager = SpannedGridLayoutManager(orientation = LinearLayoutManager.VERTICAL, spans = 3)
+        gridLayoutManager.itemOrderIsStable = true
 
         recyclerView.layoutManager = gridLayoutManager
 
         adapter = GoalAdapter(goalList)
 
-        recyclerView.adapter = adapter
+        gridLayoutManager.spanSizeLookup = SpannedGridLayoutManager.SpanSizeLookup { position ->
+            if (position == 0 || position == 6 || position == 10 || position == 16) {
+                SpanSize(2, 2)
+            }else if(position == 4 || position == 8 || position == 14 || position == 18) {
+                SpanSize(2, 1)
+            }else{
+                SpanSize(1, 1)
+            }
+        }
 
+        recyclerView.adapter = adapter
 
     }
 
