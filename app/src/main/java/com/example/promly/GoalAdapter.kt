@@ -28,8 +28,11 @@ class GoalAdapter(val goals: ArrayList<Goal>):
     override fun onBindViewHolder(holder: GoalHolder, position: Int) {
 
             holder.goalTitle.text = goals[position].goalTitle
-            if(goals[position].goalImage == "") {
-                holder.goalImage.setImageResource(R.drawable.empty_goal)
+            if(goals[position].goalTitle == "" || goals[position].goalTitle == null) {
+                if(position == 4||position == 8||position == 14||position == 18)
+                    holder.goalImage.setImageResource(R.drawable.empty_long)
+                else
+                    holder.goalImage.setImageResource(R.drawable.empty_goal)
             }
             else {
                 Picasso.get().load(goals[position].goalImage).fit().into(holder.goalImage)

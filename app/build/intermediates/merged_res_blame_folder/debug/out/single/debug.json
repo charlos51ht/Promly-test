@@ -120,6 +120,10 @@
         "source": "C:\\Users\\charl\\Documents\\School Work\\Spring 2022\\Software Engineering\\Promly-Android--main\\Promly\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.webp"
     },
     {
+        "merged": "C:\\Users\\charl\\Documents\\School Work\\Spring 2022\\Software Engineering\\Promly-Android--main\\Promly\\app\\build\\intermediates\\merged_res\\debug\\drawable_baseline_check_circle_white_24.png.flat",
+        "source": "C:\\Users\\charl\\Documents\\School Work\\Spring 2022\\Software Engineering\\Promly-Android--main\\Promly\\app\\src\\main\\res\\drawable\\baseline_check_circle_white_24.png"
+    },
+    {
         "merged": "C:\\Users\\charl\\Documents\\School Work\\Spring 2022\\Software Engineering\\Promly-Android--main\\Promly\\app\\build\\intermediates\\merged_res\\debug\\drawable-mdpi_ic_ball.png.flat",
         "source": "C:\\Users\\charl\\Documents\\School Work\\Spring 2022\\Software Engineering\\Promly-Android--main\\Promly\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\ic_ball.png"
     },

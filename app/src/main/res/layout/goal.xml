@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     app:cardCornerRadius="10dp"
-    app:cardBackgroundColor="@color/brand_purple"
+    app:cardBackgroundColor="@color/black"
     app:cardPreventCornerOverlap="false"
     app:cardUseCompatPadding="true"
     xmlns:tools="http://schemas.android.com/tools">
