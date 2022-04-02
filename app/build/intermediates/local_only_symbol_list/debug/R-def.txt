@@ -64,6 +64,7 @@ id checkbox
 id code_note
 id code_welcome
 id completed_button
+id delete_button
 id details_box
 id editText1
 id end

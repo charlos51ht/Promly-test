@@ -50,7 +50,6 @@ class GoalAdapter(val goals: ArrayList<Goal>):
         var goalImage: ImageView = itemView.findViewById(R.id.goal_image)
         var goalStatus: ImageView = itemView.findViewById(R.id.goal_status)
 
-
         //
         init {
             itemView.setOnClickListener {
