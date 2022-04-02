@@ -102,14 +102,11 @@
         app:layout_constraintTop_toBottomOf="@+id/notes_text"
         tools:text="Add details to your goal..."></EditText>
 
-            <androidx.appcompat.widget.AppCompatButton
+            <androidx.appcompat.widget.AppCompatImageButton
                 android:id="@+id/completed_button"
                 android:layout_width="300dp"
                 android:layout_height="48dp"
-                android:background="@drawable/gradient_button"
-                android:fontFamily="@font/avenir_roman"
-                android:text="@string/completed_text"
-                android:textColor="@color/white"/>
+                android:background="@drawable/completed"/>
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/delete_button"
                 android:layout_width="300dp"

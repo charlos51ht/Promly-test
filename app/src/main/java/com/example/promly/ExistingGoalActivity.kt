@@ -1,21 +1,21 @@
 package com.example.promly
 
 import android.content.Context
+import android.content.DialogInterface
 import android.content.Intent
 import android.os.Bundle
 import android.view.KeyEvent
+import android.view.View
 import android.view.inputmethod.EditorInfo
 import android.view.inputmethod.InputMethodManager
-import android.widget.Button
-import android.widget.EditText
-import android.widget.ImageView
-import android.widget.TextView
+import android.widget.*
+import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import com.example.promly.TwentyByTwenty.TwentybyTwentyHomeActivity
 import com.squareup.picasso.Picasso
 
 lateinit var notes_enter : EditText
-lateinit var button_complete: Button
+lateinit var button_complete: ImageButton
 lateinit var button_delete: Button
 class ExistingGoalActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -35,6 +35,9 @@ class ExistingGoalActivity : AppCompatActivity() {
         button_complete = findViewById(R.id.completed_button)
         button_delete = findViewById(R.id.delete_button)
 
+        if (intent.getIntExtra("goal_status",0) == 0) {
+            button_complete.setBackgroundResource(R.drawable.mark_completed)
+        }
         notes_enter.setOnEditorActionListener{ v, keyCode, event ->
 
             if (((event?.action ?: -1) == KeyEvent.ACTION_DOWN)
@@ -53,6 +56,8 @@ class ExistingGoalActivity : AppCompatActivity() {
 
         var showGoalIntent = Intent(this, TwentybyTwentyHomeActivity::class.java)
         button_complete.setOnClickListener {
+
+
             showGoalIntent.putExtra("goal_name", goal_title.text.toString())
             showGoalIntent.putExtra("goal_index",getIntent().getIntExtra("goal_index",0))
             showGoalIntent.putExtra("goal_thumbnail", intent.getStringExtra("image_url"))
@@ -63,7 +68,18 @@ class ExistingGoalActivity : AppCompatActivity() {
         button_delete.setOnClickListener {
             //delete from database logic
             //return to home page
-            startActivity(showGoalIntent)
+            var builder = AlertDialog.Builder(this)
+            builder.setTitle("Delete Goal")
+            builder.setMessage("Are you sure you want to delete this goal? This will delete all notes and plans of this goal")
+            builder.setPositiveButton("Delete", DialogInterface.OnClickListener{dialog, id ->
+                startActivity(showGoalIntent)
+                dialog.cancel()
+            })
+            builder.setNegativeButton("Cancel", DialogInterface.OnClickListener{dialog, id ->
+                dialog.cancel()
+            })
+            var alert = builder.create()
+            alert.show()
         }
 
     }
