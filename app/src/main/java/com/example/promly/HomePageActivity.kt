@@ -26,6 +26,7 @@ class HomePageActivity : AppCompatActivity() {
 
         twenty_by.setOnClickListener {
             val intent = Intent(this, TwentybyTwentyHomeActivity::class.java)
+            intent.putExtra("from_home","from home")
             startActivity(intent);
         }
     }

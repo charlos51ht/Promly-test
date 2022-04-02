@@ -2515,6 +2515,7 @@ drawable design_password_eye
 drawable design_snackbar_background
 drawable empty_goal
 drawable empty_long
+drawable ex
 drawable expand_circle_icon
 drawable gradient_button
 drawable gradient_navbar
@@ -2938,6 +2939,8 @@ id mtrl_picker_text_input_range_start
 id mtrl_picker_title_text
 id mtrl_view_tag_bottom_padding
 id multiply
+id my_scroll
+id my_toolbar
 id nav_controller_view_tag
 id nav_graph
 id nav_host_fragment_container
@@ -2996,6 +2999,7 @@ id right_side
 id rounded
 id row_index_key
 id rtl
+id save_goal
 id save_non_transition_alpha
 id save_overlay_view
 id sawtooth
@@ -3057,7 +3061,6 @@ id staticPostLayout
 id stop
 id stretch
 id submenuarrow
-id submit
 id submit_area
 id supportScrollUp
 id tabMode
@@ -3100,6 +3103,7 @@ id title
 id titleDividerNoCustom
 id title_template
 id toggle
+id toolbar_newgoal
 id top
 id topPanel
 id touch_outside
@@ -3111,6 +3115,7 @@ id transition_position
 id transition_scene_layoutid_cache
 id transition_transform
 id triangle
+id twenty_back
 id twenty_recycler_view
 id twenty_title
 id twenty_welcome
@@ -4528,6 +4533,7 @@ style Widget_MaterialComponents_Toolbar_Surface
 style Widget_MaterialComponents_Tooltip
 style Widget_Support_CoordinatorLayout
 style twenty_by_bar
+style twenty_by_twenty
 styleable ActionBar background backgroundSplit backgroundStacked contentInsetEnd contentInsetEndWithActions contentInsetLeft contentInsetRight contentInsetStart contentInsetStartWithNavigation customNavigationLayout displayOptions divider elevation height hideOnContentScroll homeAsUpIndicator homeLayout icon indeterminateProgressStyle itemPadding logo navigationMode popupTheme progressBarPadding progressBarStyle subtitle subtitleTextStyle title titleTextStyle
 styleable ActionBarLayout android_layout_gravity
 styleable ActionMenuItemView android_minWidth

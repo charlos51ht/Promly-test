@@ -1,15 +1,16 @@
 package com.example.promly.TwentyByTwenty
 
 import android.content.Intent
-import android.media.Image
-import android.util.Log
+import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.cardview.widget.CardView
 import androidx.recyclerview.widget.RecyclerView
-import com.example.promly.*
+import com.example.promly.ExistingGoalActivity
+import com.example.promly.NewGoalActivity
+import com.example.promly.R
 import com.squareup.picasso.Picasso
 
 

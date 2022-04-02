@@ -77,13 +77,18 @@
         <item name="windowNoTitle">true</item>
     </style>
     <style name="Theme.Promly.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
-    <style name="twenty_by_bar" parent="Theme.AppCompat.Light.DarkActionBar">
-        <!-- Customize your theme here. -->
+    <style name="twenty_by_bar">
+        <item name="titleTextAppearance">@style/TextAppearance.AppCompat</item>
         <item name="actionBarSize">68dp</item>
         <item name="background">@drawable/gradient_navbar</item>
+        <item name="android:text">My 20by20</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+    <style name="twenty_by_twenty" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
         <item name="android:windowTranslucentStatus">true</item>
-        <item name="android:windowActionBarOverlay">false</item>
-        <item name="android:windowActionBar">false</item>
-        <item name="android:windowActionModeOverlay">false</item>
+        <item name="actionBarStyle">@style/twenty_by_bar</item>
+        <item name="android:textColor">@color/white</item>
     </style>
 </resources>

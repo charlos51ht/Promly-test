@@ -5,8 +5,25 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/black"
+    android:fitsSystemWindows="true"
     tools:context=".ExistingGoalActivity">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="66dp"
+        android:background="@drawable/gradient_navbar"
+        android:elevation="4dp">
+
+        <ImageButton
+            android:id="@+id/twenty_back"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:background="@drawable/ex"
+            ></ImageButton>
+
+    </androidx.appcompat.widget.Toolbar>
     <ScrollView
+        android:id="@+id/my_scroll"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <LinearLayout android:layout_height="match_parent"

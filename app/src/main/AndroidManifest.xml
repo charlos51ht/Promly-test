@@ -12,13 +12,15 @@
         android:name=".UnsplashApplication">
         <activity
             android:name=".NewGoalActivity"
+            android:theme="@style/Theme.Promly.NoActionBar"
             android:exported="false" />
         <activity
             android:name=".ExistingGoalActivity"
+            android:theme="@style/Theme.Promly.NoActionBar"
             android:exported="false" />
         <activity
             android:name=".TwentyByTwenty.TwentybyTwentyHomeActivity"
-            android:theme="@style/twenty_by_bar"
+            android:theme="@style/Theme.Promly.NoActionBar"
             android:exported="false" />
         <activity
             android:name=".HomePageActivity"
@@ -53,5 +55,6 @@
             </intent-filter>
         </activity>
     </application>
+
 
 </manifest>

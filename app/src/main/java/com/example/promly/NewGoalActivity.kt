@@ -3,8 +3,10 @@ package com.example.promly
 import android.app.Activity
 import android.content.Intent
 import android.os.Bundle
+import android.view.WindowManager
 import android.widget.Button
 import android.widget.EditText
+import android.widget.TextView
 import androidx.activity.result.ActivityResult
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.appcompat.app.AppCompatActivity
@@ -19,8 +21,8 @@ import com.unsplash.pickerandroid.photopicker.presentation.UnsplashPickerViewMod
 class NewGoalActivity : AppCompatActivity() {
 
     private lateinit var goal_title : EditText
-    private lateinit var submit: Button
     private lateinit var mViewModel: UnsplashPickerViewModel
+    private lateinit var save_link: TextView
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -28,7 +30,7 @@ class NewGoalActivity : AppCompatActivity() {
         setContentView(R.layout.activity_new_goal)
 
         goal_title = findViewById(R.id.editText1)
-        submit = findViewById(R.id.submit)
+        save_link = findViewById(R.id.save_goal)
 
         mViewModel = ViewModelProviders.of(this, Injector.createPickerViewModelFactory())
             .get(UnsplashPickerViewModel::class.java)
@@ -42,15 +44,14 @@ class NewGoalActivity : AppCompatActivity() {
                 intent.putExtra("goal_name", goal_title.text.toString())
                 intent.putExtra("goal_index",getIntent().getIntExtra("goal_index",0))
                 intent.putExtra("goal_thumbnail",photos?.get(0)?.urls?.small)
-                startActivity(intent);
+                startActivity(intent)
 
             }
         }
 
-        submit.setOnClickListener {
+        save_link.setOnClickListener {
             mViewModel.bindSearch(goal_title)
             unsplashWindow.launch(UnsplashPickerActivity.getStartingIntent(this,isMultipleSelection = false))
-
         }
 
         if(getSupportActionBar()!=null) {

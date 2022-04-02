@@ -2,6 +2,7 @@ package com.example.promly.TwentyByTwenty
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import androidx.appcompat.widget.Toolbar
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.promly.R
@@ -17,21 +18,23 @@ class TwentybyTwentyHomeActivity : AppCompatActivity() {
     private lateinit var recyclerView: RecyclerView
     private lateinit var gridLayoutManager: SpannedGridLayoutManager
     private lateinit var adapter: GoalAdapter
-
+    private lateinit var toolbar: Toolbar
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
         setContentView(R.layout.activity_twenty_by_twenty_home)
-
-        supportActionBar?.title = "My 20by20"
-
+        toolbar = findViewById(R.id.my_toolbar)
+        setSupportActionBar(toolbar)
         /* initializes arraylist of goals (card view) */
-        val goalList = ArrayList<Goal>()
+
 
         //Placeholder code for Firebase below
-        for(i in 0..19){
-            goalList.add(Goal())
+        //remove if statement on firebase addition
+        if(intent.getStringExtra("from_home")!=null) {
+            for (i in 0..19) {
+                goalList.add(Goal())
+            }
         }
         val goalIndex = intent.getIntExtra("goal_index",0)
         goalList.get(goalIndex).goalTitle = intent.getStringExtra("goal_name")
@@ -61,6 +64,9 @@ class TwentybyTwentyHomeActivity : AppCompatActivity() {
 
         recyclerView.adapter = adapter
 
+    }
+    companion object{
+        val goalList = ArrayList<Goal>()
     }
 
 }

@@ -22,6 +22,7 @@ drawable baseline_check_circle_white_24
 drawable completed
 drawable empty_goal
 drawable empty_long
+drawable ex
 drawable expand_circle_icon
 drawable gradient_button
 drawable gradient_navbar
@@ -83,14 +84,18 @@ id intro_logo
 id intro_slogan
 id logo
 id menu
+id my_scroll
+id my_toolbar
 id nav_graph
 id notes_text
 id profilePicture
 id progressBar
 id respect_code
+id save_goal
 id start
-id submit
 id textView
+id toolbar_newgoal
+id twenty_back
 id twenty_recycler_view
 id twenty_title
 id twenty_welcome
@@ -133,4 +138,5 @@ style Theme.Promly.AppBarOverlay
 style Theme.Promly.NoActionBar
 style Theme.Promly.PopupOverlay
 style twenty_by_bar
+style twenty_by_twenty
 xml activity_twenty_by_twenty_home_scene
