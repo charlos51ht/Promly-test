@@ -18,7 +18,6 @@ import com.example.promly.TwentybyTwentyHomeActivity
 import com.squareup.picasso.Picasso
 
 
-lateinit var notes_enter : EditText
 lateinit var button_complete: ImageButton
 lateinit var button_delete: Button
 lateinit var my_scroll:ScrollView
@@ -39,9 +38,9 @@ class ExistingGoalActivity : AppCompatActivity() {
         var date_created : TextView = findViewById(R.id.goal_date)
         date_created.text = "Date Created: "+ intent.getStringExtra("date_created").toString()
         Picasso.get().load(intent.getStringExtra("image_url").toString()).fit().into(image)
+        var notes_enter : EditText = findViewById(R.id.details_box)
+        notes_enter.setText(intent.getStringExtra("goal_details"))
 
-
-        notes_enter = findViewById(R.id.details_box)
         button_complete = findViewById(R.id.completed_button)
         button_delete = findViewById(R.id.delete_button)
         my_scroll = findViewById(R.id.my_scroll)
@@ -74,6 +73,7 @@ class ExistingGoalActivity : AppCompatActivity() {
             showGoalIntent.putExtra("goal_index",getIntent().getIntExtra("goal_index",0))
             showGoalIntent.putExtra("goal_thumbnail", intent.getStringExtra("image_url"))
             showGoalIntent.putExtra("goal_status", R.drawable.baseline_check_circle_white_24)
+            showGoalIntent.putExtra("goal_details", notes_enter.text.toString())
             startActivity(showGoalIntent)
             //return to home page
         }
@@ -102,6 +102,7 @@ class ExistingGoalActivity : AppCompatActivity() {
             showGoalIntent.putExtra("goal_index",getIntent().getIntExtra("goal_index",0))
             showGoalIntent.putExtra("goal_thumbnail", intent.getStringExtra("image_url"))
             showGoalIntent.putExtra("goal_status", intent.getIntExtra("goal_status",0))
+            showGoalIntent.putExtra("goal_details", notes_enter.text.toString())
             startActivity(showGoalIntent)
         }
     }

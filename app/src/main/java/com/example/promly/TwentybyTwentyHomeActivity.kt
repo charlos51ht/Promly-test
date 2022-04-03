@@ -40,6 +40,7 @@ class TwentybyTwentyHomeActivity : AppCompatActivity() {
         goalList.get(goalIndex).goalImage = intent.getStringExtra("goal_thumbnail")
         goalList.get(goalIndex).date_created = Date()
         goalList.get(goalIndex).goalStatus = intent.getIntExtra("goal_status", 0)
+        goalList.get(goalIndex).details = intent.getStringExtra("goal_details")
 
         /* initializes recyclerview and sets up the layout manager of the recycler view*/
         recyclerView = findViewById(R.id.twenty_recycler_view)

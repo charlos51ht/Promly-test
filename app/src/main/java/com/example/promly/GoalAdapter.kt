@@ -62,6 +62,8 @@ class GoalAdapter(val goals: ArrayList<Goal>):
                     showGoalIntent.putExtra("title",goals[adapterPosition].goalTitle)
                     showGoalIntent.putExtra("date_created",goals[adapterPosition].date_created.toString())
                     showGoalIntent.putExtra("goal_status",goals[adapterPosition].goalStatus)
+                    showGoalIntent.putExtra("goal_details",goals[adapterPosition].details)
+
 
 
                 }
