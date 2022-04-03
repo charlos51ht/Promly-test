@@ -14,7 +14,7 @@ import android.widget.*
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
-import com.example.promly.TwentyByTwenty.TwentybyTwentyHomeActivity
+import com.example.promly.TwentybyTwentyHomeActivity
 import com.squareup.picasso.Picasso
 
 
@@ -101,6 +101,7 @@ class ExistingGoalActivity : AppCompatActivity() {
             showGoalIntent.putExtra("goal_name", goal_title.text.toString())
             showGoalIntent.putExtra("goal_index",getIntent().getIntExtra("goal_index",0))
             showGoalIntent.putExtra("goal_thumbnail", intent.getStringExtra("image_url"))
+            showGoalIntent.putExtra("goal_status", intent.getIntExtra("goal_status",0))
             startActivity(showGoalIntent)
         }
     }

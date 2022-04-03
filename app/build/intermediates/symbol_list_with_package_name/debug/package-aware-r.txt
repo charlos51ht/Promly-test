@@ -2519,7 +2519,14 @@ drawable ex
 drawable expand_circle_icon
 drawable gradient_button
 drawable gradient_navbar
-drawable gradient_new_goal_background
+drawable gradient_new_goal_background1
+drawable gradient_new_goal_background2
+drawable gradient_new_goal_background3
+drawable gradient_new_goal_background4
+drawable gradient_new_goal_background5
+drawable gradient_new_goal_background6
+drawable gradient_new_goal_background7
+drawable gradient_new_goal_background8
 drawable hustle_icon
 drawable ic_arrow_back_24dp
 drawable ic_ball
@@ -2954,6 +2961,7 @@ id navigation_header_container
 id never
 id neverCompleteToEnd
 id neverCompleteToStart
+id new_goal_layout
 id noScroll
 id noState
 id none

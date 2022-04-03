@@ -1,13 +1,12 @@
-package com.example.promly.TwentyByTwenty
+package com.example.promly
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.example.promly.R
-import com.example.promly.SpanSize
-import com.example.promly.SpannedGridLayoutManager
+import com.example.promly.TwentyByTwenty.Goal
+import com.example.promly.TwentyByTwenty.GoalAdapter
 import java.util.*
 
 
@@ -68,5 +67,7 @@ class TwentybyTwentyHomeActivity : AppCompatActivity() {
     companion object{
         val goalList = ArrayList<Goal>()
     }
+
+
 
 }

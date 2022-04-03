@@ -30,7 +30,7 @@
             android:exported="false"
             android:theme="@style/Theme.Promly.NoActionBar" />
         <activity
-            android:name="com.example.promly.TwentyByTwenty.TwentybyTwentyHomeActivity"
+            android:name="com.example.promly.TwentybyTwentyHomeActivity"
             android:exported="false"
             android:theme="@style/Theme.Promly.NoActionBar" />
         <activity

@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@color/black"
     android:fitsSystemWindows="true"
-    tools:context=".TwentyByTwenty.TwentybyTwentyHomeActivity"
+    tools:context=".TwentybyTwentyHomeActivity"
     app:layoutDescription="@xml/activity_twenty_by_twenty_home_scene">
 
     <androidx.appcompat.widget.Toolbar

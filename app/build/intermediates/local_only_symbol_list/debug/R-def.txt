@@ -26,7 +26,14 @@ drawable ex
 drawable expand_circle_icon
 drawable gradient_button
 drawable gradient_navbar
-drawable gradient_new_goal_background
+drawable gradient_new_goal_background1
+drawable gradient_new_goal_background2
+drawable gradient_new_goal_background3
+drawable gradient_new_goal_background4
+drawable gradient_new_goal_background5
+drawable gradient_new_goal_background6
+drawable gradient_new_goal_background7
+drawable gradient_new_goal_background8
 drawable hustle_icon
 drawable ic_ball
 drawable ic_launcher_background
@@ -87,6 +94,7 @@ id menu
 id my_scroll
 id my_toolbar
 id nav_graph
+id new_goal_layout
 id notes_text
 id profilePicture
 id progressBar
