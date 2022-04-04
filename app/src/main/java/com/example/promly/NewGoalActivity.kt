@@ -8,6 +8,7 @@ import android.view.View
 import android.view.WindowManager
 import android.widget.Button
 import android.widget.EditText
+import android.widget.ImageButton
 import android.widget.TextView
 import androidx.activity.result.ActivityResult
 import androidx.activity.result.contract.ActivityResultContracts
@@ -26,6 +27,7 @@ class NewGoalActivity : AppCompatActivity() {
     private lateinit var goal_title : EditText
     private lateinit var mViewModel: UnsplashPickerViewModel
     private lateinit var save_link: TextView
+    private lateinit var back_20: ImageButton
     private lateinit var view : View
 
 
@@ -49,7 +51,7 @@ class NewGoalActivity : AppCompatActivity() {
 
         goal_title = findViewById(R.id.editText1)
         save_link = findViewById(R.id.save_goal)
-
+        back_20 = findViewById(R.id.back_20)
 
         mViewModel = ViewModelProviders.of(this, Injector.createPickerViewModelFactory())
             .get(UnsplashPickerViewModel::class.java)
@@ -72,9 +74,9 @@ class NewGoalActivity : AppCompatActivity() {
             mViewModel.bindSearch(goal_title)
             unsplashWindow.launch(UnsplashPickerActivity.getStartingIntent(this,isMultipleSelection = false))
         }
-
-        if(getSupportActionBar()!=null) {
-            getSupportActionBar()?.hide()
+        back_20.setOnClickListener{
+            var homeIntent = Intent(this, TwentybyTwentyHomeActivity::class.java)
+            startActivity(homeIntent)
         }
     }
 

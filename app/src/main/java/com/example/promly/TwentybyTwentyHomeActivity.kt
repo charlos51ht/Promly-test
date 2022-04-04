@@ -1,6 +1,9 @@
 package com.example.promly
 
+import android.content.Intent
 import android.os.Bundle
+import android.widget.Button
+import android.widget.ImageButton
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -18,6 +21,7 @@ class TwentybyTwentyHomeActivity : AppCompatActivity() {
     private lateinit var gridLayoutManager: SpannedGridLayoutManager
     private lateinit var adapter: GoalAdapter
     private lateinit var toolbar: Toolbar
+    private lateinit var home_20: ImageButton
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -63,6 +67,11 @@ class TwentybyTwentyHomeActivity : AppCompatActivity() {
         }
 
         recyclerView.adapter = adapter
+        home_20 = findViewById(R.id.home_20)
+        home_20.setOnClickListener{
+            var homeIntent = Intent(this, HomePageActivity::class.java)
+            startActivity(homeIntent)
+        }
 
     }
     companion object{

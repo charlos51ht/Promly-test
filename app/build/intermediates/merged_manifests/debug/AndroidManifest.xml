@@ -22,6 +22,10 @@
         android:testOnly="true"
         android:theme="@style/Theme.Promly" >
         <activity
+            android:name="com.example.promly.FindFriendsActivity"
+            android:exported="false"
+            android:theme="@style/Theme.Promly.NoActionBar" />
+        <activity
             android:name="com.example.promly.NewGoalActivity"
             android:exported="false"
             android:theme="@style/Theme.Promly.NoActionBar" />

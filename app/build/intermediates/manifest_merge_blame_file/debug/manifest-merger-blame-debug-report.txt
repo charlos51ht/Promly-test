@@ -6,179 +6,187 @@
 6
 7    <uses-sdk
 8        android:minSdkVersion="21"
-8-->C:\Users\adici\AndroidStudioProjects\Promly-test\app\src\main\AndroidManifest.xml
+8-->C:\Users\charl\Documents\School Work\Spring 2022\Software Engineering\Promly-Android--main\Promly\app\src\main\AndroidManifest.xml
 9        android:targetSdkVersion="32" />
-9-->C:\Users\adici\AndroidStudioProjects\Promly-test\app\src\main\AndroidManifest.xml
+9-->C:\Users\charl\Documents\School Work\Spring 2022\Software Engineering\Promly-Android--main\Promly\app\src\main\AndroidManifest.xml
 10
 11    <uses-permission android:name="android.permission.INTERNET" />
-11-->[com.github.unsplash:unsplash-photopicker-android:1.0.1] C:\Users\adici\.gradle\caches\transforms-3\806d2976b25a937dd962d49e6875f597\transformed\unsplash-photopicker-android-1.0.1\AndroidManifest.xml:11:5-67
-11-->[com.github.unsplash:unsplash-photopicker-android:1.0.1] C:\Users\adici\.gradle\caches\transforms-3\806d2976b25a937dd962d49e6875f597\transformed\unsplash-photopicker-android-1.0.1\AndroidManifest.xml:11:22-64
+11-->[com.github.unsplash:unsplash-photopicker-android:1.0.1] C:\Users\charl\.gradle\caches\transforms-3\806d2976b25a937dd962d49e6875f597\transformed\unsplash-photopicker-android-1.0.1\AndroidManifest.xml:11:5-67
+11-->[com.github.unsplash:unsplash-photopicker-android:1.0.1] C:\Users\charl\.gradle\caches\transforms-3\806d2976b25a937dd962d49e6875f597\transformed\unsplash-photopicker-android-1.0.1\AndroidManifest.xml:11:22-64
 12
 13    <application
-13-->C:\Users\adici\AndroidStudioProjects\Promly-test\app\src\main\AndroidManifest.xml:5:5-57:19
+13-->C:\Users\charl\Documents\School Work\Spring 2022\Software Engineering\Promly-Android--main\Promly\app\src\main\AndroidManifest.xml:5:5-61:19
 14        android:name="com.example.promly.UnsplashApplication"
-14-->C:\Users\adici\AndroidStudioProjects\Promly-test\app\src\main\AndroidManifest.xml:12:9-44
+14-->C:\Users\charl\Documents\School Work\Spring 2022\Software Engineering\Promly-Android--main\Promly\app\src\main\AndroidManifest.xml:6:9-44
 15        android:allowBackup="true"
-15-->C:\Users\adici\AndroidStudioProjects\Promly-test\app\src\main\AndroidManifest.xml:6:9-35
+15-->C:\Users\charl\Documents\School Work\Spring 2022\Software Engineering\Promly-Android--main\Promly\app\src\main\AndroidManifest.xml:7:9-35
 16        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-16-->[androidx.core:core:1.7.0] C:\Users\adici\.gradle\caches\transforms-3\a927d619ce56469f35da2fa2f2cd3b0b\transformed\core-1.7.0\AndroidManifest.xml:24:18-86
+16-->[androidx.core:core:1.7.0] C:\Users\charl\.gradle\caches\transforms-3\a927d619ce56469f35da2fa2f2cd3b0b\transformed\core-1.7.0\AndroidManifest.xml:24:18-86
 17        android:debuggable="true"
 18        android:icon="@mipmap/ic_launcher"
-18-->C:\Users\adici\AndroidStudioProjects\Promly-test\app\src\main\AndroidManifest.xml:7:9-43
+18-->C:\Users\charl\Documents\School Work\Spring 2022\Software Engineering\Promly-Android--main\Promly\app\src\main\AndroidManifest.xml:8:9-43
 19        android:label=""
-19-->C:\Users\adici\AndroidStudioProjects\Promly-test\app\src\main\AndroidManifest.xml:8:9-25
+19-->C:\Users\charl\Documents\School Work\Spring 2022\Software Engineering\Promly-Android--main\Promly\app\src\main\AndroidManifest.xml:9:9-25
 20        android:roundIcon="@mipmap/ic_launcher_round"
-20-->C:\Users\adici\AndroidStudioProjects\Promly-test\app\src\main\AndroidManifest.xml:9:9-54
+20-->C:\Users\charl\Documents\School Work\Spring 2022\Software Engineering\Promly-Android--main\Promly\app\src\main\AndroidManifest.xml:10:9-54
 21        android:supportsRtl="true"
-21-->C:\Users\adici\AndroidStudioProjects\Promly-test\app\src\main\AndroidManifest.xml:10:9-35
+21-->C:\Users\charl\Documents\School Work\Spring 2022\Software Engineering\Promly-Android--main\Promly\app\src\main\AndroidManifest.xml:11:9-35
 22        android:testOnly="true"
 23        android:theme="@style/Theme.Promly" >
-23-->C:\Users\adici\AndroidStudioProjects\Promly-test\app\src\main\AndroidManifest.xml:11:9-44
+23-->C:\Users\charl\Documents\School Work\Spring 2022\Software Engineering\Promly-Android--main\Promly\app\src\main\AndroidManifest.xml:12:9-44
 24        <activity
-24-->C:\Users\adici\AndroidStudioProjects\Promly-test\app\src\main\AndroidManifest.xml:13:9-16:40
-25            android:name="com.example.promly.NewGoalActivity"
-25-->C:\Users\adici\AndroidStudioProjects\Promly-test\app\src\main\AndroidManifest.xml:14:13-44
+24-->C:\Users\charl\Documents\School Work\Spring 2022\Software Engineering\Promly-Android--main\Promly\app\src\main\AndroidManifest.xml:13:9-16:40
+25            android:name="com.example.promly.FindFriendsActivity"
+25-->C:\Users\charl\Documents\School Work\Spring 2022\Software Engineering\Promly-Android--main\Promly\app\src\main\AndroidManifest.xml:14:13-48
 26            android:exported="false"
-26-->C:\Users\adici\AndroidStudioProjects\Promly-test\app\src\main\AndroidManifest.xml:16:13-37
+26-->C:\Users\charl\Documents\School Work\Spring 2022\Software Engineering\Promly-Android--main\Promly\app\src\main\AndroidManifest.xml:16:13-37
 27            android:theme="@style/Theme.Promly.NoActionBar" />
-27-->C:\Users\adici\AndroidStudioProjects\Promly-test\app\src\main\AndroidManifest.xml:15:13-60
+27-->C:\Users\charl\Documents\School Work\Spring 2022\Software Engineering\Promly-Android--main\Promly\app\src\main\AndroidManifest.xml:15:13-60
 28        <activity
-28-->C:\Users\adici\AndroidStudioProjects\Promly-test\app\src\main\AndroidManifest.xml:17:9-20:40
-29            android:name="com.example.promly.ExistingGoalActivity"
-29-->C:\Users\adici\AndroidStudioProjects\Promly-test\app\src\main\AndroidManifest.xml:18:13-49
+28-->C:\Users\charl\Documents\School Work\Spring 2022\Software Engineering\Promly-Android--main\Promly\app\src\main\AndroidManifest.xml:17:9-20:63
+29            android:name="com.example.promly.NewGoalActivity"
+29-->C:\Users\charl\Documents\School Work\Spring 2022\Software Engineering\Promly-Android--main\Promly\app\src\main\AndroidManifest.xml:18:13-44
 30            android:exported="false"
-30-->C:\Users\adici\AndroidStudioProjects\Promly-test\app\src\main\AndroidManifest.xml:20:13-37
+30-->C:\Users\charl\Documents\School Work\Spring 2022\Software Engineering\Promly-Android--main\Promly\app\src\main\AndroidManifest.xml:19:13-37
 31            android:theme="@style/Theme.Promly.NoActionBar" />
-31-->C:\Users\adici\AndroidStudioProjects\Promly-test\app\src\main\AndroidManifest.xml:19:13-60
+31-->C:\Users\charl\Documents\School Work\Spring 2022\Software Engineering\Promly-Android--main\Promly\app\src\main\AndroidManifest.xml:20:13-60
 32        <activity
-32-->C:\Users\adici\AndroidStudioProjects\Promly-test\app\src\main\AndroidManifest.xml:21:9-24:40
-33            android:name="com.example.promly.TwentybyTwentyHomeActivity"
-33-->C:\Users\adici\AndroidStudioProjects\Promly-test\app\src\main\AndroidManifest.xml:22:13-55
+32-->C:\Users\charl\Documents\School Work\Spring 2022\Software Engineering\Promly-Android--main\Promly\app\src\main\AndroidManifest.xml:21:9-24:63
+33            android:name="com.example.promly.ExistingGoalActivity"
+33-->C:\Users\charl\Documents\School Work\Spring 2022\Software Engineering\Promly-Android--main\Promly\app\src\main\AndroidManifest.xml:22:13-49
 34            android:exported="false"
-34-->C:\Users\adici\AndroidStudioProjects\Promly-test\app\src\main\AndroidManifest.xml:24:13-37
+34-->C:\Users\charl\Documents\School Work\Spring 2022\Software Engineering\Promly-Android--main\Promly\app\src\main\AndroidManifest.xml:23:13-37
 35            android:theme="@style/Theme.Promly.NoActionBar" />
-35-->C:\Users\adici\AndroidStudioProjects\Promly-test\app\src\main\AndroidManifest.xml:23:13-60
+35-->C:\Users\charl\Documents\School Work\Spring 2022\Software Engineering\Promly-Android--main\Promly\app\src\main\AndroidManifest.xml:24:13-60
 36        <activity
-36-->C:\Users\adici\AndroidStudioProjects\Promly-test\app\src\main\AndroidManifest.xml:25:9-29:63
-37            android:name="com.example.promly.HomePageActivity"
-37-->C:\Users\adici\AndroidStudioProjects\Promly-test\app\src\main\AndroidManifest.xml:26:13-45
+36-->C:\Users\charl\Documents\School Work\Spring 2022\Software Engineering\Promly-Android--main\Promly\app\src\main\AndroidManifest.xml:25:9-28:63
+37            android:name="com.example.promly.TwentybyTwentyHomeActivity"
+37-->C:\Users\charl\Documents\School Work\Spring 2022\Software Engineering\Promly-Android--main\Promly\app\src\main\AndroidManifest.xml:26:13-55
 38            android:exported="false"
-38-->C:\Users\adici\AndroidStudioProjects\Promly-test\app\src\main\AndroidManifest.xml:27:13-37
-39            android:label="@string/title_activity_home_page"
-39-->C:\Users\adici\AndroidStudioProjects\Promly-test\app\src\main\AndroidManifest.xml:28:13-61
-40            android:theme="@style/Theme.Promly.NoActionBar" />
-40-->C:\Users\adici\AndroidStudioProjects\Promly-test\app\src\main\AndroidManifest.xml:29:13-60
-41        <activity
-41-->C:\Users\adici\AndroidStudioProjects\Promly-test\app\src\main\AndroidManifest.xml:30:9-38:20
-42            android:name="com.example.promly.MainActivity"
-42-->C:\Users\adici\AndroidStudioProjects\Promly-test\app\src\main\AndroidManifest.xml:31:13-41
-43            android:exported="true" >
-43-->C:\Users\adici\AndroidStudioProjects\Promly-test\app\src\main\AndroidManifest.xml:32:13-36
-44            <intent-filter>
-44-->C:\Users\adici\AndroidStudioProjects\Promly-test\app\src\main\AndroidManifest.xml:33:13-37:29
-45                <action android:name="android.intent.action.MAIN" />
-45-->C:\Users\adici\AndroidStudioProjects\Promly-test\app\src\main\AndroidManifest.xml:34:17-69
-45-->C:\Users\adici\AndroidStudioProjects\Promly-test\app\src\main\AndroidManifest.xml:34:25-66
-46
-47                <category android:name="android.intent.category.LAUNCHER" />
-47-->C:\Users\adici\AndroidStudioProjects\Promly-test\app\src\main\AndroidManifest.xml:36:17-77
-47-->C:\Users\adici\AndroidStudioProjects\Promly-test\app\src\main\AndroidManifest.xml:36:27-74
-48            </intent-filter>
-49        </activity>
-50        <activity
-50-->C:\Users\adici\AndroidStudioProjects\Promly-test\app\src\main\AndroidManifest.xml:39:9-47:20
-51            android:name="com.example.promly.RespectCodeActivity"
-51-->C:\Users\adici\AndroidStudioProjects\Promly-test\app\src\main\AndroidManifest.xml:40:13-48
-52            android:exported="true" >
-52-->C:\Users\adici\AndroidStudioProjects\Promly-test\app\src\main\AndroidManifest.xml:41:13-36
-53            <intent-filter>
-53-->C:\Users\adici\AndroidStudioProjects\Promly-test\app\src\main\AndroidManifest.xml:33:13-37:29
-54                <action android:name="android.intent.action.MAIN" />
-54-->C:\Users\adici\AndroidStudioProjects\Promly-test\app\src\main\AndroidManifest.xml:34:17-69
-54-->C:\Users\adici\AndroidStudioProjects\Promly-test\app\src\main\AndroidManifest.xml:34:25-66
-55
-56                <category android:name="android.intent.category.LAUNCHER" />
-56-->C:\Users\adici\AndroidStudioProjects\Promly-test\app\src\main\AndroidManifest.xml:36:17-77
-56-->C:\Users\adici\AndroidStudioProjects\Promly-test\app\src\main\AndroidManifest.xml:36:27-74
-57            </intent-filter>
-58        </activity>
-59        <activity
-59-->C:\Users\adici\AndroidStudioProjects\Promly-test\app\src\main\AndroidManifest.xml:48:9-56:20
-60            android:name="com.example.promly.IntroActivity"
-60-->C:\Users\adici\AndroidStudioProjects\Promly-test\app\src\main\AndroidManifest.xml:49:13-42
-61            android:exported="true" >
-61-->C:\Users\adici\AndroidStudioProjects\Promly-test\app\src\main\AndroidManifest.xml:50:13-36
-62            <intent-filter>
-62-->C:\Users\adici\AndroidStudioProjects\Promly-test\app\src\main\AndroidManifest.xml:33:13-37:29
-63                <action android:name="android.intent.action.MAIN" />
-63-->C:\Users\adici\AndroidStudioProjects\Promly-test\app\src\main\AndroidManifest.xml:34:17-69
-63-->C:\Users\adici\AndroidStudioProjects\Promly-test\app\src\main\AndroidManifest.xml:34:25-66
-64
-65                <category android:name="android.intent.category.LAUNCHER" />
-65-->C:\Users\adici\AndroidStudioProjects\Promly-test\app\src\main\AndroidManifest.xml:36:17-77
-65-->C:\Users\adici\AndroidStudioProjects\Promly-test\app\src\main\AndroidManifest.xml:36:27-74
-66            </intent-filter>
-67        </activity>
+38-->C:\Users\charl\Documents\School Work\Spring 2022\Software Engineering\Promly-Android--main\Promly\app\src\main\AndroidManifest.xml:27:13-37
+39            android:theme="@style/Theme.Promly.NoActionBar" />
+39-->C:\Users\charl\Documents\School Work\Spring 2022\Software Engineering\Promly-Android--main\Promly\app\src\main\AndroidManifest.xml:28:13-60
+40        <activity
+40-->C:\Users\charl\Documents\School Work\Spring 2022\Software Engineering\Promly-Android--main\Promly\app\src\main\AndroidManifest.xml:29:9-33:63
+41            android:name="com.example.promly.HomePageActivity"
+41-->C:\Users\charl\Documents\School Work\Spring 2022\Software Engineering\Promly-Android--main\Promly\app\src\main\AndroidManifest.xml:30:13-45
+42            android:exported="false"
+42-->C:\Users\charl\Documents\School Work\Spring 2022\Software Engineering\Promly-Android--main\Promly\app\src\main\AndroidManifest.xml:31:13-37
+43            android:label="@string/title_activity_home_page"
+43-->C:\Users\charl\Documents\School Work\Spring 2022\Software Engineering\Promly-Android--main\Promly\app\src\main\AndroidManifest.xml:32:13-61
+44            android:theme="@style/Theme.Promly.NoActionBar" />
+44-->C:\Users\charl\Documents\School Work\Spring 2022\Software Engineering\Promly-Android--main\Promly\app\src\main\AndroidManifest.xml:33:13-60
+45        <activity
+45-->C:\Users\charl\Documents\School Work\Spring 2022\Software Engineering\Promly-Android--main\Promly\app\src\main\AndroidManifest.xml:34:9-42:20
+46            android:name="com.example.promly.MainActivity"
+46-->C:\Users\charl\Documents\School Work\Spring 2022\Software Engineering\Promly-Android--main\Promly\app\src\main\AndroidManifest.xml:35:13-41
+47            android:exported="true" >
+47-->C:\Users\charl\Documents\School Work\Spring 2022\Software Engineering\Promly-Android--main\Promly\app\src\main\AndroidManifest.xml:36:13-36
+48            <intent-filter>
+48-->C:\Users\charl\Documents\School Work\Spring 2022\Software Engineering\Promly-Android--main\Promly\app\src\main\AndroidManifest.xml:37:13-41:29
+49                <action android:name="android.intent.action.MAIN" />
+49-->C:\Users\charl\Documents\School Work\Spring 2022\Software Engineering\Promly-Android--main\Promly\app\src\main\AndroidManifest.xml:38:17-69
+49-->C:\Users\charl\Documents\School Work\Spring 2022\Software Engineering\Promly-Android--main\Promly\app\src\main\AndroidManifest.xml:38:25-66
+50
+51                <category android:name="android.intent.category.LAUNCHER" />
+51-->C:\Users\charl\Documents\School Work\Spring 2022\Software Engineering\Promly-Android--main\Promly\app\src\main\AndroidManifest.xml:40:17-77
+51-->C:\Users\charl\Documents\School Work\Spring 2022\Software Engineering\Promly-Android--main\Promly\app\src\main\AndroidManifest.xml:40:27-74
+52            </intent-filter>
+53        </activity>
+54        <activity
+54-->C:\Users\charl\Documents\School Work\Spring 2022\Software Engineering\Promly-Android--main\Promly\app\src\main\AndroidManifest.xml:43:9-51:20
+55            android:name="com.example.promly.RespectCodeActivity"
+55-->C:\Users\charl\Documents\School Work\Spring 2022\Software Engineering\Promly-Android--main\Promly\app\src\main\AndroidManifest.xml:44:13-48
+56            android:exported="true" >
+56-->C:\Users\charl\Documents\School Work\Spring 2022\Software Engineering\Promly-Android--main\Promly\app\src\main\AndroidManifest.xml:45:13-36
+57            <intent-filter>
+57-->C:\Users\charl\Documents\School Work\Spring 2022\Software Engineering\Promly-Android--main\Promly\app\src\main\AndroidManifest.xml:37:13-41:29
+58                <action android:name="android.intent.action.MAIN" />
+58-->C:\Users\charl\Documents\School Work\Spring 2022\Software Engineering\Promly-Android--main\Promly\app\src\main\AndroidManifest.xml:38:17-69
+58-->C:\Users\charl\Documents\School Work\Spring 2022\Software Engineering\Promly-Android--main\Promly\app\src\main\AndroidManifest.xml:38:25-66
+59
+60                <category android:name="android.intent.category.LAUNCHER" />
+60-->C:\Users\charl\Documents\School Work\Spring 2022\Software Engineering\Promly-Android--main\Promly\app\src\main\AndroidManifest.xml:40:17-77
+60-->C:\Users\charl\Documents\School Work\Spring 2022\Software Engineering\Promly-Android--main\Promly\app\src\main\AndroidManifest.xml:40:27-74
+61            </intent-filter>
+62        </activity>
+63        <activity
+63-->C:\Users\charl\Documents\School Work\Spring 2022\Software Engineering\Promly-Android--main\Promly\app\src\main\AndroidManifest.xml:52:9-60:20
+64            android:name="com.example.promly.IntroActivity"
+64-->C:\Users\charl\Documents\School Work\Spring 2022\Software Engineering\Promly-Android--main\Promly\app\src\main\AndroidManifest.xml:53:13-42
+65            android:exported="true" >
+65-->C:\Users\charl\Documents\School Work\Spring 2022\Software Engineering\Promly-Android--main\Promly\app\src\main\AndroidManifest.xml:54:13-36
+66            <intent-filter>
+66-->C:\Users\charl\Documents\School Work\Spring 2022\Software Engineering\Promly-Android--main\Promly\app\src\main\AndroidManifest.xml:37:13-41:29
+67                <action android:name="android.intent.action.MAIN" />
+67-->C:\Users\charl\Documents\School Work\Spring 2022\Software Engineering\Promly-Android--main\Promly\app\src\main\AndroidManifest.xml:38:17-69
+67-->C:\Users\charl\Documents\School Work\Spring 2022\Software Engineering\Promly-Android--main\Promly\app\src\main\AndroidManifest.xml:38:25-66
 68
-69        <uses-library
-69-->[androidx.window:window:1.0.0] C:\Users\adici\.gradle\caches\transforms-3\100cce961b268a04d43a329ccad52465\transformed\window-1.0.0\AndroidManifest.xml:25:9-27:40
-70            android:name="androidx.window.extensions"
-70-->[androidx.window:window:1.0.0] C:\Users\adici\.gradle\caches\transforms-3\100cce961b268a04d43a329ccad52465\transformed\window-1.0.0\AndroidManifest.xml:26:13-54
-71            android:required="false" />
-71-->[androidx.window:window:1.0.0] C:\Users\adici\.gradle\caches\transforms-3\100cce961b268a04d43a329ccad52465\transformed\window-1.0.0\AndroidManifest.xml:27:13-37
-72        <uses-library
-72-->[androidx.window:window:1.0.0] C:\Users\adici\.gradle\caches\transforms-3\100cce961b268a04d43a329ccad52465\transformed\window-1.0.0\AndroidManifest.xml:28:9-30:40
-73            android:name="androidx.window.sidecar"
-73-->[androidx.window:window:1.0.0] C:\Users\adici\.gradle\caches\transforms-3\100cce961b268a04d43a329ccad52465\transformed\window-1.0.0\AndroidManifest.xml:29:13-51
-74            android:required="false" />
-74-->[androidx.window:window:1.0.0] C:\Users\adici\.gradle\caches\transforms-3\100cce961b268a04d43a329ccad52465\transformed\window-1.0.0\AndroidManifest.xml:30:13-37
-75
-76        <activity
-76-->[com.github.unsplash:unsplash-photopicker-android:1.0.1] C:\Users\adici\.gradle\caches\transforms-3\806d2976b25a937dd962d49e6875f597\transformed\unsplash-photopicker-android-1.0.1\AndroidManifest.xml:14:9-18:20
-77            android:name="com.unsplash.pickerandroid.photopicker.presentation.UnsplashPickerActivity"
-77-->[com.github.unsplash:unsplash-photopicker-android:1.0.1] C:\Users\adici\.gradle\caches\transforms-3\806d2976b25a937dd962d49e6875f597\transformed\unsplash-photopicker-android-1.0.1\AndroidManifest.xml:15:13-102
-78            android:configChanges="orientation|screenSize"
-78-->[com.github.unsplash:unsplash-photopicker-android:1.0.1] C:\Users\adici\.gradle\caches\transforms-3\806d2976b25a937dd962d49e6875f597\transformed\unsplash-photopicker-android-1.0.1\AndroidManifest.xml:16:13-59
-79            android:theme="@style/AppTheme.NoActionBar" >
-79-->[com.github.unsplash:unsplash-photopicker-android:1.0.1] C:\Users\adici\.gradle\caches\transforms-3\806d2976b25a937dd962d49e6875f597\transformed\unsplash-photopicker-android-1.0.1\AndroidManifest.xml:17:13-56
-80        </activity>
-81        <activity
-81-->[com.github.unsplash:unsplash-photopicker-android:1.0.1] C:\Users\adici\.gradle\caches\transforms-3\806d2976b25a937dd962d49e6875f597\transformed\unsplash-photopicker-android-1.0.1\AndroidManifest.xml:19:9-22:20
-82            android:name="com.unsplash.pickerandroid.photopicker.presentation.PhotoShowActivity"
-82-->[com.github.unsplash:unsplash-photopicker-android:1.0.1] C:\Users\adici\.gradle\caches\transforms-3\806d2976b25a937dd962d49e6875f597\transformed\unsplash-photopicker-android-1.0.1\AndroidManifest.xml:20:13-97
-83            android:theme="@style/AppTheme.NoActionBar.Transparent" >
-83-->[com.github.unsplash:unsplash-photopicker-android:1.0.1] C:\Users\adici\.gradle\caches\transforms-3\806d2976b25a937dd962d49e6875f597\transformed\unsplash-photopicker-android-1.0.1\AndroidManifest.xml:21:13-68
+69                <category android:name="android.intent.category.LAUNCHER" />
+69-->C:\Users\charl\Documents\School Work\Spring 2022\Software Engineering\Promly-Android--main\Promly\app\src\main\AndroidManifest.xml:40:17-77
+69-->C:\Users\charl\Documents\School Work\Spring 2022\Software Engineering\Promly-Android--main\Promly\app\src\main\AndroidManifest.xml:40:27-74
+70            </intent-filter>
+71        </activity>
+72
+73        <uses-library
+73-->[androidx.window:window:1.0.0] C:\Users\charl\.gradle\caches\transforms-3\100cce961b268a04d43a329ccad52465\transformed\window-1.0.0\AndroidManifest.xml:25:9-27:40
+74            android:name="androidx.window.extensions"
+74-->[androidx.window:window:1.0.0] C:\Users\charl\.gradle\caches\transforms-3\100cce961b268a04d43a329ccad52465\transformed\window-1.0.0\AndroidManifest.xml:26:13-54
+75            android:required="false" />
+75-->[androidx.window:window:1.0.0] C:\Users\charl\.gradle\caches\transforms-3\100cce961b268a04d43a329ccad52465\transformed\window-1.0.0\AndroidManifest.xml:27:13-37
+76        <uses-library
+76-->[androidx.window:window:1.0.0] C:\Users\charl\.gradle\caches\transforms-3\100cce961b268a04d43a329ccad52465\transformed\window-1.0.0\AndroidManifest.xml:28:9-30:40
+77            android:name="androidx.window.sidecar"
+77-->[androidx.window:window:1.0.0] C:\Users\charl\.gradle\caches\transforms-3\100cce961b268a04d43a329ccad52465\transformed\window-1.0.0\AndroidManifest.xml:29:13-51
+78            android:required="false" />
+78-->[androidx.window:window:1.0.0] C:\Users\charl\.gradle\caches\transforms-3\100cce961b268a04d43a329ccad52465\transformed\window-1.0.0\AndroidManifest.xml:30:13-37
+79
+80        <activity
+80-->[com.github.unsplash:unsplash-photopicker-android:1.0.1] C:\Users\charl\.gradle\caches\transforms-3\806d2976b25a937dd962d49e6875f597\transformed\unsplash-photopicker-android-1.0.1\AndroidManifest.xml:14:9-18:20
+81            android:name="com.unsplash.pickerandroid.photopicker.presentation.UnsplashPickerActivity"
+81-->[com.github.unsplash:unsplash-photopicker-android:1.0.1] C:\Users\charl\.gradle\caches\transforms-3\806d2976b25a937dd962d49e6875f597\transformed\unsplash-photopicker-android-1.0.1\AndroidManifest.xml:15:13-102
+82            android:configChanges="orientation|screenSize"
+82-->[com.github.unsplash:unsplash-photopicker-android:1.0.1] C:\Users\charl\.gradle\caches\transforms-3\806d2976b25a937dd962d49e6875f597\transformed\unsplash-photopicker-android-1.0.1\AndroidManifest.xml:16:13-59
+83            android:theme="@style/AppTheme.NoActionBar" >
+83-->[com.github.unsplash:unsplash-photopicker-android:1.0.1] C:\Users\charl\.gradle\caches\transforms-3\806d2976b25a937dd962d49e6875f597\transformed\unsplash-photopicker-android-1.0.1\AndroidManifest.xml:17:13-56
 84        </activity>
-85
-86        <provider
-86-->[androidx.emoji2:emoji2:1.0.0] C:\Users\adici\.gradle\caches\transforms-3\e501fbc125b967976ed2a47954f25095\transformed\emoji2-1.0.0\AndroidManifest.xml:26:9-34:20
-87            android:name="androidx.startup.InitializationProvider"
-87-->[androidx.emoji2:emoji2:1.0.0] C:\Users\adici\.gradle\caches\transforms-3\e501fbc125b967976ed2a47954f25095\transformed\emoji2-1.0.0\AndroidManifest.xml:27:13-67
-88            android:authorities="com.example.promly.androidx-startup"
-88-->[androidx.emoji2:emoji2:1.0.0] C:\Users\adici\.gradle\caches\transforms-3\e501fbc125b967976ed2a47954f25095\transformed\emoji2-1.0.0\AndroidManifest.xml:28:13-68
-89            android:exported="false" >
-89-->[androidx.emoji2:emoji2:1.0.0] C:\Users\adici\.gradle\caches\transforms-3\e501fbc125b967976ed2a47954f25095\transformed\emoji2-1.0.0\AndroidManifest.xml:29:13-37
-90            <meta-data
-90-->[androidx.emoji2:emoji2:1.0.0] C:\Users\adici\.gradle\caches\transforms-3\e501fbc125b967976ed2a47954f25095\transformed\emoji2-1.0.0\AndroidManifest.xml:31:13-33:52
-91                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-91-->[androidx.emoji2:emoji2:1.0.0] C:\Users\adici\.gradle\caches\transforms-3\e501fbc125b967976ed2a47954f25095\transformed\emoji2-1.0.0\AndroidManifest.xml:32:17-75
-92                android:value="androidx.startup" />
-92-->[androidx.emoji2:emoji2:1.0.0] C:\Users\adici\.gradle\caches\transforms-3\e501fbc125b967976ed2a47954f25095\transformed\emoji2-1.0.0\AndroidManifest.xml:33:17-49
-93            <meta-data
-93-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\adici\.gradle\caches\transforms-3\e355f95edd1b1b3c63cea57ba8ae1ff1\transformed\lifecycle-process-2.4.0\AndroidManifest.xml:31:13-33:52
-94                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-94-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\adici\.gradle\caches\transforms-3\e355f95edd1b1b3c63cea57ba8ae1ff1\transformed\lifecycle-process-2.4.0\AndroidManifest.xml:32:17-78
-95                android:value="androidx.startup" />
-95-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\adici\.gradle\caches\transforms-3\e355f95edd1b1b3c63cea57ba8ae1ff1\transformed\lifecycle-process-2.4.0\AndroidManifest.xml:33:17-49
-96        </provider>
-97        <provider
-97-->[com.squareup.picasso:picasso:2.71828] C:\Users\adici\.gradle\caches\transforms-3\958b2b63d5b51a2067a756e1a71b908f\transformed\picasso-2.71828\AndroidManifest.xml:8:9-11:40
-98            android:name="com.squareup.picasso.PicassoProvider"
-98-->[com.squareup.picasso:picasso:2.71828] C:\Users\adici\.gradle\caches\transforms-3\958b2b63d5b51a2067a756e1a71b908f\transformed\picasso-2.71828\AndroidManifest.xml:9:13-64
-99            android:authorities="com.example.promly.com.squareup.picasso"
-99-->[com.squareup.picasso:picasso:2.71828] C:\Users\adici\.gradle\caches\transforms-3\958b2b63d5b51a2067a756e1a71b908f\transformed\picasso-2.71828\AndroidManifest.xml:10:13-72
-100            android:exported="false" />
-100-->[com.squareup.picasso:picasso:2.71828] C:\Users\adici\.gradle\caches\transforms-3\958b2b63d5b51a2067a756e1a71b908f\transformed\picasso-2.71828\AndroidManifest.xml:11:13-37
-101    </application>
-102
-103</manifest>
+85        <activity
+85-->[com.github.unsplash:unsplash-photopicker-android:1.0.1] C:\Users\charl\.gradle\caches\transforms-3\806d2976b25a937dd962d49e6875f597\transformed\unsplash-photopicker-android-1.0.1\AndroidManifest.xml:19:9-22:20
+86            android:name="com.unsplash.pickerandroid.photopicker.presentation.PhotoShowActivity"
+86-->[com.github.unsplash:unsplash-photopicker-android:1.0.1] C:\Users\charl\.gradle\caches\transforms-3\806d2976b25a937dd962d49e6875f597\transformed\unsplash-photopicker-android-1.0.1\AndroidManifest.xml:20:13-97
+87            android:theme="@style/AppTheme.NoActionBar.Transparent" >
+87-->[com.github.unsplash:unsplash-photopicker-android:1.0.1] C:\Users\charl\.gradle\caches\transforms-3\806d2976b25a937dd962d49e6875f597\transformed\unsplash-photopicker-android-1.0.1\AndroidManifest.xml:21:13-68
+88        </activity>
+89
+90        <provider
+90-->[androidx.emoji2:emoji2:1.0.0] C:\Users\charl\.gradle\caches\transforms-3\e501fbc125b967976ed2a47954f25095\transformed\emoji2-1.0.0\AndroidManifest.xml:26:9-34:20
+91            android:name="androidx.startup.InitializationProvider"
+91-->[androidx.emoji2:emoji2:1.0.0] C:\Users\charl\.gradle\caches\transforms-3\e501fbc125b967976ed2a47954f25095\transformed\emoji2-1.0.0\AndroidManifest.xml:27:13-67
+92            android:authorities="com.example.promly.androidx-startup"
+92-->[androidx.emoji2:emoji2:1.0.0] C:\Users\charl\.gradle\caches\transforms-3\e501fbc125b967976ed2a47954f25095\transformed\emoji2-1.0.0\AndroidManifest.xml:28:13-68
+93            android:exported="false" >
+93-->[androidx.emoji2:emoji2:1.0.0] C:\Users\charl\.gradle\caches\transforms-3\e501fbc125b967976ed2a47954f25095\transformed\emoji2-1.0.0\AndroidManifest.xml:29:13-37
+94            <meta-data
+94-->[androidx.emoji2:emoji2:1.0.0] C:\Users\charl\.gradle\caches\transforms-3\e501fbc125b967976ed2a47954f25095\transformed\emoji2-1.0.0\AndroidManifest.xml:31:13-33:52
+95                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+95-->[androidx.emoji2:emoji2:1.0.0] C:\Users\charl\.gradle\caches\transforms-3\e501fbc125b967976ed2a47954f25095\transformed\emoji2-1.0.0\AndroidManifest.xml:32:17-75
+96                android:value="androidx.startup" />
+96-->[androidx.emoji2:emoji2:1.0.0] C:\Users\charl\.gradle\caches\transforms-3\e501fbc125b967976ed2a47954f25095\transformed\emoji2-1.0.0\AndroidManifest.xml:33:17-49
+97            <meta-data
+97-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\charl\.gradle\caches\transforms-3\e355f95edd1b1b3c63cea57ba8ae1ff1\transformed\lifecycle-process-2.4.0\AndroidManifest.xml:31:13-33:52
+98                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+98-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\charl\.gradle\caches\transforms-3\e355f95edd1b1b3c63cea57ba8ae1ff1\transformed\lifecycle-process-2.4.0\AndroidManifest.xml:32:17-78
+99                android:value="androidx.startup" />
+99-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\charl\.gradle\caches\transforms-3\e355f95edd1b1b3c63cea57ba8ae1ff1\transformed\lifecycle-process-2.4.0\AndroidManifest.xml:33:17-49
+100        </provider>
+101        <provider
+101-->[com.squareup.picasso:picasso:2.71828] C:\Users\charl\.gradle\caches\transforms-3\958b2b63d5b51a2067a756e1a71b908f\transformed\picasso-2.71828\AndroidManifest.xml:8:9-11:40
+102            android:name="com.squareup.picasso.PicassoProvider"
+102-->[com.squareup.picasso:picasso:2.71828] C:\Users\charl\.gradle\caches\transforms-3\958b2b63d5b51a2067a756e1a71b908f\transformed\picasso-2.71828\AndroidManifest.xml:9:13-64
+103            android:authorities="com.example.promly.com.squareup.picasso"
+103-->[com.squareup.picasso:picasso:2.71828] C:\Users\charl\.gradle\caches\transforms-3\958b2b63d5b51a2067a756e1a71b908f\transformed\picasso-2.71828\AndroidManifest.xml:10:13-72
+104            android:exported="false" />
+104-->[com.squareup.picasso:picasso:2.71828] C:\Users\charl\.gradle\caches\transforms-3\958b2b63d5b51a2067a756e1a71b908f\transformed\picasso-2.71828\AndroidManifest.xml:11:13-37
+105    </application>
+106
+107</manifest>

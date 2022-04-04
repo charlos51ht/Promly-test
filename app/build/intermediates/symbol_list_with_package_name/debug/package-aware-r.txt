@@ -2710,6 +2710,7 @@ id auto
 id autoComplete
 id autoCompleteToEnd
 id autoCompleteToStart
+id back_20
 id barrier
 id baseline
 id beginOnFirstDraw
@@ -2843,6 +2844,7 @@ id header_title
 id hideable
 id home
 id homeAsUp
+id home_20
 id honorRequest
 id horizontal_only
 id icon
@@ -3023,6 +3025,7 @@ id search_bar
 id search_button
 id search_close_btn
 id search_edit_frame
+id search_friends
 id search_go_btn
 id search_mag_icon
 id search_plate
@@ -3111,6 +3114,7 @@ id title
 id titleDividerNoCustom
 id title_template
 id toggle
+id toolbar_ff
 id toolbar_newgoal
 id top
 id topPanel
@@ -3247,6 +3251,7 @@ layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_existing_goal
+layout activity_find_friends
 layout activity_home_page
 layout activity_image_show
 layout activity_intro
@@ -3400,6 +3405,7 @@ string error_icon_content_description
 string exposed_dropdown_menu_content_description
 string fab_transformation_scrim_behavior
 string fab_transformation_sheet_behavior
+string ff_nav
 string first_fragment_label
 string hide_bottom_view_on_scroll_behavior
 string i_agree

@@ -9,7 +9,7 @@ class HomePageActivity : AppCompatActivity() {
 
     private lateinit var twenty_by : ImageButton
     private lateinit var one_by_two : ImageButton
-    private lateinit var exapand_circle : ImageButton
+    private lateinit var expand_circle : ImageButton
     private lateinit var we_got_you : ImageButton
     private lateinit var spin_me : ImageButton
     private lateinit var shop : ImageButton
@@ -22,9 +22,15 @@ class HomePageActivity : AppCompatActivity() {
         setContentView(R.layout.activity_home_page)
 
         twenty_by = findViewById(R.id.twentybytwenty)
+        expand_circle = findViewById(R.id.ExpandYourCircle)
 
         twenty_by.setOnClickListener {
             val intent = Intent(this, TwentybyTwentyHomeActivity::class.java)
+            intent.putExtra("from_home","from home")
+            startActivity(intent);
+        }
+        expand_circle.setOnClickListener {
+            val intent = Intent(this, FindFriendsActivity::class.java)
             intent.putExtra("from_home","from home")
             startActivity(intent);
         }

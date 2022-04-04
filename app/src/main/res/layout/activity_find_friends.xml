@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@color/black"
+    tools:context=".FindFriendsActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_ff"
+        android:layout_width="match_parent"
+        android:layout_height="88dp"
+        android:background="@drawable/gradient_navbar"
+        android:elevation="4dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ff_nav"
+            android:textSize="20dp"
+            android:layout_gravity="center"
+            android:textColor="@color/white"></TextView>
+
+        <ImageButton
+            android:id="@+id/home_20"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:background="@drawable/img"
+            ></ImageButton>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <EditText
+        android:id="@+id/search_friends"
+        android:layout_width="343dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="4dp"
+        android:hint="Search"
+        android:background="#8A8686"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar_ff">
+
+    </EditText>
+
+    <!-- Recycler View here with displaying data class for person -->
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

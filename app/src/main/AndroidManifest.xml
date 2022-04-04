@@ -3,25 +3,29 @@
     package="com.example.promly">
 
     <application
+        android:name=".UnsplashApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label=""
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Promly"
-        android:name=".UnsplashApplication">
+        android:theme="@style/Theme.Promly">
+        <activity
+            android:name=".FindFriendsActivity"
+            android:theme="@style/Theme.Promly.NoActionBar"
+            android:exported="false" />
         <activity
             android:name=".NewGoalActivity"
-            android:theme="@style/Theme.Promly.NoActionBar"
-            android:exported="false" />
+            android:exported="false"
+            android:theme="@style/Theme.Promly.NoActionBar" />
         <activity
             android:name=".ExistingGoalActivity"
-            android:theme="@style/Theme.Promly.NoActionBar"
-            android:exported="false" />
+            android:exported="false"
+            android:theme="@style/Theme.Promly.NoActionBar" />
         <activity
             android:name=".TwentybyTwentyHomeActivity"
-            android:theme="@style/Theme.Promly.NoActionBar"
-            android:exported="false" />
+            android:exported="false"
+            android:theme="@style/Theme.Promly.NoActionBar" />
         <activity
             android:name=".HomePageActivity"
             android:exported="false"
@@ -55,6 +59,5 @@
             </intent-filter>
         </activity>
     </application>
-
 
 </manifest>
