@@ -82,7 +82,8 @@ class ExistingGoalActivity : AppCompatActivity() {
             builder.setTitle("Delete Goal")
             builder.setMessage("Are you sure you want to delete this goal? This will delete all notes and plans of this goal.")
             builder.setPositiveButton("Delete", DialogInterface.OnClickListener{dialog, id ->
-                //***need delete from database logic here***
+
+                showGoalIntent.putExtra("goal_index",getIntent().getIntExtra("goal_index",0))
 
                 //return to home page
                 startActivity(showGoalIntent)

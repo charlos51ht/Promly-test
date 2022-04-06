@@ -46,9 +46,6 @@ class NewGoalActivity : AppCompatActivity() {
         view = findViewById(R.id.new_goal_layout)
         view.setBackgroundResource(back_images[rand])
 
-
-
-
         goal_title = findViewById(R.id.editText1)
         save_link = findViewById(R.id.save_goal)
         back_20 = findViewById(R.id.back_20)
@@ -71,11 +68,14 @@ class NewGoalActivity : AppCompatActivity() {
         }
 
         save_link.setOnClickListener {
-            mViewModel.bindSearch(goal_title)
-            unsplashWindow.launch(UnsplashPickerActivity.getStartingIntent(this,isMultipleSelection = false))
+            if(goal_title.text.toString() !="" ){
+                mViewModel.bindSearch(goal_title)
+                unsplashWindow.launch(UnsplashPickerActivity.getStartingIntent(this,isMultipleSelection = false))
+            }
         }
         back_20.setOnClickListener{
             var homeIntent = Intent(this, TwentybyTwentyHomeActivity::class.java)
+            homeIntent.putExtra("goal_index",getIntent().getIntExtra("goal_index",0))
             startActivity(homeIntent)
         }
     }
