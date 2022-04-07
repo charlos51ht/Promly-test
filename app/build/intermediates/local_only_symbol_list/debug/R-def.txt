@@ -130,8 +130,14 @@ string check_box
 string code_note
 string code_welcome
 string completed_text
+string default_web_client_id
 string ff_nav
 string first_fragment_label
+string gcm_defaultSenderId
+string google_api_key
+string google_app_id
+string google_crash_reporting_api_key
+string google_storage_bucket
 string i_agree
 string intro_apple_text
 string intro_email_text
@@ -139,6 +145,7 @@ string intro_google_text
 string intro_slogan
 string next
 string previous
+string project_id
 string respect_code
 string second_fragment_label
 string set_goal_text

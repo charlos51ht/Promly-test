@@ -23,10 +23,11 @@ class HomePageActivity : AppCompatActivity() {
 
         twenty_by = findViewById(R.id.twentybytwenty)
         expand_circle = findViewById(R.id.ExpandYourCircle)
-
+        var user_id = this.intent.getStringExtra("user-id")
         twenty_by.setOnClickListener {
             val intent = Intent(this, TwentybyTwentyHomeActivity::class.java)
             intent.putExtra("from_home","from home")
+            //intent.putExtra("user_id",user_id)
             startActivity(intent);
         }
         expand_circle.setOnClickListener {

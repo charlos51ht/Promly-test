@@ -1,9 +1,9 @@
 <component name="libraryTable">
   <library name="Gradle: com.jakewharton.rxbinding2:rxbinding:2.1.1@aar">
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/31984c9225dcb51c83bc60c94735a8c3/transformed/rxbinding-2.1.1/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/31984c9225dcb51c83bc60c94735a8c3/transformed/rxbinding-2.1.1/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/31984c9225dcb51c83bc60c94735a8c3/transformed/rxbinding-2.1.1/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/9bdb9c8c1305df49ae05611699a1fa04/transformed/rxbinding-2.1.1/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/9bdb9c8c1305df49ae05611699a1fa04/transformed/rxbinding-2.1.1/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/9bdb9c8c1305df49ae05611699a1fa04/transformed/rxbinding-2.1.1/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.jakewharton.rxbinding2/rxbinding/2.1.1/fa75d23e4b454bce552e806eeb3fdbf383f4d374/rxbinding-2.1.1-javadoc.jar!/" />

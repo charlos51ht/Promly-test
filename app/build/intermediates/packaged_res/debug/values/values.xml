@@ -24,8 +24,14 @@
         and conditions and privacy policy.</string>
     <string name="code_welcome">Welcome to Promly!\n\nPlease remember to be respectful of your fellow users.This platform is designed to empower teens-Created for GenZ by GenZ.\n\nWe hope this app fosters more genuine connections and allows people to share their authentic selves! </string>
     <string name="completed_text">Mark as Completed</string>
+    <string name="default_web_client_id" translatable="false">793296947151-ch48ej5eulemg9sp734b093bchj29vim.apps.googleusercontent.com</string>
     <string name="ff_nav">Find Friends</string>
     <string name="first_fragment_label">First Fragment</string>
+    <string name="gcm_defaultSenderId" translatable="false">793296947151</string>
+    <string name="google_api_key" translatable="false">AIzaSyBD7te6EjvNTqBaSzzfL3Tth8hvj723r5I</string>
+    <string name="google_app_id" translatable="false">1:793296947151:android:f36c5a6f50e840e54e74ba</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyBD7te6EjvNTqBaSzzfL3Tth8hvj723r5I</string>
+    <string name="google_storage_bucket" translatable="false">promly-test.appspot.com</string>
     <string name="i_agree">I agree</string>
     <string name="intro_apple_text">Continue with Apple</string>
     <string name="intro_email_text">Continue with Email</string>
@@ -33,6 +39,7 @@
     <string name="intro_slogan">connections for genz by genz</string>
     <string name="next">Next</string>
     <string name="previous">Previous</string>
+    <string name="project_id" translatable="false">promly-test</string>
     <string name="respect_code">Respect Code</string>
     <string name="second_fragment_label">Second Fragment</string>
     <string name="set_goal_text">Set a goal:</string>

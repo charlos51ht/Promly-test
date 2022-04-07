@@ -1,11 +1,14 @@
 package com.example.promly
 
+import android.content.ContentValues.TAG
 import android.content.Intent
 import android.os.Bundle
+import android.util.Log
 import android.widget.Button
 import android.widget.CheckBox
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
+import com.google.firebase.firestore.FirebaseFirestore
 
 class IntroActivity : AppCompatActivity(){
 
@@ -37,6 +40,11 @@ class IntroActivity : AppCompatActivity(){
         //may be a cleaner way to do this
         emailButton.setOnClickListener{
                 val intent = Intent(this, HomePageActivity::class.java)
+                var db= FirebaseFirestore.getInstance()
+                val user = db.collection("users").document("user-1")
+                user.get().addOnSuccessListener{ document ->
+                        intent.putExtra("user_id", "user-1")
+                }
                 startActivity(intent);
         }
         appleButton.setOnClickListener{

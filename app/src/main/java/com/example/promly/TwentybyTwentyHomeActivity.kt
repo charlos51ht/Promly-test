@@ -10,6 +10,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.promly.TwentyByTwenty.Goal
 import com.example.promly.TwentyByTwenty.GoalAdapter
+import com.google.firebase.firestore.FirebaseFirestore
 import java.util.*
 
 
@@ -30,10 +31,22 @@ class TwentybyTwentyHomeActivity : AppCompatActivity() {
         toolbar = findViewById(R.id.my_toolbar)
         setSupportActionBar(toolbar)
         /* initializes arraylist of goals (card view) */
+        var db= FirebaseFirestore.getInstance()
+        var db_goalList = ArrayList<Goal>()
+        var goals_db = db.collection("users").document(intent.getStringExtra("user-id").toString()).collection("goals")
+        goals_db.get().addOnSuccessListener{ documents->
+            if(documents.isEmpty)
+            {
+                for(i in 0..19)
+                    goals_db.document("goal-"+i).set(Goal())
+            }
+            else{
+                /*for(document in documents) {
+                    db_goalList.add(Goal(document.))
+                }*/
+            }
+        }
 
-
-        //Placeholder code for Firebase below
-        //remove if statement on firebase addition
         if(intent.getStringExtra("from_home")!=null) {
             for (i in 0..19) {
                 goalList.add(Goal())
