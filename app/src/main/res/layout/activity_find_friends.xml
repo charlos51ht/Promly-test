@@ -46,6 +46,17 @@
     </EditText>
 
     <!-- Recycler View here with displaying data class for person -->
+    <TextView
+        android:layout_width="360dp"
+        android:layout_height="360dp"
+        android:layout_marginTop="112dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar_ff"
+        android:id="@+id/TestText"
+        ></TextView>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

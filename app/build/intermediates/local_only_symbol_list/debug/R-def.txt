@@ -63,6 +63,7 @@ id SecondFragment
 id ShareYourVoice
 id ShopButton
 id SpinMe
+id TestText
 id WeGotYou
 id action_FirstFragment_to_SecondFragment
 id action_SecondFragment_to_FirstFragment

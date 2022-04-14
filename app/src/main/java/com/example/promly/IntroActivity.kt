@@ -43,7 +43,7 @@ class IntroActivity : AppCompatActivity(){
                 var db= FirebaseFirestore.getInstance()
                 val user = db.collection("users").document("user-1")
                 user.get().addOnSuccessListener{ document ->
-                        intent.putExtra("user_id", "user-1")
+                        intent.putExtra("user_id", "dev-test")
                 }
                 startActivity(intent);
         }

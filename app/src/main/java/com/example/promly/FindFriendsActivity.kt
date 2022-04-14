@@ -1,16 +1,22 @@
 package com.example.promly
 
+import android.content.ContentValues.TAG
 import android.graphics.Rect
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.view.MotionEvent
 import android.view.View
 import android.view.inputmethod.InputMethodManager
 import android.widget.EditText
+import android.widget.TextView
+import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
+import com.google.firebase.firestore.FirebaseFirestore
 
 private lateinit var ff_toolbar : Toolbar
 private lateinit var search_bar : EditText
+
+private lateinit var test_text  : TextView
 class FindFriendsActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -24,6 +30,19 @@ class FindFriendsActivity : AppCompatActivity() {
                 //collapse navbar
                 //update search results as user types
             }
+        }
+        var profiles = ArrayList<Profile>()
+        //Database Logic
+        test_text = findViewById(R.id.TestText)
+        var db= FirebaseFirestore.getInstance()
+        var users_db = db.collection("users").limit(20).get()
+        users_db.addOnSuccessListener { documents->
+            for(document in documents)
+                db.collection("users").document(document.id).collection("profile").document("public").get().addOnSuccessListener{ document->
+                    Log.d(TAG, "${document.id}=> ${document.data}");
+                    profiles.add(Profile(document.get("interests") as ArrayList<String>, document.get("profile") as Map<String, String>?, document.get("school") as Map<String, String>?))
+                    test_text.text= profiles.get(0).interests?.get(0);
+                }
         }
     }
     override fun dispatchTouchEvent(event: MotionEvent): Boolean {

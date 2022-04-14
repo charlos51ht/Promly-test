@@ -2670,6 +2670,7 @@ id ShopButton
 id SpinMe
 id TOP_END
 id TOP_START
+id TestText
 id WeGotYou
 id accelerate
 id accessibility_action_clickable_span
