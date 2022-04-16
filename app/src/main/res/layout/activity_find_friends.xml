@@ -18,6 +18,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/ff_nav"
+            android:fontFamily="@font/avenir_roman"
             android:textSize="20dp"
             android:layout_gravity="center"
             android:textColor="@color/white"></TextView>
@@ -36,8 +37,11 @@
         android:layout_width="343dp"
         android:layout_height="36dp"
         android:layout_marginTop="4dp"
+        android:drawableLeft="@drawable/search_icon"
+        android:fontFamily="@font/avenir_roman"
         android:hint="Search"
-        android:background="#8A8686"
+        android:backgroundTint="#3A3A3C"
+        android:background="@drawable/rounded_corners_gray"
         android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -46,17 +50,16 @@
     </EditText>
 
     <!-- Recycler View here with displaying data class for person -->
-    <TextView
-        android:layout_width="360dp"
-        android:layout_height="360dp"
-        android:layout_marginTop="112dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.49"
-        android:textColor="@color/white"
+    <include
+        android:id="@+id/card_test"
+        layout="@layout/friend_card"
+        android:layout_width="154dp"
+        android:layout_height="200dp"
+        android:layout_marginStart="32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/toolbar_ff"
-        android:id="@+id/TestText"
-        ></TextView>
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.306" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

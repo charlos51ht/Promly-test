@@ -2513,6 +2513,7 @@ drawable abc_textfield_search_activated_mtrl_alpha
 drawable abc_textfield_search_default_mtrl_alpha
 drawable abc_textfield_search_material
 drawable abc_vector_test
+drawable add_friend_icon
 drawable avd_hide_password
 drawable avd_show_password
 drawable baseline_check_circle_white_24
@@ -2633,6 +2634,7 @@ drawable rounded_corners_gray
 drawable rounded_corners_purple
 drawable rounded_corners_red
 drawable rounded_corners_white
+drawable search_icon
 drawable shape_rectangle_gradient
 drawable shape_rectangle_round_white
 drawable share_your_voice_icon
@@ -2670,7 +2672,6 @@ id ShopButton
 id SpinMe
 id TOP_END
 id TOP_START
-id TestText
 id WeGotYou
 id accelerate
 id accessibility_action_clickable_span
@@ -2731,6 +2732,7 @@ id action_text
 id actions
 id activity_chooser_view_content
 id add
+id add_friend
 id adjust_height
 id adjust_width
 id agreeButton
@@ -2769,6 +2771,7 @@ id cache_measures
 id callMeasure
 id cancel_button
 id cardView3
+id card_test
 id carryVelocity
 id center
 id center_horizontal
@@ -2867,6 +2870,8 @@ id flip
 id floating
 id forever
 id fragment_container_view_tag
+id friend_image
+id friend_name
 id frost
 id ghost_view
 id ghost_view_holder
@@ -2901,6 +2906,10 @@ id image_show_view
 id immediateStop
 id included
 id info
+id interest_1
+id interest_2
+id interest_3
+id interests
 id intro_apple_button
 id intro_ball
 id intro_email_button
@@ -3322,6 +3331,7 @@ layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
+layout friend_card
 layout goal
 layout item_unsplash_photo
 layout m3_alert_dialog
