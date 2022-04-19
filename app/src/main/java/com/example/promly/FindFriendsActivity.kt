@@ -3,6 +3,8 @@ package com.example.promly
 import android.content.ContentValues.TAG
 import android.graphics.Rect
 import android.os.Bundle
+import android.text.Editable
+import android.text.TextWatcher
 import android.util.Log
 import android.view.MotionEvent
 import android.view.View
@@ -13,6 +15,7 @@ import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
 import androidx.cardview.widget.CardView
+import androidx.core.widget.doOnTextChanged
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.promly.TwentyByTwenty.Goal
@@ -32,7 +35,6 @@ class FindFriendsActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_find_friends)
-
         ff_toolbar = findViewById(R.id.toolbar_ff)
         setSupportActionBar(ff_toolbar)
         search_bar = findViewById(R.id.search_friends)
@@ -46,36 +48,42 @@ class FindFriendsActivity : AppCompatActivity() {
                 //sets recycler view to one that is filtered by name
             }
         }
+        search_bar.doOnTextChanged { text, start, count, after ->
+            // action which will be invoked when the text is changing
+            profiles = java.util.ArrayList<Profile>()
+            populateList(text.toString())
+        }
 
         recyclerView = findViewById(R.id.expand_your_circle_recycler_view)
         recyclerView.layoutManager = GridLayoutManager(this, 2)
         recyclerView.setHasFixedSize(true);
 
-        populateList()
+        populateList("")
 
     }
 
-    private fun populateList(){
+    private fun populateList(filter: String){
 
         val db= FirebaseFirestore.getInstance()
-        val usersDb = db.collection("users").limit(20).get()
-
+        var usersDb = db.collection("users").limit(20).get()
         usersDb.addOnSuccessListener { documents ->
             for (document in documents)
                 db.collection("users").document(document.id).collection("profile")
                     .document("public").get().addOnSuccessListener { document ->
                      Log.i("Check DB", "${document.id}=> ${document.data}");
                         if(document != null){
-                            Log.d("TAG", "Document Exists!!!")
-
-                            profiles.add(
-                                Profile(
-                                    document.get("interests") as ArrayList<String>?,
-                                    document.get("profile") as Map<String, String>?,
-                                    document.get("school") as Map<String, String>?
+                            var profile = document.get("profile") as Map<String, String>?
+                            if(filter==""||profile?.get("name")?.contains(filter)==true) {
+                                Log.d("TAG", "Document Exists!!!")
+                                profiles.add(
+                                    Profile(
+                                        document.get("interests") as ArrayList<String>?,
+                                        document.get("profile") as Map<String, String>?,
+                                        document.get("school") as Map<String, String>?
+                                    )
                                 )
-                            )
-                            Log.d("Check Size", profiles.size.toString())
+                                Log.d("Check Size", profiles.size.toString())
+                            }
                         }else{
                             Log.d("TAG", "No Such Document!!!")
                         }
@@ -114,6 +122,6 @@ class FindFriendsActivity : AppCompatActivity() {
         return super.dispatchTouchEvent(event)
     }
     companion object{
-        val profiles = java.util.ArrayList<Profile>()
+        var profiles = java.util.ArrayList<Profile>()
     }
 }
