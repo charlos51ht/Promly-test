@@ -82,7 +82,7 @@ class TwentybyTwentyHomeActivity : AppCompatActivity() {
         recyclerView.adapter = adapter
         home_20 = findViewById(R.id.home_20)
         home_20.setOnClickListener{
-            var homeIntent = Intent(this, HomePageActivity::class.java)
+            val homeIntent = Intent(this, HomePageActivity::class.java)
             startActivity(homeIntent)
         }
 

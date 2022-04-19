@@ -4,7 +4,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     app:cardCornerRadius="10dp"
-    app:cardBackgroundColor="@color/brand_purple"
     app:cardPreventCornerOverlap="false"
     app:cardUseCompatPadding="true"
     xmlns:tools="http://schemas.android.com/tools">
@@ -25,8 +24,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
-            android:layout_marginStart="5dp"
-            android:layout_marginBottom="25dp"
+            android:layout_marginStart="13dp"
+            android:layout_marginBottom="100dp"
             android:fontFamily="@font/avenir_roman"
             android:text="Name"
             android:textColor="@color/white"
@@ -37,7 +36,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
-            android:layout_marginBottom="10dp">
+            android:layout_marginBottom="70dp"
+            android:layout_marginLeft="10dp">
 
             <TextView
                 android:id="@+id/interest_1"
@@ -48,7 +48,7 @@
                 android:padding="3dp"
                 android:textColor="@color/white"
                 android:background="@drawable/rounded_corners_red"
-                android:textSize="11sp"></TextView>
+                android:textSize="11sp" />
 
             <TextView
                 android:id="@+id/interest_2"
@@ -59,30 +59,37 @@
                 android:padding="3dp"
                 android:background="@drawable/rounded_corners_red"
                 android:textColor="@color/white"
-                android:textSize="11sp"></TextView>
+                android:textSize="11sp"
+                android:layout_marginLeft="5dp"/>
 
-            <TextView
-                android:id="@+id/interest_3"
-                android:layout_width="wrap_content"
-                android:layout_height="16dp"
-                android:fontFamily="@font/avenir_roman"
-                android:background="@drawable/rounded_corners_red"
-                android:text="Interest3"
-                android:padding="3dp"
-                android:textColor="@color/white"
-                android:textSize="11sp"></TextView>
+
         </LinearLayout>
 
-        <ImageView
+        <TextView
+            android:id="@+id/interest_3"
+            android:layout_width="wrap_content"
+            android:layout_height="16dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="50dp"
+            android:background="@drawable/rounded_corners_red"
+            android:fontFamily="@font/avenir_roman"
+            android:padding="3dp"
+            android:text="Interest3"
+            android:textColor="@color/white"
+            android:textSize="11sp" />
+
+        <Button
             android:id="@+id/add_friend"
             android:layout_width="32dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginEnd="10dp"
-            android:background="@drawable/add_friend_icon"
             android:layout_height="32dp"
             android:layout_alignParentEnd="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/friend_add_circle"
+            android:drawableTint="@android:color/transparent"
             android:contentDescription="Will create an add friend or view profile button"
-            tools:ignore="HardcodedText"/>
+            tools:ignore="HardcodedText" />
     </RelativeLayout>
 
 

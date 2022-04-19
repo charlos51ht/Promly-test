@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="350dp"
+    app:cardCornerRadius="10dp"
+    app:cardPreventCornerOverlap="false"
+    app:cardUseCompatPadding="true"
+    android:backgroundTint="@color/brand_purple"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/friend_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="The image that is displayed on the page"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/friend_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="13dp"
+            android:layout_marginBottom="100dp"
+            android:fontFamily="@font/avenir_roman"
+            android:text="Name"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:id="@+id/interests"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="70dp"
+            android:layout_marginStart="10dp">
+
+            <TextView
+                android:id="@+id/interest_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/avenir_roman"
+                android:text="interest_1"
+                android:padding="4dp"
+                android:textColor="@color/white"
+                android:background="@drawable/rounded_corners_red"
+                android:textSize="12sp"/>
+
+            <TextView
+                android:id="@+id/interest_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/avenir_roman"
+                android:text="Interest_2"
+                android:background="@drawable/rounded_corners_green"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                android:padding="4dp"
+                android:layout_marginStart="5dp"/>
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/interest_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginBottom="45dp"
+            android:background="@drawable/rounded_corners_blue"
+            android:fontFamily="@font/avenir_roman"
+            android:padding="3dp"
+            android:text="Interest_3"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/add_friend"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/friend_add_circle"
+            android:contentDescription="Will create an add friend or view profile button"
+            tools:ignore="HardcodedText" />
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>

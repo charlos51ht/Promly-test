@@ -1,7 +1,6 @@
 package com.example.promly.TwentyByTwenty
 
 import android.content.Intent
-import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import android.widget.ImageView
@@ -63,8 +62,6 @@ class GoalAdapter(val goals: ArrayList<Goal>):
                     showGoalIntent.putExtra("date_created",goals[adapterPosition].date_created.toString())
                     showGoalIntent.putExtra("goal_status",goals[adapterPosition].goalStatus)
                     showGoalIntent.putExtra("goal_details",goals[adapterPosition].details)
-
-
 
                 }
 
