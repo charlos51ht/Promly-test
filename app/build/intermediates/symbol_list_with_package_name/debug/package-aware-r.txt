@@ -2513,7 +2513,7 @@ drawable abc_textfield_search_activated_mtrl_alpha
 drawable abc_textfield_search_default_mtrl_alpha
 drawable abc_textfield_search_material
 drawable abc_vector_test
-drawable add_friend_icon
+drawable add_friend
 drawable avd_hide_password
 drawable avd_show_password
 drawable baseline_check_circle_white_24
@@ -2554,6 +2554,7 @@ drawable empty_goal
 drawable empty_long
 drawable ex
 drawable expand_circle_icon
+drawable friend_add_circle
 drawable googleg_disabled_color_18
 drawable googleg_standard_color_18
 drawable gradient_button
@@ -2630,7 +2631,9 @@ drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
 drawable one_by_two_icon
+drawable rounded_corners_blue
 drawable rounded_corners_gray
+drawable rounded_corners_green
 drawable rounded_corners_purple
 drawable rounded_corners_red
 drawable rounded_corners_white
@@ -2771,7 +2774,6 @@ id cache_measures
 id callMeasure
 id cancel_button
 id cardView3
-id card_test
 id carryVelocity
 id center
 id center_horizontal
@@ -2858,6 +2860,7 @@ id enterAlways
 id enterAlwaysCollapsed
 id exitUntilCollapsed
 id expand_activities_button
+id expand_your_circle_recycler_view
 id expanded_menu
 id fade
 id fill
@@ -3331,7 +3334,7 @@ layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
-layout friend_card
+layout friend_profile
 layout goal
 layout item_unsplash_photo
 layout m3_alert_dialog

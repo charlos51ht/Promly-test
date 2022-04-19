@@ -22,7 +22,7 @@ class ProfileAdapter(private val profiles: ArrayList<Profile>): RecyclerView.Ada
 
     override fun onBindViewHolder(holder: ProfileViewHolder, position: Int) {
 
-        Picasso.get().load(profiles[position].profile?.get("avatarURL")).into(holder.profileImage)
+        Picasso.get().load(profiles[position].profile?.get("avatarURL")).fit().centerCrop().into(holder.profileImage)
         holder.profileName.text = profiles[position].profile?.get("name")
         holder.interestOne.text = profiles[position].interests?.get(0)
         holder.interestTwo.text = profiles[position].interests?.get(1)

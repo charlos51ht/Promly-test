@@ -18,13 +18,14 @@ color teal_200
 color teal_700
 color white
 dimen fab_margin
-drawable add_friend_icon
+drawable add_friend
 drawable baseline_check_circle_white_24
 drawable completed
 drawable empty_goal
 drawable empty_long
 drawable ex
 drawable expand_circle_icon
+drawable friend_add_circle
 drawable gradient_button
 drawable gradient_navbar
 drawable gradient_new_goal_background1
@@ -43,7 +44,9 @@ drawable img
 drawable logo
 drawable mark_completed
 drawable one_by_two_icon
+drawable rounded_corners_blue
 drawable rounded_corners_gray
+drawable rounded_corners_green
 drawable rounded_corners_purple
 drawable rounded_corners_red
 drawable rounded_corners_white
@@ -73,7 +76,6 @@ id agreeButton
 id back_20
 id big_goal_img
 id cardView3
-id card_test
 id check_box_agreement
 id checkbox
 id code_note
@@ -83,6 +85,7 @@ id delete_button
 id details_box
 id editText1
 id end
+id expand_your_circle_recycler_view
 id friend_image
 id friend_name
 id goal_date
@@ -130,7 +133,7 @@ layout activity_main
 layout activity_new_goal
 layout activity_respect_code
 layout activity_twenty_by_twenty_home
-layout friend_card
+layout friend_profile
 layout goal
 menu main
 mipmap ic_launcher
