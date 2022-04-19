@@ -32,17 +32,42 @@ class FindFriendsActivity : AppCompatActivity() {
     private lateinit var adapter: ProfileAdapter
     private lateinit var interest_pills: ScrollView
     private lateinit var filters: LinearLayout
+    private lateinit var name_filter: TextView
+    private lateinit var hashtag_filter: TextView
+    private lateinit var school_filter: TextView
+    private var queryType : Int = 0
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_find_friends)
+        search_bar = findViewById(R.id.search_friends)
         ff_toolbar = findViewById(R.id.toolbar_ff)
         interest_pills = findViewById(R.id.interest_scroll)
+        name_filter = findViewById(R.id.people_filter)
+        name_filter.setOnClickListener(){
+            queryType = 0
+            var query_profiles = querySelect(search_bar.text.toString())
+            adapter = ProfileAdapter(query_profiles)
+            recyclerView.adapter = adapter
+        }
+        hashtag_filter = findViewById(R.id.interests_filter)
+        hashtag_filter.setOnClickListener(){
+            queryType = 1
+            var query_profiles = querySelect(search_bar.text.toString())
+            adapter = ProfileAdapter(query_profiles)
+            recyclerView.adapter = adapter
+        }
+        school_filter = findViewById(R.id.school_filter)
+        school_filter.setOnClickListener(){
+            queryType = 2
+            var query_profiles = querySelect(search_bar.text.toString())
+            adapter = ProfileAdapter(query_profiles)
+            recyclerView.adapter = adapter
+        }
         filters = findViewById(R.id.filters)
         filters.setVisibility(View.GONE)
         setSupportActionBar(ff_toolbar)
-        search_bar = findViewById(R.id.search_friends)
-        var currentQueryType = "name"
-        var query_description = ""
         search_bar.onFocusChangeListener= View.OnFocusChangeListener{ view, hasFocus->
             if (hasFocus)
             {
@@ -57,13 +82,7 @@ class FindFriendsActivity : AppCompatActivity() {
         }
         var ignore = false
         search_bar.doOnTextChanged { text, start, before, count ->
-            var query_profiles = java.util.ArrayList<Profile>()
-            for(profile in profiles) {
-                Log.d("security",query_profiles.size.toString())
-                if(profile.profile?.get("name")?.contains(text.toString()) == true)
-                    query_profiles.add(profile)
-                Log.d("security",text.toString())
-            }
+             var query_profiles = querySelect(text.toString())
             adapter = ProfileAdapter(query_profiles)
             recyclerView.adapter = adapter
 
@@ -73,6 +92,7 @@ class FindFriendsActivity : AppCompatActivity() {
         recyclerView.layoutManager = GridLayoutManager(this, 2)
         recyclerView.setHasFixedSize(true);
 
+        querySelect("")
         populateList()
 
     }
@@ -117,8 +137,10 @@ class FindFriendsActivity : AppCompatActivity() {
             val v = currentFocus
             if (v is EditText) {
                 val outRect = Rect()
+                val outRect1 = Rect()
+                filters.getGlobalVisibleRect(outRect1)
                 v.getGlobalVisibleRect(outRect)
-                if (!outRect.contains(event.rawX.toInt(), event.rawY.toInt())) {
+                if (!outRect.contains(event.rawX.toInt(), event.rawY.toInt())&&!outRect1.contains(event.rawX.toInt(), event.rawY.toInt())) {
                     v.clearFocus()
                     val imm = getSystemService(INPUT_METHOD_SERVICE) as InputMethodManager
                     imm.hideSoftInputFromWindow(v.getWindowToken(), 0)
@@ -136,6 +158,47 @@ class FindFriendsActivity : AppCompatActivity() {
             }
         }
         return super.dispatchTouchEvent(event)
+    }
+    private fun querySelect(text:String): java.util.ArrayList<Profile> {
+        var query_profiles = java.util.ArrayList<Profile>()
+        if(queryType == 0)
+        {
+            name_filter.setTextColor(resources.getColor(R.color.brand_pink))
+            hashtag_filter.setTextColor(resources.getColor(R.color.white))
+            school_filter.setTextColor(resources.getColor(R.color.white))
+            for(profile in profiles) {
+                Log.d("security",query_profiles.size.toString())
+                if(profile.profile?.get("name")?.contains(text) == true)
+                    query_profiles.add(profile)
+                Log.d("security",text.toString())
+            }
+        }
+        if(queryType == 1)
+        {
+            name_filter.setTextColor(resources.getColor(R.color.white))
+            hashtag_filter.setTextColor(resources.getColor(R.color.brand_pink))
+            school_filter.setTextColor(resources.getColor(R.color.white))
+            for(profile in profiles) {
+                Log.d("security",query_profiles.size.toString())
+                var interests = profile.interests
+                if (interests != null) {
+                    for(interest in interests)
+                        if(interest.contains(text)) {
+                            query_profiles.add(profile)
+                            break;
+                        }
+                }
+                Log.d("security",text.toString())
+            }
+        }
+        if(queryType == 2)
+        {
+            name_filter.setTextColor(resources.getColor(R.color.white))
+            hashtag_filter.setTextColor(resources.getColor(R.color.white))
+            school_filter.setTextColor(resources.getColor(R.color.brand_pink))
+            /*no school data added to database yet*/
+        }
+        return query_profiles
     }
     companion object {
         var profiles = java.util.ArrayList<Profile>()
