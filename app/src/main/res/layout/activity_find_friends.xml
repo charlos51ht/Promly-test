@@ -4,27 +4,28 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:fitsSystemWindows="true"
     android:background="@color/black"
+    android:fitsSystemWindows="true"
     tools:context=".FindFriendsActivity">
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar_ff"
         android:layout_width="match_parent"
         android:layout_height="88dp"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
         android:background="@drawable/gradient_navbar"
-        android:elevation="4dp">
+        android:elevation="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/ff_nav"
-            android:fontFamily="@font/avenir_roman"
-            android:textSize="20sp"
             android:layout_gravity="center"
-            android:textColor="@color/white"/>
+            android:fontFamily="@font/avenir_roman"
+            android:text="@string/ff_nav"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
 
         <ImageButton
             android:id="@+id/home_20"
@@ -40,41 +41,133 @@
         android:layout_width="343dp"
         android:layout_height="36dp"
         android:layout_marginTop="4dp"
+        android:autofillHints="Search"
+        android:background="@drawable/rounded_corners_gray"
+        android:backgroundTint="#3A3A3C"
         android:drawableStart="@drawable/search_icon"
         android:fontFamily="@font/avenir_roman"
-        android:backgroundTint="#3A3A3C"
-        android:background="@drawable/rounded_corners_gray"
+        android:inputType="textNoSuggestions"
         android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/toolbar_ff"
-        android:autofillHints="Search" />
+        app:layout_constraintTop_toBottomOf="@+id/toolbar_ff" />
 
+    <!-- Adding filter sections here -->
     <!-- Recycler View here with displaying data class for person -->
-<!--    <include-->
-<!--        android:id="@+id/card_test"-->
-<!--        layout="@layout/friend_profile"-->
-<!--        android:layout_width="154dp"-->
-<!--        android:layout_height="200dp"-->
-<!--        android:layout_marginStart="32dp"-->
-<!--        app:layout_constraintBottom_toBottomOf="parent"-->
-<!--        app:layout_constraintStart_toStartOf="parent"-->
-<!--        app:layout_constraintTop_toTopOf="parent"-->
-<!--        app:layout_constraintVertical_bias="0.306" />-->
+    <!--    <include-->
+    <!--        android:id="@+id/card_test"-->
+    <!--        layout="@layout/friend_profile"-->
+    <!--        android:layout_width="154dp"-->
+    <!--        android:layout_height="200dp"-->
+    <!--        android:layout_marginStart="32dp"-->
+    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="parent"-->
+    <!--        app:layout_constraintVertical_bias="0.306" />-->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="33dp"
+        android:id="@+id/interest_scroll"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/search_friends"
+        tools:layout_editor_absoluteX="0dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/my_interest_1"
+                android:layout_width="105dp"
+                android:layout_height="35dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/rounded_corners_red"
+                android:fontFamily="@font/avenir_roman"
+                android:padding="2dp"
+                android:layout_marginEnd="10dp"
+                android:text="Interest_1"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+            <TextView
+                android:id="@+id/interest_2"
+                android:layout_width="105dp"
+                android:layout_height="35dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/rounded_corners_red"
+                android:fontFamily="@font/avenir_roman"
+                android:padding="2dp"
+                android:text="Interest_2"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+            <TextView
+                android:id="@+id/interest_3"
+                android:layout_width="105dp"
+                android:layout_height="35dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/rounded_corners_blue"
+                android:fontFamily="@font/avenir_roman"
+                android:padding="2dp"
+                android:text="Interest_3"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="33dp"
+        android:id="@+id/filters"
+        android:layout_marginTop="8dp"
+        android:paddingStart="16dp"
+        app:layout_constraintTop_toBottomOf="@+id/search_friends"
+        tools:layout_editor_absoluteX="0dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:id="@+id/people_filter"
+            android:layout_height="wrap_content"
+            android:text="people"
+            android:textSize="20dp"
+            android:layout_marginEnd="10dp"
+            android:layout_gravity="end"
+            android:textColor="@color/white"></TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:id="@+id/interests_filter"
+            android:layout_height="wrap_content"
+            android:text="hashtags"
+            android:layout_marginEnd="10dp"
+            android:textSize="20dp"
+            android:layout_gravity="end"
+            android:textColor="@color/white"></TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:id="@+id/school_filter"
+            android:layout_height="wrap_content"
+            android:text="schools"
+            android:textSize="20dp"
+            android:layout_gravity="end"
+            android:textColor="@color/white"></TextView>
+
+    </LinearLayout>
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/expand_your_circle_recycler_view"
         android:layout_width="0dp"
         android:layout_height="0dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/search_friends"
-        android:layout_marginStart="20dp"
-        android:layout_marginEnd="20dp"
-        android:layout_marginTop="60dp"
 
-         />
+        />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -87,6 +87,7 @@ id details_box
 id editText1
 id end
 id expand_your_circle_recycler_view
+id filters
 id friend_image
 id friend_name
 id goal_date
@@ -98,7 +99,9 @@ id home_20
 id interest_1
 id interest_2
 id interest_3
+id interest_scroll
 id interests
+id interests_filter
 id intro_apple_button
 id intro_ball
 id intro_email_button
@@ -107,15 +110,18 @@ id intro_logo
 id intro_slogan
 id logo
 id menu
+id my_interest_1
 id my_scroll
 id my_toolbar
 id nav_graph
 id new_goal_layout
 id notes_text
+id people_filter
 id profilePicture
 id progressBar
 id respect_code
 id save_goal
+id school_filter
 id search_friends
 id start
 id textView
