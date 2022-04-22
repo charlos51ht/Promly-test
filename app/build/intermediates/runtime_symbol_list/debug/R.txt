@@ -2773,6 +2773,7 @@ int id buttonPanel 0x7f090074
 int id cache_measures 0x7f090075
 int id callMeasure 0x7f090076
 int id cancel_button 0x7f090077
+int id cancel_text 0x7f09023e
 int id cardView3 0x7f090078
 int id carryVelocity 0x7f090079
 int id center 0x7f09007a

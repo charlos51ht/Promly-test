@@ -13,6 +13,7 @@ import android.widget.*
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
 import androidx.cardview.widget.CardView
+import androidx.core.view.isVisible
 import androidx.core.widget.doAfterTextChanged
 import androidx.core.widget.doOnTextChanged
 import androidx.recyclerview.widget.GridLayoutManager
@@ -35,6 +36,7 @@ class FindFriendsActivity : AppCompatActivity() {
     private lateinit var name_filter: TextView
     private lateinit var hashtag_filter: TextView
     private lateinit var school_filter: TextView
+    private lateinit var cancel_text: TextView
     private var queryType : Int = 0
 
 
@@ -45,6 +47,19 @@ class FindFriendsActivity : AppCompatActivity() {
         ff_toolbar = findViewById(R.id.toolbar_ff)
         interest_pills = findViewById(R.id.interest_scroll)
         name_filter = findViewById(R.id.people_filter)
+        cancel_text = findViewById(R.id.cancel_text)
+        cancel_text.setVisibility(View.GONE)
+        cancel_text.setOnClickListener{
+            profiles = java.util.ArrayList<Profile>()
+            populateList()
+            interest_pills.setVisibility(View.VISIBLE)
+            filters.setVisibility(View.GONE)
+            ff_toolbar.setVisibility(View.VISIBLE)
+            cancel_text.setVisibility(View.GONE)
+            currentFocus?.clearFocus()
+            val imm = getSystemService(INPUT_METHOD_SERVICE) as InputMethodManager
+            imm.hideSoftInputFromWindow(currentFocus?.getWindowToken(), 0)
+        }
         name_filter.setOnClickListener(){
             queryType = 0
             var query_profiles = querySelect(search_bar.text.toString())
@@ -75,12 +90,12 @@ class FindFriendsActivity : AppCompatActivity() {
                 //update search results as user types
                 ff_toolbar.setVisibility(View.GONE)
                 filters.setVisibility(View.VISIBLE)
+                cancel_text.setVisibility(View.VISIBLE)
                 interest_pills.setVisibility(View.GONE)
                 //Make filter recycleable
                 //sets recycler view to one that is filtered by name
             }
         }
-        var ignore = false
         search_bar.doOnTextChanged { text, start, before, count ->
              var query_profiles = querySelect(text.toString())
             adapter = ProfileAdapter(query_profiles)
@@ -102,11 +117,11 @@ class FindFriendsActivity : AppCompatActivity() {
         var usersDb = db.collection("users").limit(20).get()
         usersDb.addOnSuccessListener { documents ->
             for (document in documents)
-                db.collection("users").document(document.id).collection("profile")
+                if(document.id!=intent.getStringExtra("user-id"))
+                    db.collection("users").document(document.id).collection("profile")
                     .document("public").get().addOnSuccessListener { document ->
                      Log.i("Check DB", "${document.id}=> ${document.data}");
                         if(document != null){
-                            var profile = document.get("profile") as Map<String, String>?
                                 Log.d("TAG", "Document Exists!!!")
                                 profiles.add(
                                     Profile(
@@ -132,7 +147,7 @@ class FindFriendsActivity : AppCompatActivity() {
 
 
     }
-    override fun dispatchTouchEvent(event: MotionEvent): Boolean {
+   override fun dispatchTouchEvent(event: MotionEvent): Boolean {
         if (event.action == MotionEvent.ACTION_DOWN) {
             val v = currentFocus
             if (v is EditText) {
@@ -150,6 +165,7 @@ class FindFriendsActivity : AppCompatActivity() {
                         populateList()
                         interest_pills.setVisibility(View.VISIBLE)
                         filters.setVisibility(View.GONE)
+                        cancel_text.setVisibility(View.GONE)
                         ff_toolbar.setVisibility(View.VISIBLE)
                       //  card_test.setVisibility(View.VISIBLE)
                         //set adapter to the photo and interests form
@@ -167,10 +183,8 @@ class FindFriendsActivity : AppCompatActivity() {
             hashtag_filter.setTextColor(resources.getColor(R.color.white))
             school_filter.setTextColor(resources.getColor(R.color.white))
             for(profile in profiles) {
-                Log.d("security",query_profiles.size.toString())
-                if(profile.profile?.get("name")?.contains(text) == true)
+                if(profile.profile?.get("name")?.lowercase()?.contains(text.lowercase()) == true)
                     query_profiles.add(profile)
-                Log.d("security",text.toString())
             }
         }
         if(queryType == 1)
@@ -179,16 +193,14 @@ class FindFriendsActivity : AppCompatActivity() {
             hashtag_filter.setTextColor(resources.getColor(R.color.brand_pink))
             school_filter.setTextColor(resources.getColor(R.color.white))
             for(profile in profiles) {
-                Log.d("security",query_profiles.size.toString())
                 var interests = profile.interests
                 if (interests != null) {
                     for(interest in interests)
-                        if(interest.contains(text)) {
+                        if(interest.lowercase().contains(text.lowercase())) {
                             query_profiles.add(profile)
                             break;
                         }
                 }
-                Log.d("security",text.toString())
             }
         }
         if(queryType == 2)
@@ -197,6 +209,10 @@ class FindFriendsActivity : AppCompatActivity() {
             hashtag_filter.setTextColor(resources.getColor(R.color.white))
             school_filter.setTextColor(resources.getColor(R.color.brand_pink))
             /*no school data added to database yet*/
+            for(profile in profiles) {
+                if(profile.school?.get("name")?.lowercase()?.contains(text.lowercase()) == true)
+                    query_profiles.add(profile)
+            }
         }
         return query_profiles
     }

@@ -2774,6 +2774,7 @@ id buttonPanel
 id cache_measures
 id callMeasure
 id cancel_button
+id cancel_text
 id cardView3
 id carryVelocity
 id center

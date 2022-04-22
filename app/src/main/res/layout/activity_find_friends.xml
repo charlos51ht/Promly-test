@@ -36,6 +36,17 @@
 
     </androidx.appcompat.widget.Toolbar>
 
+    <LinearLayout
+        android:id="@id/search_bar"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:layout_marginTop="4dp"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar_ff"
+        >
+
     <EditText
         android:id="@+id/search_friends"
         android:layout_width="343dp"
@@ -48,10 +59,18 @@
         android:fontFamily="@font/avenir_roman"
         android:inputType="textNoSuggestions"
         android:textColor="@color/white"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/toolbar_ff" />
-
+        />
+        <TextView
+            android:id="@+id/cancel_text"
+            android:layout_width="52dp"
+            android:layout_height="21dp"
+            android:layout_marginTop="4dp"
+            android:autofillHints="Search"
+            android:text="Cancel"
+            android:fontFamily="@font/avenir_roman"
+            android:inputType="textNoSuggestions"
+            android:textColor="@color/brand_purple" />
+    </LinearLayout>
     <!-- Adding filter sections here -->
     <!-- Recycler View here with displaying data class for person -->
     <!--    <include-->
@@ -71,7 +90,7 @@
         android:id="@+id/interest_scroll"
         android:layout_marginTop="15dp"
         android:orientation="horizontal"
-        app:layout_constraintTop_toBottomOf="@+id/search_friends"
+        app:layout_constraintTop_toBottomOf="@+id/search_bar"
         tools:layout_editor_absoluteX="0dp">
         <LinearLayout
             android:layout_width="match_parent"
@@ -126,7 +145,7 @@
         android:layout_marginTop="8dp"
         android:paddingStart="16dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/search_friends">
+        app:layout_constraintTop_toBottomOf="@+id/search_bar">
 
         <TextView
             android:id="@+id/people_filter"
@@ -169,7 +188,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/search_friends"
+        app:layout_constraintTop_toBottomOf="@+id/search_bar"
 
         />
 

@@ -79,7 +79,7 @@
             android:textColor="@color/white"
             android:textSize="12sp" />
 
-        <Button
+        <ImageButton
             android:id="@+id/add_friend"
             android:layout_width="32dp"
             android:layout_height="32dp"

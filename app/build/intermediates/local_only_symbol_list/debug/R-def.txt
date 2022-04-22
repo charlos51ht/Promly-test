@@ -76,6 +76,7 @@ id add_friend
 id agreeButton
 id back_20
 id big_goal_img
+id cancel_text
 id cardView3
 id check_box_agreement
 id checkbox
@@ -122,6 +123,7 @@ id progressBar
 id respect_code
 id save_goal
 id school_filter
+id search_bar
 id search_friends
 id start
 id textView
