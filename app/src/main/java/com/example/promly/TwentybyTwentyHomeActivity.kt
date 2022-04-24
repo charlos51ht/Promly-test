@@ -47,7 +47,7 @@ class TwentybyTwentyHomeActivity : AppCompatActivity() {
             }
         }
 
-        if(intent.getStringExtra("from_home")!=null) {
+        if(intent.getStringExtra("user-id")!=null) {
             for (i in 0..19) {
                 goalList.add(Goal())
             }
