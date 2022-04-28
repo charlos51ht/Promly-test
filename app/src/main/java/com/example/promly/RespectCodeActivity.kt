@@ -1,5 +1,6 @@
 package com.example.promly
 
+import android.annotation.SuppressLint
 import android.content.Intent
 import android.graphics.*
 import android.os.Bundle
@@ -21,6 +22,7 @@ class RespectCodeActivity: AppCompatActivity() {
      * This is the equivalent to the "main" function in other languages
      * Note: Do not write code above "setContentView", it will crash the code
      */
+        @SuppressLint("UseCompatLoadingForDrawables")
         override fun onCreate(savedInstanceState: Bundle?) {
             super.onCreate(savedInstanceState)
 
@@ -36,8 +38,8 @@ class RespectCodeActivity: AppCompatActivity() {
             addCodeTheme()
 
         //sets a listener to the checkbox, which lets the app know that it has been clicked
-        checkBox.setOnClickListener{
-
+        checkBox.setOnClickListener {
+            if (checkBox.isChecked) {
                 //agreeButton is unclickable in the layout file so that users are forced to check the checkbox
                 //after the app recognizes that checkbox has been clicked, the agreeButton is enabled
                 agreeButton.isEnabled = true
@@ -57,7 +59,11 @@ class RespectCodeActivity: AppCompatActivity() {
                     startActivity(intent)
                 }
             }
-
+            else{
+                agreeButton.isClickable = false
+                agreeButton.background = getDrawable(R.drawable.rounded_corners_gray)
+            }
+        }
 
         }
     //example comment
