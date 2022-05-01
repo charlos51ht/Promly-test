@@ -1,10 +1,20 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\charl\\Documents\\School Work\\Spring 2022\\Software Engineering\\Promly-Android--main\\Promly\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v24\\values-v24.xml",
+            "outputFile": "C:\\Users\\Krampus 2.0\\StudioProjects\\Promly-test7\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v24\\values-v24.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\charl\\.gradle\\caches\\transforms-3\\3c44f03caa8acbe451b6ac906eb10f97\\transformed\\material-1.5.0\\res\\values-v24\\values-v24.xml",
+                    "source": "C:\\Users\\Krampus 2.0\\.gradle\\caches\\transforms-3\\b324fc1c74a603d882c021df08b99ec4\\transformed\\appcompat-1.4.1\\res\\values-v24\\values-v24.xml",
+                    "from": {
+                        "startLines": "2,3",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,212",
+                        "endColumns": "156,134",
+                        "endOffsets": "207,342"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\Krampus 2.0\\.gradle\\caches\\transforms-3\\3c44f03caa8acbe451b6ac906eb10f97\\transformed\\material-1.5.0\\res\\values-v24\\values-v24.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,9,12,15",
                         "startColumns": "4,4,4,4,4,4,4,4",
@@ -20,16 +30,6 @@
                         "endLines": "4,5,6,7,10,13,16,19",
                         "endColumns": "84,98,86,100,10,10,10,10",
                         "endOffsets": "427,526,613,714,913,1126,1327,1542"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\charl\\.gradle\\caches\\transforms-3\\b324fc1c74a603d882c021df08b99ec4\\transformed\\appcompat-1.4.1\\res\\values-v24\\values-v24.xml",
-                    "from": {
-                        "startLines": "2,3",
-                        "startColumns": "4,4",
-                        "startOffsets": "55,212",
-                        "endColumns": "156,134",
-                        "endOffsets": "207,342"
                     }
                 }
             ]

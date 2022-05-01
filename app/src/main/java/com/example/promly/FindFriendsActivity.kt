@@ -31,7 +31,7 @@ class FindFriendsActivity : AppCompatActivity() {
     private lateinit var search_bar : EditText
     private lateinit var recyclerView: RecyclerView
     private lateinit var adapter: ProfileAdapter
-    private lateinit var interest_pills: ScrollView
+    private lateinit var interest_pills: HorizontalScrollView
     private lateinit var filters: LinearLayout
     private lateinit var name_filter: TextView
     private lateinit var hashtag_filter: TextView

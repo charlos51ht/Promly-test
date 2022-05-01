@@ -2514,7 +2514,6 @@ drawable abc_textfield_search_default_mtrl_alpha
 drawable abc_textfield_search_material
 drawable abc_vector_test
 drawable add_friend
-drawable add_friend_icon
 drawable avd_hide_password
 drawable avd_show_password
 drawable baseline_check_circle_white_24
@@ -3010,6 +3009,13 @@ id mtrl_picker_title_text
 id mtrl_view_tag_bottom_padding
 id multiply
 id my_interest_1
+id my_interest_2
+id my_interest_4
+id my_interest_5
+id my_interest_6
+id my_interest_7
+id my_interest_8
+id my_interest_9
 id my_scroll
 id my_toolbar
 id nav_controller_view_tag

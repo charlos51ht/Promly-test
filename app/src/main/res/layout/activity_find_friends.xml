@@ -84,7 +84,7 @@
     <!--        app:layout_constraintTop_toTopOf="parent"-->
     <!--        app:layout_constraintVertical_bias="0.306" />-->
 
-    <ScrollView
+    <HorizontalScrollView
         android:layout_width="match_parent"
         android:layout_height="33dp"
         android:id="@+id/interest_scroll"
@@ -106,22 +106,26 @@
                 android:fontFamily="@font/avenir_roman"
                 android:padding="2dp"
                 android:layout_marginEnd="10dp"
-                android:text="Interest_1"
+                android:text="       Food"
                 android:textColor="@color/white"
                 android:textSize="12sp" />
+
             <TextView
-                android:id="@+id/interest_2"
+                android:id="@+id/my_interest_2"
                 android:layout_width="105dp"
                 android:layout_height="35dp"
                 android:layout_alignParentBottom="true"
                 android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
                 android:layout_marginBottom="5dp"
-                android:background="@drawable/rounded_corners_red"
+                android:layout_weight="1"
+                android:background="@drawable/rounded_corners_white"
                 android:fontFamily="@font/avenir_roman"
                 android:padding="2dp"
-                android:text="Interest_2"
-                android:textColor="@color/white"
+                android:text="     Writing"
+                android:textColor="@color/black"
                 android:textSize="12sp" />
+
             <TextView
                 android:id="@+id/interest_3"
                 android:layout_width="105dp"
@@ -129,14 +133,110 @@
                 android:layout_alignParentBottom="true"
                 android:layout_marginStart="10dp"
                 android:layout_marginBottom="5dp"
+                android:background="@drawable/rounded_corners_gray"
+                android:fontFamily="@font/avenir_roman"
+                android:padding="2dp"
+                android:text="    Adventure"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/my_interest_4"
+                android:layout_width="105dp"
+                android:layout_height="35dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="5dp"
+                android:layout_weight="1"
                 android:background="@drawable/rounded_corners_blue"
                 android:fontFamily="@font/avenir_roman"
                 android:padding="2dp"
-                android:text="Interest_3"
+                android:text="       Music"
                 android:textColor="@color/white"
                 android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/my_interest_5"
+                android:layout_width="105dp"
+                android:layout_height="35dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/rounded_corners_purple"
+                android:fontFamily="@font/avenir_roman"
+                android:padding="2dp"
+                android:text="     Cooking"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/my_interest_6"
+                android:layout_width="105dp"
+                android:layout_height="35dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/rounded_corners_green"
+                android:fontFamily="@font/avenir_roman"
+                android:padding="2dp"
+                android:text="       Sports"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/my_interest_7"
+                android:layout_width="105dp"
+                android:layout_height="35dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/rounded_corners_red"
+                android:fontFamily="@font/avenir_roman"
+                android:padding="2dp"
+                android:text="      Finance"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/my_interest_8"
+                android:layout_width="105dp"
+                android:layout_height="35dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/rounded_corners_blue"
+                android:fontFamily="@font/avenir_roman"
+                android:padding="2dp"
+                android:text="       Law"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/my_interest_9"
+                android:layout_width="105dp"
+                android:layout_height="35dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/rounded_corners_purple"
+                android:fontFamily="@font/avenir_roman"
+                android:padding="2dp"
+                android:text="       Movies"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+
+
         </LinearLayout>
-    </ScrollView>
+    </HorizontalScrollView>
 
     <LinearLayout
         android:id="@+id/filters"

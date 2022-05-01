@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\charl\\Documents\\School Work\\Spring 2022\\Software Engineering\\Promly-Android--main\\Promly\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-w600dp-land-v13\\values-w600dp-land-v13.xml",
+            "outputFile": "C:\\Users\\Krampus 2.0\\StudioProjects\\Promly-test7\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-w600dp-land-v13\\values-w600dp-land-v13.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\charl\\.gradle\\caches\\transforms-3\\3c44f03caa8acbe451b6ac906eb10f97\\transformed\\material-1.5.0\\res\\values-w600dp-land-v13\\values-w600dp-land-v13.xml",
+                    "source": "C:\\Users\\Krampus 2.0\\.gradle\\caches\\transforms-3\\3c44f03caa8acbe451b6ac906eb10f97\\transformed\\material-1.5.0\\res\\values-w600dp-land-v13\\values-w600dp-land-v13.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

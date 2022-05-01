@@ -19,7 +19,6 @@ color teal_700
 color white
 dimen fab_margin
 drawable add_friend
-drawable add_friend_icon
 drawable baseline_check_circle_white_24
 drawable completed
 drawable empty_goal
@@ -112,6 +111,13 @@ id intro_slogan
 id logo
 id menu
 id my_interest_1
+id my_interest_2
+id my_interest_4
+id my_interest_5
+id my_interest_6
+id my_interest_7
+id my_interest_8
+id my_interest_9
 id my_scroll
 id my_toolbar
 id nav_graph
