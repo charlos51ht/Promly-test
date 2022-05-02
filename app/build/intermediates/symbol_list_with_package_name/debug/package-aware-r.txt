@@ -2898,6 +2898,7 @@ id hideable
 id home
 id homeAsUp
 id home_20
+id home_friend
 id honorRequest
 id horizontal_only
 id icon

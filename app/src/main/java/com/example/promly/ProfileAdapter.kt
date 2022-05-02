@@ -5,10 +5,7 @@ import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Button
-import android.widget.ImageButton
-import android.widget.ImageView
-import android.widget.TextView
+import android.widget.*
 import androidx.cardview.widget.CardView
 import androidx.recyclerview.widget.RecyclerView
 import com.google.firebase.Timestamp
@@ -51,6 +48,7 @@ class ProfileAdapter(private val profiles: ArrayList<Profile>): RecyclerView.Ada
                 Log.d("Profile Adapter", "Clicked on a profile" )
             }
             addFriendButton.setOnClickListener{
+                val context = itemView.context
                 val db= FirebaseFirestore.getInstance()
                 var usersDb = db.collection("users").get()
                 usersDb.addOnSuccessListener { documents ->
@@ -69,8 +67,14 @@ class ProfileAdapter(private val profiles: ArrayList<Profile>): RecyclerView.Ada
                                     "updatedAt" to Timestamp(Date()),
                                     "username" to profile_info?.get("username")
                                 )
-                                db.collection("users").document("user-1")
-                                    .collection("friends").document(userid).set(friendRequestInfo)
+                                var friend = db.collection("users").document("user-1")
+                                    .collection("friends").document(userid)
+                                    Toast.makeText(
+                                        context,
+                                        "Friend Request Sent",
+                                        Toast.LENGTH_SHORT
+                                    ).show();
+                                    friend.set(friendRequestInfo)
                             }
                         }
                     }

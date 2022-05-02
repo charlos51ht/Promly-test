@@ -97,6 +97,7 @@ id goal_status
 id goal_title
 id goal_title_big
 id home_20
+id home_friend
 id interest_1
 id interest_2
 id interest_3

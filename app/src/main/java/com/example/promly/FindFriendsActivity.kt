@@ -1,6 +1,7 @@
 package com.example.promly
 
 import android.content.ContentValues.TAG
+import android.content.Intent
 import android.graphics.Rect
 import android.os.Bundle
 import android.text.Editable
@@ -30,6 +31,7 @@ class FindFriendsActivity : AppCompatActivity() {
     private lateinit var ff_toolbar : Toolbar
     private lateinit var search_bar : EditText
     private lateinit var recyclerView: RecyclerView
+    private lateinit var home_friends: ImageButton
     private lateinit var adapter: ProfileAdapter
     private lateinit var interest_pills: HorizontalScrollView
     private lateinit var filters: LinearLayout
@@ -37,6 +39,7 @@ class FindFriendsActivity : AppCompatActivity() {
     private lateinit var hashtag_filter: TextView
     private lateinit var school_filter: TextView
     private lateinit var cancel_text: TextView
+    var profiles = java.util.ArrayList<Profile>()
     private var queryType : Int = 0
 
 
@@ -109,7 +112,11 @@ class FindFriendsActivity : AppCompatActivity() {
 
         querySelect("")
         populateList()
-
+        home_friends = findViewById(R.id.home_friend)
+        home_friends.setOnClickListener{
+            val homeIntent = Intent(this, HomePageActivity::class.java)
+            startActivity(homeIntent)
+        }
     }
 
     private fun populateList(){
@@ -215,8 +222,5 @@ class FindFriendsActivity : AppCompatActivity() {
             }
         }
         return query_profiles
-    }
-    companion object {
-        var profiles = java.util.ArrayList<Profile>()
     }
 }

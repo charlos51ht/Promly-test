@@ -1,11 +1,11 @@
 [
     {
-        "merged": "C:\\Users\\charl\\Documents\\School Work\\Spring 2022\\Software Engineering\\Promly-Android--main\\Promly\\app\\build\\intermediates\\merged_res\\debug\\drawable-xxhdpi_ic_ball.png.flat",
-        "source": "C:\\Users\\charl\\Documents\\School Work\\Spring 2022\\Software Engineering\\Promly-Android--main\\Promly\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxhdpi\\ic_ball.png"
-    },
-    {
         "merged": "C:\\Users\\charl\\Documents\\School Work\\Spring 2022\\Software Engineering\\Promly-Android--main\\Promly\\app\\build\\intermediates\\merged_res\\debug\\font_avenir_black.otf.flat",
         "source": "C:\\Users\\charl\\Documents\\School Work\\Spring 2022\\Software Engineering\\Promly-Android--main\\Promly\\app\\src\\main\\res\\font\\avenir_black.otf"
+    },
+    {
+        "merged": "C:\\Users\\charl\\Documents\\School Work\\Spring 2022\\Software Engineering\\Promly-Android--main\\Promly\\app\\build\\intermediates\\merged_res\\debug\\drawable-xxhdpi_ic_ball.png.flat",
+        "source": "C:\\Users\\charl\\Documents\\School Work\\Spring 2022\\Software Engineering\\Promly-Android--main\\Promly\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxhdpi\\ic_ball.png"
     },
     {
         "merged": "C:\\Users\\charl\\Documents\\School Work\\Spring 2022\\Software Engineering\\Promly-Android--main\\Promly\\app\\build\\intermediates\\merged_res\\debug\\drawable-mdpi_we_got_you_icon.png.flat",
@@ -44,12 +44,12 @@
         "source": "C:\\Users\\charl\\Documents\\School Work\\Spring 2022\\Software Engineering\\Promly-Android--main\\Promly\\app\\src\\main\\res\\layout\\activity_find_friends.xml"
     },
     {
-        "merged": "C:\\Users\\charl\\Documents\\School Work\\Spring 2022\\Software Engineering\\Promly-Android--main\\Promly\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_home_page.xml.flat",
-        "source": "C:\\Users\\charl\\Documents\\School Work\\Spring 2022\\Software Engineering\\Promly-Android--main\\Promly\\app\\src\\main\\res\\layout\\activity_home_page.xml"
-    },
-    {
         "merged": "C:\\Users\\charl\\Documents\\School Work\\Spring 2022\\Software Engineering\\Promly-Android--main\\Promly\\app\\build\\intermediates\\merged_res\\debug\\drawable_completed.png.flat",
         "source": "C:\\Users\\charl\\Documents\\School Work\\Spring 2022\\Software Engineering\\Promly-Android--main\\Promly\\app\\src\\main\\res\\drawable\\completed.png"
+    },
+    {
+        "merged": "C:\\Users\\charl\\Documents\\School Work\\Spring 2022\\Software Engineering\\Promly-Android--main\\Promly\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_home_page.xml.flat",
+        "source": "C:\\Users\\charl\\Documents\\School Work\\Spring 2022\\Software Engineering\\Promly-Android--main\\Promly\\app\\src\\main\\res\\layout\\activity_home_page.xml"
     },
     {
         "merged": "C:\\Users\\charl\\Documents\\School Work\\Spring 2022\\Software Engineering\\Promly-Android--main\\Promly\\app\\build\\intermediates\\merged_res\\debug\\drawable-mdpi_empty_goal.png.flat",

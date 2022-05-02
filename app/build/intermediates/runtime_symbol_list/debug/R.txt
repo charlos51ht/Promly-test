@@ -2897,6 +2897,7 @@ int id hideable 0x7f0900f0
 int id home 0x7f0900f1
 int id homeAsUp 0x7f0900f2
 int id home_20 0x7f0900f3
+int id home_friend 0x7f090246
 int id honorRequest 0x7f0900f4
 int id horizontal_only 0x7f0900f5
 int id icon 0x7f0900f6
