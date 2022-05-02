@@ -3,6 +3,7 @@ package com.example.promly
 import android.app.Application
 import android.view.WindowManager
 import com.unsplash.pickerandroid.photopicker.UnsplashPhotoPicker
+import com.unsplash.pickerandroid.photopicker.presentation.UnsplashPhotoAdapter
 
 
 class UnsplashApplication : Application() {
