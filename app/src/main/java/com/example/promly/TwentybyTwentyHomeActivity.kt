@@ -31,33 +31,20 @@ class TwentybyTwentyHomeActivity : AppCompatActivity() {
         toolbar = findViewById(R.id.my_toolbar)
         setSupportActionBar(toolbar)
         /* initializes arraylist of goals (card view) */
-        var db= FirebaseFirestore.getInstance()
-        var db_goalList = ArrayList<Goal>()
-        var goals_db = db.collection("users").document(intent.getStringExtra("user-id").toString()).collection("goals")
-        goals_db.get().addOnSuccessListener{ documents->
-            if(documents.isEmpty)
-            {
-                for(i in 0..19)
-                    goals_db.document("goal-"+i).set(Goal())
-            }
-            else{
-                /*for(document in documents) {
-                    db_goalList.add(Goal(document.))
-                }*/
-            }
-        }
 
-        if(intent.getStringExtra("user-id")!=null) {
+        if(intent.getBooleanExtra("first_time",false)) {
             for (i in 0..19) {
-                goalList.add(Goal())
+                goalList.add(i, Goal())
             }
         }
-        val goalIndex = intent.getIntExtra("goal_index",0)
-        goalList.get(goalIndex).goalTitle = intent.getStringExtra("goal_name")
-        goalList.get(goalIndex).goalImage = intent.getStringExtra("goal_thumbnail")
-        goalList.get(goalIndex).date_created = Date()
-        goalList.get(goalIndex).goalStatus = intent.getIntExtra("goal_status", 0)
-        goalList.get(goalIndex).details = intent.getStringExtra("goal_details")
+        if(intent.getStringExtra("goal_name")!=null) {
+            val goalIndex = intent.getIntExtra("goal_index", 0)
+            goalList.get(goalIndex).goalTitle = intent.getStringExtra("goal_name")
+            goalList.get(goalIndex).goalImage = intent.getStringExtra("goal_thumbnail")
+            goalList.get(goalIndex).date_created = Date()
+            goalList.get(goalIndex).goalStatus = intent.getIntExtra("goal_status", 0)
+            goalList.get(goalIndex).details = intent.getStringExtra("goal_details")
+        }
 
         /* initializes recyclerview and sets up the layout manager of the recycler view*/
         recyclerView = findViewById(R.id.twenty_recycler_view)

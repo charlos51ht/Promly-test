@@ -1,11 +1,10 @@
 package com.example.promly
 
+import android.app.ActionBar
 import android.content.ContentValues.TAG
 import android.content.Intent
 import android.graphics.Rect
 import android.os.Bundle
-import android.text.Editable
-import android.text.TextWatcher
 import android.util.Log
 import android.view.MotionEvent
 import android.view.View
@@ -13,17 +12,10 @@ import android.view.inputmethod.InputMethodManager
 import android.widget.*
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
-import androidx.cardview.widget.CardView
-import androidx.core.view.isVisible
-import androidx.core.widget.doAfterTextChanged
 import androidx.core.widget.doOnTextChanged
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.example.promly.TwentyByTwenty.Goal
 import com.google.firebase.firestore.FirebaseFirestore
-import com.google.firebase.ktx.Firebase
-import com.squareup.picasso.Picasso
-
 
 
 class FindFriendsActivity : AppCompatActivity() {
@@ -117,6 +109,7 @@ class FindFriendsActivity : AppCompatActivity() {
             val homeIntent = Intent(this, HomePageActivity::class.java)
             startActivity(homeIntent)
         }
+
     }
 
     private fun populateList(){

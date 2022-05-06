@@ -4,6 +4,8 @@ import android.content.Intent
 import android.os.Bundle
 import android.widget.ImageButton
 import androidx.appcompat.app.AppCompatActivity
+import com.example.promly.TwentyByTwenty.Goal
+import java.util.ArrayList
 
 class HomePageActivity : AppCompatActivity() {
 
@@ -26,7 +28,10 @@ class HomePageActivity : AppCompatActivity() {
         var user_id = this.intent.getStringExtra("user-id")
         twenty_by.setOnClickListener {
             val intent = Intent(this, TwentybyTwentyHomeActivity::class.java)
-            intent.putExtra("user-id","user-1")
+            if(firsttime) {
+                intent.putExtra("first_time", true)
+                firsttime=false
+            }
             //intent.putExtra("user_id",user_id)
             startActivity(intent);
         }
@@ -35,5 +40,8 @@ class HomePageActivity : AppCompatActivity() {
             intent.putExtra("user-id","user-1")
             startActivity(intent);
         }
+    }
+    companion object{
+        var firsttime = true
     }
 }

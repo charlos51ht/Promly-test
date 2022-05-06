@@ -67,14 +67,9 @@ class ProfileAdapter(private val profiles: ArrayList<Profile>): RecyclerView.Ada
                                     "updatedAt" to Timestamp(Date()),
                                     "username" to profile_info?.get("username")
                                 )
-                                var friend = db.collection("users").document("user-1")
-                                    .collection("friends").document(userid)
-                                    Toast.makeText(
-                                        context,
-                                        "Friend Request Sent",
-                                        Toast.LENGTH_SHORT
-                                    ).show();
-                                    friend.set(friendRequestInfo)
+                                db.collection("users").document("user-1")
+                                    .collection("friends").document(userid).set(friendRequestInfo)
+                                    Toast.makeText(context, "Friend Request Sent", Toast.LENGTH_SHORT).show();
                             }
                         }
                     }
