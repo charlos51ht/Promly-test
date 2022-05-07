@@ -62,6 +62,7 @@ class NewGoalActivity : AppCompatActivity() {
                 intent.putExtra("goal_name", goal_title.text.toString())
                 intent.putExtra("goal_index",getIntent().getIntExtra("goal_index",0))
                 intent.putExtra("goal_thumbnail",photos?.get(0)?.urls?.small)
+                intent.putExtra("update",1)
                 startActivity(intent)
 
             }

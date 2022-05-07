@@ -74,6 +74,7 @@ class ExistingGoalActivity : AppCompatActivity() {
             showGoalIntent.putExtra("goal_thumbnail", intent.getStringExtra("image_url"))
             showGoalIntent.putExtra("goal_status", R.drawable.baseline_check_circle_white_24)
             showGoalIntent.putExtra("goal_details", notes_enter.text.toString())
+            showGoalIntent.putExtra("update",1)
             startActivity(showGoalIntent)
             //return to home page
         }
@@ -84,7 +85,7 @@ class ExistingGoalActivity : AppCompatActivity() {
             builder.setPositiveButton("Delete", DialogInterface.OnClickListener{dialog, id ->
 
                 showGoalIntent.putExtra("goal_index",getIntent().getIntExtra("goal_index",0))
-
+                showGoalIntent.putExtra("update",1)
                 //return to home page
                 startActivity(showGoalIntent)
                 dialog.cancel()
@@ -100,6 +101,7 @@ class ExistingGoalActivity : AppCompatActivity() {
                 my_scroll.smoothScrollTo(view.left, view.top)
         }
         button_back.setOnClickListener{
+            showGoalIntent.putExtra("update",1)
             showGoalIntent.putExtra("goal_name", goal_title.text.toString())
             showGoalIntent.putExtra("goal_index",getIntent().getIntExtra("goal_index",0))
             showGoalIntent.putExtra("goal_thumbnail", intent.getStringExtra("image_url"))

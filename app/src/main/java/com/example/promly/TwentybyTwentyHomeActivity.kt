@@ -37,7 +37,7 @@ class TwentybyTwentyHomeActivity : AppCompatActivity() {
                 goalList.add(i, Goal())
             }
         }
-        if(intent.getStringExtra("goal_name")!=null) {
+        if(intent.getIntExtra("update",0)==1) {
             val goalIndex = intent.getIntExtra("goal_index", 0)
             goalList.get(goalIndex).goalTitle = intent.getStringExtra("goal_name")
             goalList.get(goalIndex).goalImage = intent.getStringExtra("goal_thumbnail")
