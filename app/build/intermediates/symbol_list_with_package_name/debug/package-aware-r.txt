@@ -2514,7 +2514,7 @@ drawable abc_textfield_search_default_mtrl_alpha
 drawable abc_textfield_search_material
 drawable abc_vector_test
 drawable add_friend
-drawable add_friend_icon
+drawable apple
 drawable avd_hide_password
 drawable avd_show_password
 drawable baseline_check_circle_white_24
@@ -2551,11 +2551,13 @@ drawable design_ic_visibility
 drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
+drawable email
 drawable empty_goal
 drawable empty_long
 drawable ex
 drawable expand_circle_icon
 drawable friend_add_circle
+drawable google
 drawable googleg_disabled_color_18
 drawable googleg_standard_color_18
 drawable gradient_button

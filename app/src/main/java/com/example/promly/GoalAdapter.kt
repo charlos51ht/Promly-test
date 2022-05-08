@@ -35,7 +35,7 @@ class GoalAdapter(val goals: ArrayList<Goal>):
                     holder.goalImage.setImageResource(R.drawable.empty_goal)
             }
             else {
-                Picasso.get().load(goals[position].goalImage).fit().into(holder.goalImage)
+                Picasso.get().load(goals[position].goalImage).fit().centerCrop().into(holder.goalImage)
             }
             goals[position].goalStatus?.let { holder.goalStatus.setImageResource(it)
             goals[position].goalIndex = position

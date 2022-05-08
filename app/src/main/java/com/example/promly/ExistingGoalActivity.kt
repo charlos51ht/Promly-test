@@ -79,23 +79,28 @@ class ExistingGoalActivity : AppCompatActivity() {
             //return to home page
         }
         button_delete.setOnClickListener {
+            //Prompts user to confirm they want to delete the goal
             var builder = AlertDialog.Builder(this)
             builder.setTitle("Delete Goal")
             builder.setMessage("Are you sure you want to delete this goal? This will delete all notes and plans of this goal.")
+            //Condition if user selects "Delete"
             builder.setPositiveButton("Delete", DialogInterface.OnClickListener{dialog, id ->
-
+                //Deletes goal from local storage
                 showGoalIntent.putExtra("goal_index",getIntent().getIntExtra("goal_index",0))
                 showGoalIntent.putExtra("update",1)
                 //return to home page
                 startActivity(showGoalIntent)
                 dialog.cancel()
             })
+            //Condition if user selects "Cancel"
             builder.setNegativeButton("Cancel", DialogInterface.OnClickListener{dialog, id ->
                 dialog.cancel()
             })
             var alert = builder.create()
             alert.show()
         }
+
+
         notes_enter.onFocusChangeListener= View.OnFocusChangeListener{ view, hasFocus->
             if (hasFocus)
                 my_scroll.smoothScrollTo(view.left, view.top)

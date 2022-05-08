@@ -1,6 +1,5 @@
 package com.example.promly
 
-import android.app.ActionBar
 import android.content.ContentValues.TAG
 import android.content.Intent
 import android.graphics.Rect
@@ -87,7 +86,7 @@ class FindFriendsActivity : AppCompatActivity() {
                 filters.setVisibility(View.VISIBLE)
                 cancel_text.setVisibility(View.VISIBLE)
                 interest_pills.setVisibility(View.GONE)
-                //Make filter recycleable
+                //Make filter recyclable
                 //sets recycler view to one that is filtered by name
             }
         }
@@ -100,7 +99,7 @@ class FindFriendsActivity : AppCompatActivity() {
 
         recyclerView = findViewById(R.id.expand_your_circle_recycler_view)
         recyclerView.layoutManager = GridLayoutManager(this, 2)
-        recyclerView.setHasFixedSize(true);
+        recyclerView.setHasFixedSize(true)
 
         querySelect("")
         populateList()
@@ -120,7 +119,7 @@ class FindFriendsActivity : AppCompatActivity() {
                 if(document.id!=intent.getStringExtra("user-id"))
                     db.collection("users").document(document.id).collection("profile")
                     .document("public").get().addOnSuccessListener { document ->
-                     Log.i("Check DB", "${document.id}=> ${document.data}");
+                     Log.i("Check DB", "${document.id}=> ${document.data}")
                         if(document != null){
                                 Log.d("TAG", "Document Exists!!!")
                                 profiles.add(
@@ -198,7 +197,7 @@ class FindFriendsActivity : AppCompatActivity() {
                     for(interest in interests)
                         if(interest.lowercase().contains(text.lowercase())) {
                             query_profiles.add(profile)
-                            break;
+                            break
                         }
                 }
             }

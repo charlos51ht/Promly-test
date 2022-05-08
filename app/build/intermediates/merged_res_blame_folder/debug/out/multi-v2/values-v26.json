@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\charl\\Documents\\School Work\\Spring 2022\\Software Engineering\\Promly-Android--main\\Promly\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v26\\values-v26.xml",
+            "outputFile": "C:\\Users\\adici\\AndroidStudioProjects\\Promly-test\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v26\\values-v26.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\charl\\.gradle\\caches\\transforms-3\\b324fc1c74a603d882c021df08b99ec4\\transformed\\appcompat-1.4.1\\res\\values-v26\\values-v26.xml",
+                    "source": "C:\\Users\\adici\\.gradle\\caches\\transforms-3\\b324fc1c74a603d882c021df08b99ec4\\transformed\\appcompat-1.4.1\\res\\values-v26\\values-v26.xml",
                     "from": {
                         "startLines": "2,3,4,8,12,16",
                         "startColumns": "4,4,4,4,4,4",
